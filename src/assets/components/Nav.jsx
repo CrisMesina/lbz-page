@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { BsInstagram } from 'react-icons/bs'
-import {  } from 'react-icons/fa'
+
+
 
 
 export const Nav = () => {
 
     const [openDropDown, setOpenDropdown] = useState(null);
+    const [openMenu, setOpenMenu] = useState(null);
 
     const navs = [
         {
@@ -48,6 +49,25 @@ export const Nav = () => {
         },
     ]
 
+    const cuenta = [
+        {
+            id:1,
+            label: "Cuenta",
+            options: [
+                {
+                    label: "Estudiante",
+                    href: "https://lms.lirmi.com/login",
+                    blank: "_blank"
+                },
+                {
+                    label: "Docente",
+                    href: "https://login.lirmi.com/login",
+                    blank: "_blank"
+                }
+            ]
+        }
+    ]
+
     return(
         <> 
             <div className='grid grid-cols-3 h-20 bg-white shadow-lg'>
@@ -88,12 +108,35 @@ export const Nav = () => {
 
                 </div>
 
-                <div className='flex flex-wrap my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-white font-extrabold'>
-                    <a href="/mi-cuenta">
-                        <button className='p-3 cursor-pointer'>
-                            Mi cuenta
-                        </button>
-                    </a>
+                <div className='flex flex-wrap my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-black '>
+                    <div>
+                        {cuenta.map((c, i) =>(
+                            <div>
+                                <button
+                                    className='p-4 w-36 text-white font-bold'
+                                    onClick={()=> setOpenMenu(openMenu === i ? null: i)}>
+                                        {c.label}
+                                </button>
+                                {openMenu === i && (
+                                    <div className='absolute bg-white p-2 shadow-lg shadow-theme-old-green-nav'>
+                                        {c.options.map((opt, i) =>(
+                                            <a 
+                                                key={i}
+                                                href={opt.href}
+                                                target={opt.blank}
+                                                className='flex border-b my-2 p-2'
+                                            >
+                                                {opt.label}
+                                            </a>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+
+
+                            
+                        ))}
+                    </div>
                 </div>
 
             </div>
