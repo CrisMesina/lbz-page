@@ -1,16 +1,36 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 
 
 
 export const Nav = () => {
 
+
+    const dropDownRef = useRef();
+    const menuRef = useRef();
+
+    useEffect(()=>(
+        function handleClickOutside(event){
+            if(
+                dropDownRef.current && !dropDownRef.current.contains(event.target) &&
+                menuRef.current && !menuRef.current.contains(event.target)
+            ){
+                setOpenDropdown(null);
+                setOpenMenu(null)
+            }
+            document.addEventListener("mousedown", handleClickOutside);
+            return () => {
+                document.removeEventListener("mousedown", handleClickOutside);
+            }
+        }
+    ), [])
+
     const [openDropDown, setOpenDropdown] = useState(null);
     const [openMenu, setOpenMenu] = useState(null);
 
     const navs = [
         {
-            label: "Liceo ↓",
+            label: "Liceo 🔽",
             options : [
                 {
                     label: "Nosotros",
@@ -23,7 +43,7 @@ export const Nav = () => {
             ]
         },
         {
-            label: "Comunidad",
+            label: "Comunidad 🔽",
             options: [
                 {
                     label : "Centro de Alumnos",
@@ -77,12 +97,13 @@ export const Nav = () => {
                     </a>
                 </div>
 
-                <div className='flex flex-wrap my-auto'>
+                <div className='flex flex-wrap my-auto ' ref={dropDownRef}>
                     {navs.map((n, i) =>(
                        <div key={i} className={`mx-auto p-5 flex items-center justify-center h-20`}>
                             {n.options ? (
                                 <div>
                                     <button
+                                        className='underline-animate cursor-pointer'
                                         onClick={() => setOpenDropdown(openDropDown === i ? null: i)}>
                                             {n.label}
                                     </button>
@@ -92,7 +113,7 @@ export const Nav = () => {
                                                 <a 
                                                     key={i}
                                                     href={opt.href}
-                                                    className='flex border-b my-2 p-2'
+                                                    className='flex underline-animate my-2 p-2'
                                                 >
                                                     {opt.label}
                                                 </a>
@@ -101,14 +122,16 @@ export const Nav = () => {
                                     )}
                                 </div>
                             ) : (
-                                <a href={n.href}>{n.label}</a>
+                                <a 
+                                    className='underline-animate'
+                                    href={n.href}>{n.label}</a>
                             )}
                        </div>
                     ))}
 
                 </div>
 
-                <div className='flex flex-wrap my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-black '>
+                <div ref={menuRef} className='flex flex-wrap my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-black '>
                     <div>
                         {cuenta.map((c, i) =>(
                             <div>
@@ -124,7 +147,7 @@ export const Nav = () => {
                                                 key={i}
                                                 href={opt.href}
                                                 target={opt.blank}
-                                                className='flex border-b my-2 p-2'
+                                                className='flex my-2 p-2 underline-animate'
                                             >
                                                 {opt.label}
                                             </a>

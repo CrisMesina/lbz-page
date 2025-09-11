@@ -27,13 +27,6 @@ export const Cordinadores = () => {
             img: "/tea3.jpg",
             cargo: "Director"
         },
-        {
-            id: 4,
-            nombre: "Juan Perez",
-            img: "/tea3.jpg",
-            cargo: "Director"
-        },
-
     ]
 
     return(

@@ -3,7 +3,7 @@ import React from 'react'
 export const MisionyVision = () => {
     return(
         <>
-            <div className='flex mt-25'>
+            <div className='flex'>
                 <div className='text-center mx-auto w-full h-96 p-2'>
                     <h1 className='text-5xl mt-10'>Misión</h1>
                     <p className='mt-1 p-10 text-start'>
