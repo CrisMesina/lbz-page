@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+
+@theme{
+  /* ------------COLORES PRINCIPALES-------------- */
+  --color-theme-blue-bg: #1A2040;
+  --color-theme-lime: #2EBE76; /* Verde más oscuro */
+  --color-theme-mint: #4FE3C1; /* Verde claro */
+  --color-theme-borders: #fcc436;
+
+
+
+  /* --------------------------------------------- */
+  /* -------------- COLORES PAG ANT -------------- */
+  /* --------------------------------------------- */
+  --color-theme-old-green: #61ba6d;
+  --color-theme-old-green-nav: #69bc5f;
+  --color-theme-old-green-dark: #134d08;
+  --color-theme-old-green-medium: #0d4d03;
+  --color-theme-old-green-light: #61ba6d;
+  --color-theme-old-green-slider-text: #11a111;
+  
+  /* --------------------------------------------- */
+  /* --------------                 -------------- */
+  /* --------------------------------------------- */
+
+  
+  --color-color-text: #F5F6FA;
+
+}
