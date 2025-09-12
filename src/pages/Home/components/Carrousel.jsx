@@ -6,7 +6,7 @@ export const Carrousel = () => {
     const imgStorage = [
         {
             id: 1,
-            img: "/foto1.JPG",
+            img: "/index-hero3.avif",
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
@@ -14,14 +14,14 @@ export const Carrousel = () => {
         },
         {
             id: 2,
-            img: "/foto2.JPG",
+            img: "/index-hero.avif",
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             href: "/"
         },
         {
             id: 3,
-            img: "/foto3.jpg",
+            img: "/index-hero2.avif",
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             href: "/"

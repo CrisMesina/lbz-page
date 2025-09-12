@@ -38,7 +38,7 @@ export const Contactos = () => {
             <div className='p-5'>
                 {contactos.map((c, i) =>(
                     <div key={i} 
-                        className={` my-4 scroll-item  rounded-2xl bg-conic/[from_var(--border-angle)] p-1  animate-rotate-border from-theme-old-green-medium via-green-300 to-green-900
+                        className={` my-4  rounded-2xl bg-conic/[from_var(--border-angle)] p-1 animate-rotate-border from-theme-old-green-medium via-green-300 to-green-900
                             shadow-lg ${c.style} ${c.container} `}
                         >
                         <div className='flex bg-white rounded-2xl'>

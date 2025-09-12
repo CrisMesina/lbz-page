@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav } from '../../assets/components/Nav'
+import { Listado } from './components/Listado'
 
 export const Documentos = () => {
     return (
@@ -9,6 +10,10 @@ export const Documentos = () => {
             </div>
             <div className='min-h-screen'>
                 <img src="/foto1.JPG" alt="" />
+            </div>
+            <div className='min-h-screen'>
+                <Listado/>
+                
             </div>
         </>
     )
