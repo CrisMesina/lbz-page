@@ -1,8 +1,33 @@
 @import "tailwindcss";
 
 
+/* PROPIEDADES CUSTOMS */
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
 
 @theme{
+
+  /* - ANIMACIONES (ANIMACION ROTACION DE BORDE) - */
+  --animate-rotate-border: border-rotate 3s linear infinite;
+
+
+
+  /* ----------------- KEYFRAMES ----------------- */
+
+
+
+  @keyframes border-rotate {
+    to{
+      --border-angle: 360deg
+    }
+    
+  }
+
+
   /* ------------COLORES PRINCIPALES-------------- */
   --color-theme-blue-bg: #1A2040;
   --color-theme-lime: #2EBE76; /* Verde más oscuro */
@@ -29,3 +54,4 @@
   --color-color-text: #F5F6FA;
 
 }
+
