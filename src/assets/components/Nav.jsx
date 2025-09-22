@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { lazy, useEffect, useRef, useState } from 'react'
 
 
 
@@ -27,6 +27,7 @@ export const Nav = () => {
 
     const [openDropDown, setOpenDropdown] = useState(null);
     const [openMenu, setOpenMenu] = useState(null);
+    const [resMenu, setResMenu] = useState(null);
 
     const navs = [
         {
@@ -72,7 +73,7 @@ export const Nav = () => {
     const cuenta = [
         {
             id:1,
-            label: "Cuenta",
+            label: "Cuenta 🔽",
             options: [
                 {
                     label: "Estudiante",
@@ -90,16 +91,16 @@ export const Nav = () => {
 
     return(
         <> 
-            <div className='grid grid-cols-3 h-20 bg-white shadow-lg'>
+            <div className='grid md:grid-cols-3 grid-cols-2 h-20 bg-white shadow-lg'>
                 <div className=' text-mint relative'>
                     <a href="/">
                         <img src="/Logo.png" className='absolute left-1/7 top-0 shadow-lg w-30 h-30 bg-white rounded-b-2xl p-3' alt="" /> 
                     </a>
                 </div>
 
-                <div className='flex flex-wrap my-auto ' ref={dropDownRef}>
+                <div className='md:flex md:flex-wrap hidden my-auto ' ref={dropDownRef}>
                     {navs.map((n, i) =>(
-                       <div key={i} className={`mx-auto p-5 flex items-center justify-center h-20`}>
+                       <div key={i} className={` flex mx-auto items-center justify-center h-20`}>
                             {n.options ? (
                                 <div>
                                     <button
@@ -131,10 +132,10 @@ export const Nav = () => {
 
                 </div>
 
-                <div ref={menuRef} className='flex flex-wrap my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-black '>
+                <div ref={menuRef} className='md:flex md:flex-wrap hidden my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-black '>
                     <div>
                         {cuenta.map((c, i) =>(
-                            <div>
+                            <div className=''>
                                 <button
                                     className='p-4 w-36 text-white font-bold'
                                     onClick={()=> setOpenMenu(openMenu === i ? null: i)}>
@@ -159,6 +160,79 @@ export const Nav = () => {
 
                             
                         ))}
+                    </div>
+                </div>
+
+                <div className='block md:hidden my-auto items-end justify-end mx-auto rounded-md bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-black'>
+                    <div>
+                        <button
+                            className='p-4 w-36 text-white font-bold'
+                            onClick={()=> setResMenu(resMenu === true ? false: true)}>
+                                Menu
+                        </button>
+                        {resMenu === true && (
+                            <div className='absolute bg-white p-2 shadow-lg shadow-theme-old-green-nav' ref={dropDownRef}>
+                                {navs.map((n,i) =>(
+                                    <div className='my-2' key={i}>
+                                        {n.options ? (
+                                            <div className='' >
+                                                <button
+                                                    className='underline-animate cursor-pointer'
+                                                    onClick={() => setOpenDropdown(openDropDown === i ? null: i)}>
+                                                        {n.label}
+                                                </button>
+                                            </div>
+                                            
+                                        ) : (
+                                            <a 
+                                                className='underline-animate '
+                                                href={n.href}>
+                                                    {n.label}
+                                            </a>
+                                        )}
+                                        {openDropDown === i && (
+                                                <div className='bg-white p-1 '>
+                                                    {n.options.map((opt, i) =>(
+                                                        <a
+                                                            key={i}
+                                                            href={opt.href}
+                                                            className='flex underline-animate p-2'
+                                                        >
+                                                        {opt.label}
+                                                        </a>
+
+                                                    ))}
+                                                </div>
+                                            )}
+
+                                        
+                                    </div>
+                                ))}
+                                {cuenta.map((c, i) =>(
+                                    <div className='my-2' key={i}>
+                                        <button 
+                                        className='underline-animate cursor-pointer' onClick={()=> setOpenMenu(openMenu === i ? null: i)}>
+                                            {c.label}
+                                        </button>
+                                        {openMenu === i && (
+                                            <div className='bg-white p-1'>
+                                                {c.options.map((opt, i) =>(
+                                                    <a
+                                                    key={i}
+                                                    href={opt.href}
+                                                    target={opt.blank}
+                                                    className='flex underline-animate my-2 p-2'
+                                                    >
+                                                        {opt.label}
+                                                    </a>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        )}
+
                     </div>
                 </div>
 

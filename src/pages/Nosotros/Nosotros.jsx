@@ -4,6 +4,7 @@ import { MisionyVision } from '../Nosotros/components/MisionyVision'
 import { Directiva } from '../Nosotros/components/Directiva'
 import { Cordinadores } from '../Nosotros/components/Cordinadores'
 import { Ubicacion } from '../Nosotros/components/Ubicacion'
+import { Footer } from '../../assets/components/Footer'
 
 export const Nosotros = () => {
     return(
@@ -21,7 +22,7 @@ export const Nosotros = () => {
             <div className='mt-10 mb-20'>
                 <MisionyVision/>
             </div>
-            <div className='my-20'>
+            <div className='my-20' id='directiva'>
                 <Directiva/>
             </div>
             <div className='min-h-screen'>
@@ -29,6 +30,9 @@ export const Nosotros = () => {
             </div>
             <div>
                 <Ubicacion/>
+            </div>
+            <div>
+                <Footer/>
             </div>
         </>
     )

@@ -1,0 +1,50 @@
+import React from 'react'
+
+export const Padres = () => {
+
+    const listado = [
+        {
+            id: 1,
+            image: "/tea3.avif",
+            name: "Juan Perez",
+            cargo: "presidente"
+        },
+        {
+            id: 2,
+            image: "/tea3.avif",
+            name: "Juan Perez",
+            cargo: "presidente"
+        },
+        {
+            id: 3,
+            image: "/tea3.avif",
+            name: "Juan Perez",
+            cargo: "presidente"
+        },
+        {
+            id: 4,
+            image: "/tea3.avif",
+            name: "Juan Perez",
+            cargo: "presidente"
+        },
+    ]
+
+    return (
+        <>
+            <h1 className='text-center font-bold text-4xl'>¿Quienes forman parte del centro de Padres</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5'>
+                    {listado.map((a, i) =>(
+                        <div key={i} className='w-60 shadow-lg mx-auto my-5 rounded-t-2xl rounded-b-2xl text-center'>
+                            <div>
+                                <img src={a.image} alt="" className='rounded-t-2xl' />
+                            </div>
+                            <div className='p-5'>
+                                <h1>{a.name}</h1>
+                                <p>{a.cargo}</p>
+                            </div>
+                        </div>
+                    ))}
+            </div>
+        </>
+    )
+}

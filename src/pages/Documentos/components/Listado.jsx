@@ -45,14 +45,14 @@ export const Listado = () => {
             <div className=''>
                 <h1 className="text-start p-10 text-5xl font-bold">Descargas (pdf)</h1>            
             </div>
-            <div className='grid grid-cols-3'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 '>
                 {
                     archivos.map((a, i) =>(
                         <div className=" w-96 my-10 scroll-item h-auto mx-auto shadow-lg rounded-2xl">
                             <a href="" download={a.download}>
                                 <img src={a.img} className="rounded-2xl mx-auto" alt="" />
                             </a>
-                            <h1 className="text-center my-10">{a.name}</h1>
+                            <h1 className="text-start mx-10 my-10">{a.name}</h1>
                             <div className="p-10 text-center">
                                 <a href=""
                                     download={a.download}

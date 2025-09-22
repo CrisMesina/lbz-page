@@ -39,10 +39,10 @@ export const Recomendaciones = () => {
 
     return(
         <>
-            <div className='grid grid-cols-2'>
+            <div className='md:grid md:grid-cols-2 grid-cols-1'>
                 {recomendaciones.map((r, i) =>(
-                    <div key={i} className='flex mx-30 my-20'>
-                        <img src={r.img} className='w-20 h-20 aspect-square rounded-full hover:border hover:border-theme-old-green' alt="" />
+                    <div key={i} className='flex mx-2 md:mx-5 md:my-20'>
+                        <img src={r.img} className='w-20 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt="" />
                         <div className='flex-col'>
                             <h1 className='text-theme-old-green mx-2 p-1 font-extrabold text-xl mb-5'>{r.title}</h1>
                             <p className='text-start p-1 mx-2 text-white'>{r.texto}</p>
