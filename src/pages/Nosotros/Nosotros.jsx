@@ -22,7 +22,7 @@ export const Nosotros = () => {
             <div className='mt-10 mb-20'>
                 <MisionyVision/>
             </div>
-            <div className='my-20' id='directiva'>
+            <div className='my-20'>
                 <Directiva/>
             </div>
             <div className='p-4'>

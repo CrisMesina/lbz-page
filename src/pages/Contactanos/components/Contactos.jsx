@@ -7,7 +7,7 @@ export const Contactos = () => {
             id:1,
             name: "Juan Perez",
             img: "/tea3.avif",
-            style: "md:w-3/6 ",
+            style: "",
             email: "director@director.cl",
             cargo: "director"
         },
@@ -15,8 +15,7 @@ export const Contactos = () => {
             id:2,
             name: "Juan Perez",
             img: "/tea3.jpg",
-            style: "md:w-3/6 mx-auto",
-
+            style: "lg:w-1/2",
             email: "director@director.cl",
             cargo: "director"
         },
@@ -24,7 +23,7 @@ export const Contactos = () => {
             id:3,
             name: "Juan Perez",
             img: "/tea3.jpg",
-            style: "md:w-3/6",
+            style: "",
             email: "director@director.cl",
             cargo: "director",
         },
@@ -38,16 +37,16 @@ export const Contactos = () => {
             <div className='flex flex-col p-5'>
                 {contactos.map((c, i) =>(
                     <div key={i} 
-                        className={` my-4 relative  rounded-2xl bg-conic/[from_var(--border-angle)] p-1 animate-rotate-border from-theme-old-green-medium via-green-300 to-green-900
+                        className={` my-4 relative mx-auto  rounded-2xl bg-conic/[from_var(--border-angle)] p-1 animate-rotate-border from-theme-old-green-medium via-green-300 to-green-900
                             shadow-lg ${c.style} `}
                         >
-                        <div className='flex p-2 bg-white rounded-2xl'>
+                        <div className='flex p-1 bg-white rounded-2xl'>
                             <div>
-                                <img src={c.img} className={`w-46 ${c.style} shadow-lg shadow-theme-old-green-medium hover:shadow-theme-old-green-light hover:scale-110 rounded-tl-2xl rounded-bl-2xl `} alt="" />
+                                <img src={c.img} className={`w-46 shadow-lg shadow-theme-old-green-medium hover:shadow-theme-old-green-light hover:scale-110 rounded-tl-2xl rounded-bl-2xl `} alt="" />
                             </div>
                             <div className='grid grid-cols-2 w-full'>
                                 <div className=''>
-                                    <h1 className=' mx-5 md:mt-5 border w-32 text-2xl font-bold'>{c.name}</h1>
+                                    <h1 className=' mx-5 md:mt-5 w-32 text-2xl font-bold'>{c.name}</h1>
                                     <p className=' mx-5'>
                                         <a href={`mailto:${c.email}`} className='underline-animate text-xl'>
                                             {c.email}
@@ -55,10 +54,10 @@ export const Contactos = () => {
                                     </p>
                                     <p className=' mx-5 mt-5 italic font-bold'>{c.cargo}</p>
                                 </div>
-                                <div className='flex mx-auto text-center w-32 my-auto shadow-lg shadow-theme-old-green-medium
+                                <div className='flex mt-20 text-center w-25 my-auto shadow-lg shadow-theme-old-green-medium
                                     hover:scale-110 hover:shadow-theme-old-green-light rounded-lg'>
                                         
-                                    <button className='text-center h-20 mx-auto'>Contactar</button>
+                                    <button className='mx-auto p-2'>Contactar</button>
                                 </div>
                             </div>
                         </div>
