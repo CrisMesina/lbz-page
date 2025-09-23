@@ -25,7 +25,7 @@ export const Nosotros = () => {
             <div className='my-20' id='directiva'>
                 <Directiva/>
             </div>
-            <div className='min-h-screen'>
+            <div className='p-4'>
                 <Cordinadores/>
             </div>
             <div>

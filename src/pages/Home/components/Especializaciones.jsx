@@ -36,12 +36,12 @@ export const Especializaciones = () => {
     return(
         <>
             <div className='flex h-20 bg-black'>
-                <h1 className='mx-auto my-auto font-bold text-4xl text-white'>Desde 2do medio puedes escoger</h1>
+                <h1 className='mx-auto my-auto font-bold md:text-4xl  text-2xl text-white'>Desde 2do medio puedes escoger</h1>
             </div>
             <div className='flex flex-wrap my-20'>
                 {
                     especializaciones.map((e, i) =>(
-                        <div className='mx-auto w-80 h-96 mt-20 rounded-xl shadow-md shadow-green-900 hover:scale-105'>
+                        <div className='mx-auto w-80 h-96 my-20 rounded-xl shadow-md shadow-green-900 hover:scale-105'>
                             <div className='relative'>
                                 <img src={e.img} className='absolute w-30 h-30 hover:scale-105 rounded-full shadow-lg shadow-theme-old-green-dark left-25 -bottom-10' alt="imagen de prueba" />
                             </div>
@@ -50,7 +50,7 @@ export const Especializaciones = () => {
                                 <p>{e.text}</p>
                                 <a href="/">
                                     <button className='border p-4 mt-5 rounded-xl w-32'>
-                                        Ver mas 
+                                        Ver mas     
                                     </button>
                                 </a>
                             </div>

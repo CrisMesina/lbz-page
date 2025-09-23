@@ -1,4 +1,5 @@
 
+import { Footer } from '../../assets/components/Footer'
 import { Nav } from '../../assets/components/Nav'
 import { Contactos } from './components/Contactos'
 
@@ -19,8 +20,8 @@ export const Contacto = () => {
             <div>
                 <Contactos/>
             </div>
-            <div className='min-h-screen'>
-
+            <div>
+                <Footer/>
             </div>
         </>
     )

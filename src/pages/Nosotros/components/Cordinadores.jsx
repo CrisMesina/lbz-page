@@ -33,7 +33,7 @@ export const Cordinadores = () => {
         <>
            <div className='text-center'>
                 <h1 className="text-5xl mb-20 font-bold">Cordinadores</h1>
-                <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
+                <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
                     {
                         cordinadores.map((d, i ) => (
                             <div key={i} className="mx-auto my-10 rounded-2xl shadow-lg">
