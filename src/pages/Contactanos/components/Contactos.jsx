@@ -48,7 +48,7 @@ export const Contactos = () => {
                                 <div className=''>
                                     <h1 className=' mx-5 md:mt-5 w-32 text-2xl font-bold'>{c.name}</h1>
                                     <p className=' mx-5'>
-                                        <a href={`mailto:${c.email}`} className='underline-animate text-xl'>
+                                        <a href={`mailto:${c.email}`} className='underline-animate cursor-pointer text-xl'>
                                             {c.email}
                                         </a>
                                     </p>
@@ -57,7 +57,9 @@ export const Contactos = () => {
                                 <div className='flex mt-20 text-center w-25 my-auto shadow-lg shadow-theme-old-green-medium
                                     hover:scale-110 hover:shadow-theme-old-green-light rounded-lg'>
                                         
-                                    <button className='mx-auto p-2'>Contactar</button>
+                                    <a href={`mailto:${c.email}`}>
+                                        <button className='mx-auto p-2 cursor-pointer'>Contactar</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>

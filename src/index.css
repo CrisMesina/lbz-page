@@ -22,6 +22,38 @@ body{
     width: 100%;
 }
 
+.carta{
+  width: 100%;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  padding: 20px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+
+}
+
+.carousel{
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 800px;
+  overflow: hidden;
+  display: flex; > * { flex: 0 0 50% }
+  &:hover .grupo{
+    animation-play-state: paused;
+  }
+}
+
+.grupo{
+  display: flex;
+  gap: 2px;
+  padding-right: 20px;
+  will-change: transform;
+  animation: scrolling 10s linear infinite;
+}
+
 
 .scroll-item{
   animation: showElement linear forwards;
@@ -30,11 +62,20 @@ body{
   animation-duration:0.5s ;
 }
 
+.transition-delay-200{
+  animation-delay: 5s;
+}
+
 .scroll-items-left{
   animation: showElementLeft linear forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
   animation-duration: 0.5s;
+}
+
+
+.fade-carousel{
+  animation: carouselFade 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-item-right{
@@ -45,11 +86,23 @@ body{
 }
 
 .scroll-items-down{
-  animation: showElementDown ease-out forwards;
+  animation: showElementDown ease-in forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
+
+
+@keyframes scrolling {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+  
+}
+
 
 @keyframes showElementDown {
   from{
@@ -91,10 +144,10 @@ body{
   
 }
 
-@keyframes showElement {
+@keyframes fade-carousel {
   from{
     opacity: 0;
-    transform: scale(0);
+    transform: scale(0.98);
 
   }
   to{

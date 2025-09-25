@@ -45,7 +45,7 @@ export const Recomendaciones = () => {
         <>
             <div className='md:grid md:grid-cols-2 grid-cols-1'>
                 {recomendaciones.map((r, i) =>(
-                    <div key={i} className={`flex opacity-0 scroll-item mx-2 md:mx-5 md:my-20 ${r.animation}`}>
+                    <div key={i} className={`flex opacity-0 scroll-item mx-2 delay-300 md:mx-5 md:my-20 ${r.animation}`}>
                         <img src={r.img} className='w-20 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt="" />
                         <div className='flex-col'>
                             <h1 className='text-theme-old-green mx-2 p-1 font-extrabold text-xl mb-5'>{r.title}</h1>

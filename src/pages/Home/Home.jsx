@@ -2,6 +2,7 @@
 import { Footer } from '../../assets/components/Footer'
 import { Nav } from '../../assets/components/Nav'
 import { Carrousel } from './components/Carrousel'
+import { Convenios } from './components/Convenios'
 import { Especializaciones } from './components/Especializaciones'
 import { Recomendaciones } from './components/Recomendaciones'
 import { Sellos } from './components/Sellos'
@@ -24,6 +25,9 @@ export const Home = () => {
                 </div>
                 <div>
                     <Sellos/>
+                </div>
+                <div>
+                    <Convenios/>
                 </div>
                 <div className='relative mt-20'>
                     <Footer/>

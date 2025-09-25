@@ -14,12 +14,12 @@ export const Nosotros = () => {
             </div>
             <div className='min-h-screen'>
                 <div className='relative'>
-                    <h1 className='absolute text-6xl font-bold text-theme-old-green-dark top-1/2 left-1/20'>Nosotros</h1>
-                    <p className='absolute text-6xl font-bold text-theme-old-green-light bottom-1/3 left-1/20'>Conocenos un poco mas</p>
+                    <h1 className='absolute text-6xl font-bold text-theme-old-green-dark top-1/2 left-1/20 drop-shadow-title-text'>Nosotros</h1>
+                    <p className='absolute text-6xl font-bold text-theme-old-green-light bottom-1/3 left-1/20 drop-shadow-title-text'>Conocenos un poco mas</p>
                     <img src="/portada1.jpg" className='w-full h-screen object-cover' alt="" />
                 </div>
             </div>
-            <div className='mt-10 mb-20'>
+            <div>
                 <MisionyVision/>
             </div>
             <div className='my-20'>
