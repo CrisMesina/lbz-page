@@ -5,19 +5,19 @@ export const Directiva = () => {
         {
             id: 1,
             nombre: "Juan Perez",
-            img: "/tea3.jpg",
+            img: "/director.avif",
             cargo: "Director"
         },
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/tea3.jpg",
+            img: "/inspectora.avif",
             cargo: "Director"
         },
         {
             id: 3,
             nombre: "Juan Perez",
-            img: "/tea3.jpg",
+            img: "/utp.avif",
             cargo: "Director"
         },
         {
@@ -37,7 +37,7 @@ export const Directiva = () => {
                         directiva.map((d, i ) => (
                             <div key={i} className="mx-auto rounded-2xl shadow-lg">
                                 <div>
-                                    <img src={d.img} className="w-70 rounded-t-2xl mx-auto"  alt="" />
+                                    <img src={d.img} className="w-70 rounded-t-2xl mx-auto hover:scale-120 hover:rounded-2xl transition-all duration-150"  alt="" />
                                 </div>
                                 <div>
                                     <h1 className="my-4">{d.nombre}</h1>

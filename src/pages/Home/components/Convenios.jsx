@@ -41,10 +41,21 @@ export const Convenios = () => {
     return (
         <>
             <h1 className='text-center font-bold text-5xl'>Convenios</h1>
-            <div className='carousel basic'>
+            <div className='carousel'>
                 {
                     conv.map((c, i) =>(
                         <div className='grupo'>
+                            <div className='carta'>
+                                <a href={c.href}>
+                                    <img src={c.img} alt={c.name} className='w-full h-full object-contain'/>
+                                </a>
+                            </div>
+                        </div>
+                    ))
+                }
+                {
+                    conv.map((c, i) =>(
+                        <div className='grupo' aria-hidden="true">
                             <div className='carta'>
                                 <a href={c.href}>
                                     <img src={c.img} alt={c.name} className='w-full h-full object-contain'/>
