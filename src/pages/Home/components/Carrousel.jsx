@@ -9,7 +9,6 @@ export const Carrousel = () => {
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
-            animation:"show-element",
             href: "/"
         },
         {
@@ -18,7 +17,6 @@ export const Carrousel = () => {
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
-            animation:"show-element",
             href: "/"
         },
         {
@@ -27,7 +25,6 @@ export const Carrousel = () => {
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
-            animation:"show-element",
             href: "/"
         }
     ]
