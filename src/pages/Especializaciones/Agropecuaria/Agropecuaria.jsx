@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav } from '../../../assets/components/Nav'
+import { Malla } from './components/Malla'
 
 export const Agropecuaria = () => {
     return (
@@ -25,7 +26,7 @@ export const Agropecuaria = () => {
                 </div>
 
                 <div className='min-h-screen p-5'>
-                    <h1 className='text-center my-5 font-bold text-2xl'>Malla Curricular</h1>
+                    <Malla/>
 
                 </div>   
 
@@ -33,7 +34,7 @@ export const Agropecuaria = () => {
                     <iframe 
                         className='w-full mx-auto h-96 lg:h-screen p-10' 
                         src="https://www.youtube.com/embed/MHWGJG-biSE?si=-FZEYRXniUgF4G4T" 
-                        title="Video sobre especiazacion de programacion" 
+                        title="Video sobre especiazacion de agropecuaria" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerpolicy="strict-origin-when-cross-origin" 

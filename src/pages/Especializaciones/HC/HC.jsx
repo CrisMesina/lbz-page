@@ -1,5 +1,6 @@
 import React from 'react'
 import { Nav } from '../../../assets/components/Nav'
+import { Malla } from './components/Malla'
 
 export const HC = () => {
     return (
@@ -25,8 +26,7 @@ export const HC = () => {
                 </div>
 
                 <div className='min-h-screen p-5'>
-                    <h1 className='text-center my-5 font-bold text-2xl'>Malla Curricular</h1>
-
+                    <Malla/>
                 </div>   
 
                 <div>
