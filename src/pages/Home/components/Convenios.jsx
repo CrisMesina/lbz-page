@@ -40,7 +40,7 @@ export const Convenios = () => {
 
     return (
         <>
-            <h1 className='text-center font-bold text-5xl'>Convenios</h1>
+            <h1 className='text-center font-bold my-15 text-5xl'>Convenios</h1>
             <div className='carousel'>
                 {
                     conv.map((c, i) =>(
