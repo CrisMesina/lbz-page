@@ -55,27 +55,22 @@ body{
 }
 
 
+
+
+
 .scroll-item{
   animation: showElement linear forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
-  animation-duration:0.5s ;
+  animation-duration: 0.5s;
 }
 
-.transition-delay-200{
-  animation-delay: 5s;
-}
 
 .scroll-items-left{
   animation: showElementLeft linear forwards;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
   animation-duration: 0.5s;
-}
-
-
-.fade-carousel{
-  animation: carouselFade 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .scroll-item-right{
@@ -142,26 +137,4 @@ body{
     transform: translateX(0);
   }
   
-}
-
-@keyframes fade-carousel {
-  from{
-    opacity: 0;
-    transform: scale(0.98);
-
-  }
-  to{
-    opacity: 1;
-    transform: scale(1);
-
-  }
-}
-
-@keyframes animacion {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 7));
-  }
 }

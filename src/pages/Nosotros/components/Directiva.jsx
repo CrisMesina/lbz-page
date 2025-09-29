@@ -35,7 +35,7 @@ export const Directiva = () => {
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-4 mx-auto">
                     {
                         directiva.map((d, i ) => (
-                            <div key={i} className="mx-auto rounded-2xl shadow-lg">
+                            <div key={i} className="mx-auto rounded-2xl scroll-items-left shadow-lg">
                                 <div>
                                     <img src={d.img} className="w-70 rounded-t-2xl mx-auto hover:scale-120 hover:rounded-2xl transition-all duration-150"  alt="" />
                                 </div>

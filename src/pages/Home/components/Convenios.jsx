@@ -40,8 +40,8 @@ export const Convenios = () => {
 
     return (
         <>
-            <h1 className='text-center font-bold my-15 text-5xl'>Convenios</h1>
-            <div className='carousel'>
+            <h1 className='text-center font-bold my-15 text-5xl scroll-items-down'>Convenios</h1>
+            <div className='carousel scroll-items-left'>
                 {
                     conv.map((c, i) =>(
                         <div className='grupo'>

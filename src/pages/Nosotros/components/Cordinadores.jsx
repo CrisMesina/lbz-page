@@ -36,7 +36,7 @@ export const Cordinadores = () => {
                 <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
                     {
                         cordinadores.map((d, i ) => (
-                            <div key={i} className="mx-auto my-10 rounded-2xl shadow-lg">
+                            <div key={i} className="mx-auto my-10 rounded-2xl scroll-item-right shadow-lg">
                                 <div>
                                     <img src={d.img} className="w-70 rounded-t-2xl mx-auto"  alt="" />
                                 </div>

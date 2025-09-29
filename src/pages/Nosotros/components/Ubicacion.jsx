@@ -4,7 +4,7 @@ export const Ubicacion = () => {
     return(
         <>
             <div>
-                <div>
+                <div className='scroll-item-right'>
                     <div>
                         <h1 className='text-center text-5xl font-bold'>¿Donde estamos ubicados?</h1>
                     </div>
