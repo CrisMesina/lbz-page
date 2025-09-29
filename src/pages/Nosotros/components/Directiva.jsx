@@ -5,19 +5,19 @@ export const Directiva = () => {
         {
             id: 1,
             nombre: "Juan Perez",
-            img: "/director.avif",
+            img: "/director-min.jpg",
             cargo: "Director"
         },
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/inspectora.avif",
+            img: "/inspectora-min.jpg",
             cargo: "Director"
         },
         {
             id: 3,
             nombre: "Juan Perez",
-            img: "/utp.avif",
+            img: "/utp-min.jpg",
             cargo: "Director"
         },
         {

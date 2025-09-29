@@ -21,7 +21,7 @@ export const Agropecuaria = () => {
                     </div>  
                     <div className='p-4'>
                         {/* COLOCAR UNA IMAGEN O UN CARROUSEL DE IMAGENES (PUEDEN SER LAS DE PUERTAS ABIERTAS) */}
-                        <img src="/agropecuaria.avif" className='mx-auto rounded-2xl my-5 ' />
+                        <img src="/agropecuaria-min.JPG" className='mx-auto rounded-2xl my-5 ' />
                     </div>
                 </div>
 

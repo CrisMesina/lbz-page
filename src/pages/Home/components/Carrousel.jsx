@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-//import { BiArrowFromLeft, BiArrowFromRight } from 'react-icons/bi';
 
 export const Carrousel = () => {
 
     const imgStorage = [
         {
             id: 1,
-            img: "/index-hero3.avif",
+            img: "/hero1-min.JPG",
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
@@ -15,7 +14,7 @@ export const Carrousel = () => {
         },
         {
             id: 2,
-            img: "/index-hero.avif",
+            img: "hero2-min.JPG",
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
@@ -24,7 +23,7 @@ export const Carrousel = () => {
         },
         {
             id: 3,
-            img: "/index-hero2.avif",
+            img: "/hero3-min.JPG",
             title: "Especialidad Agropecuaria",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
@@ -46,17 +45,6 @@ export const Carrousel = () => {
     }, [cantidad])
 
     if(!Array.isArray(imgStorage) || cantidad === 0 ) return;
-
-
-    // QUITAR DE COMENTARIOS SI QUIEREN COLOCARLE BOTONES AL CARROUSEL
-    //const sigImg = () =>{
-    //    setImgActual(imgActual === cantidad - 1 ? 0  : imgActual + 1 );
-    //}
-
-    //const antImg = () =>{
-    //    setImgActual(imgActual === 0 ? cantidad - 1 : imgActual - 1);
-    //}
-
 
 
 

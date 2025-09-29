@@ -12,19 +12,19 @@ export const Cordinadores = () => {
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/director.avif",
+            img: "/c_agro-min.jpg",
             cargo: "Director"
         },
         {
             id: 3,
             nombre: "Juan Perez",
-            img: "/director.avif",
+            img: "/c-hc-min.jpg",
             cargo: "Director"
         },
         {
             id: 4,
             nombre: "Juan Perez",
-            img: "/director.avif",
+            img: "/c_progra-min.jpg",
             cargo: "Director"
         },
     ]

@@ -16,7 +16,7 @@ export const Nosotros = () => {
                 <div className='relative'>
                     <h1 className='absolute text-6xl font-bold text-theme-old-green-dark top-1/2 left-1/20 drop-shadow-title-text'>Nosotros</h1>
                     <p className='absolute text-6xl font-bold text-theme-old-green-light bottom-1/3 left-1/20 drop-shadow-title-text'>Conocenos un poco mas</p>
-                    <img src="/portada1.jpg" className='w-full h-screen object-cover' alt="" />
+                    <img src="/hero3-min.JPG" className='w-full h-screen object-cover' alt="" />
                 </div>
             </div>
             <div>

@@ -15,7 +15,6 @@ export const CentroAlumnos = () => {
                    <Hero/>
                 </div>
                 <div className='min-h-screen'>
-                    {/* SECCION DE PUBLICACIONES, COMPLETAR AL FINAL */}
                     <h1 className='p-5 text-4xl font-bold text-center'>Ultimas Publicaciones</h1>
                 </div>
                 <div className='min-h-screen'>
