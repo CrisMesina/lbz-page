@@ -36,7 +36,7 @@ export const Padres = () => {
                     {listado.map((a, i) =>(
                         <div key={i} className='w-60 shadow-lg mx-auto my-5 rounded-t-2xl rounded-b-2xl text-center'>
                             <div>
-                                <img src={a.image} alt="" className='rounded-t-2xl' />
+                                <img src={a.image} alt="Imagen de la persona que esta encargada de su cargo (Presidente, tesorera, etc)" className='rounded-t-2xl' />
                             </div>
                             <div className='p-5'>
                                 <h1>{a.name}</h1>

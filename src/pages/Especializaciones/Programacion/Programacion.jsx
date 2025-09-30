@@ -21,7 +21,7 @@ export const Programacion = () => {
                     </div>  
                     <div className='p-4'>
                         {/* COLOCAR UNA IMAGEN O UN CARROUSEL DE IMAGENES (PUEDEN SER LAS DE PUERTAS ABIERTAS) */}
-                        <img src="/programacion-min.avif" className='mx-auto rounded-2xl my-5'/>
+                        <img src="/programacion-min.avif" className='mx-auto rounded-2xl my-5' alt='Imagen representativa de nuestra especializacion en Programaicon, la foto fue tomada en un dia de puertas abiertas.'/>
                     </div>
                 </div>
 

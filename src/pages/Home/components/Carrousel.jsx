@@ -53,7 +53,7 @@ export const Carrousel = () => {
                         <div>
                             {imgActual === i && (
                                 <div className=''>
-                                    <img src={s.img} key={i} className={`object-cover  h-screen w-full`} alt="" />
+                                    <img src={s.img} key={i} className={`object-cover  h-screen w-full`} alt="Imagen de la entrada principal de la institucion. Con nuestros coordinadores y nuestro director." />
                                     <div className='absolute left-1/20 top-1/4 p-8'>
                                         <h1 className='text-3xl font-theme-caveat drop-shadow-title-text animation-show-left text-start my-10 font-bold  text-theme-old-green-dark text-shadow-lg tracking-wide'
                                         >

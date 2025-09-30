@@ -5,37 +5,43 @@ const archivos = [
         id:1,
         name:"Documento 1",
         img:"/Logo.png",
-        download:"/Logo-png"
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:2,
         name:"Documento 1",
         img:"/Logo.png",
-        download:"/Logo-png"
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:3,
         name:"Documento 1",
         img:"/Logo.png",
-        download:"/Logo-png"
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:4,
         name:"Documento 1",
         img:"/Logo.png",
-        download:"/Logo-png"
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:5,
         name:"Documento 1",
         img:"/Logo.png",
-        download:"/Logo-png"
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:6,
         name:"Documento 1",
         img:"/Logo.png",
-        download:"/Logo-png"
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
     },
 ]
 

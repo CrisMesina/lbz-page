@@ -42,7 +42,7 @@ export const Contactos = () => {
                         >
                         <div className='flex p-1 bg-white rounded-2xl'>
                             <div>
-                                <img src={c.img} className={`w-46 shadow-lg shadow-theme-old-green-medium hover:shadow-theme-old-green-light hover:scale-110 rounded-tl-2xl rounded-bl-2xl `} alt="" />
+                                <img src={c.img} className={`w-46 shadow-lg shadow-theme-old-green-medium hover:shadow-theme-old-green-light hover:scale-110 rounded-tl-2xl rounded-bl-2xl `} alt="+Imagen de la persona con la que podran ponerse en contacto Ya sea el director de el liceo, la Jefa de UTP o el mismo liceo" />
                             </div>
                             <div className='grid grid-cols-2 w-full'>
                                 <div className=''>

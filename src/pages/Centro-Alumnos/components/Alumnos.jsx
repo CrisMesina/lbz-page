@@ -8,28 +8,32 @@ export const Alumnos = () => {
             image: "/tea3.avif",
             name: "Juan Perez",
             curso: "2do Medio",
-            cargo: "presidente"
+            cargo: "presidente",
+            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 2,
             image: "/tea3.avif",
             name: "Juan Perez",
             curso: "2do Medio",
-            cargo: "presidente"
+            cargo: "presidente",
+            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 3,
             image: "/tea3.avif",
             name: "Juan Perez",
             curso: "2do Medio",
-            cargo: "presidente"
+            cargo: "presidente",
+            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 4,
             image: "/tea3.avif",
             name: "Juan Perez",
             curso: "2do Medio",
-            cargo: "presidente"
+            cargo: "presidente",
+            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
     ]
 

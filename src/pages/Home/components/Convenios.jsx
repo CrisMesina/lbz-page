@@ -8,31 +8,37 @@ export const Convenios = () => {
             id: 1,
             href: "#",
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyDGHefQfSb_12AsROBcwtbHFG4-G-Nq_wliEjbBVfD_nzY7U5DYtPY2kV5XPoOaVwcg&usqp=CAU",
+            alt: "Imagen de muestra con el logo de la institucion con la que tenemos el convenio: INACAP"
         },
         {
             id: 2,
             href: "#",
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBHeebItLMu5vA37c-tT_SjcBfbBS5grffg&s",
+            alt: "Imagen de muestra con el logo de la institucion con la que tenemos el convenio: INACAP"
         },
         {
             id: 3,
             href: "#",
             img: "https://ucampus.uoh.cl/d/imglocal/favicon/android-chrome-512x512.png",
+            alt: "Imagen de muestra con el logo de la institucion con la que tenemos el convenio: INACAP"
         },
         {
             id: 1,
             href: "#",
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyDGHefQfSb_12AsROBcwtbHFG4-G-Nq_wliEjbBVfD_nzY7U5DYtPY2kV5XPoOaVwcg&usqp=CAU",
+            alt: "Imagen de muestra con el logo de la institucion con la que tenemos el convenio: UOH"
         },
         {
             id: 2,
             href: "#",
             img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBHeebItLMu5vA37c-tT_SjcBfbBS5grffg&s",
+            alt: "Imagen de muestra con el logo de la institucion con la que tenemos el convenio: UOH"
         },
         {
             id: 3,
             href: "#",
             img: "https://ucampus.uoh.cl/d/imglocal/favicon/android-chrome-512x512.png",
+            alt: "Imagen de muestra con el logo de la institucion con la que tenemos el convenio: UOH"
         },
 
 
