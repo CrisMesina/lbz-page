@@ -9,7 +9,8 @@ export const Especializaciones = () => {
             title: "Cientifico Humanista",
             animation: "scroll-items-left",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
-            href: "/hc"
+            href: "/hc",
+            alt: "Logo de la especializacion/formacion : Cientifico Humanista(HC)"
         },
         {
             id: 2,
@@ -17,7 +18,8 @@ export const Especializaciones = () => {
             title: "Adminstracion",
             animation: "scroll-items-left",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
-            href: "/administracion"               
+            href: "/administracion",
+            alt: "Logo de la especializacion/formacion : Administracion "               
         },
         {
             id: 3,
@@ -25,7 +27,8 @@ export const Especializaciones = () => {
             title: "Agropecuaria",
             animation: "scroll-item-right",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
-            href: "/agropecuaria"
+            href: "/agropecuaria",
+            alt: "Logo de la especializacion/formacion : Agropecuaria"
         },
         {
             id: 4,
@@ -33,7 +36,8 @@ export const Especializaciones = () => {
             title: "Programacion",
             animation: "scroll-item-right",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
-            href: "/programacion"
+            href: "/programacion",
+            alt: "Logo de la especializacion/formacion : Programacion"
         }
     ]
 
