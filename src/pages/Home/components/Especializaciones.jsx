@@ -39,8 +39,8 @@ export const Especializaciones = () => {
 
     return(
         <>
-            <div className='flex h-20 bg-black'>
-                <h1 className='mx-auto my-auto font-bold md:text-4xl  text-2xl text-white'>Desde 2do medio puedes escoger</h1>
+            <div className='flex h-20'>
+                <h1 className='mx-auto my-auto font-bold md:text-4xl  text-2xl text-black'>¿No sabes que estudiar?</h1>
             </div>
             <div className='flex flex-wrap my-20'>
                 {

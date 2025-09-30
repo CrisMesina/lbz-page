@@ -52,17 +52,17 @@ export const Carrousel = () => {
                     return(
                         <div>
                             {imgActual === i && (
-                                <div>
+                                <div className=''>
                                     <img src={s.img} key={i} className={`object-cover  h-screen w-full`} alt="" />
                                     <div className='absolute left-1/20 top-1/4 p-8'>
-                                        <h1 className='text-3xl drop-shadow-title-text text-start my-10 font-bold  text-theme-old-green-dark text-shadow-lg tracking-wide'
+                                        <h1 className='text-3xl drop-shadow-title-text animation-show-left text-start my-10 font-bold  text-theme-old-green-dark text-shadow-lg tracking-wide'
                                         >
                                             {s.title}
                                         </h1>
-                                        <h5 className='text-6xl font-bold text-theme-old-green-light drop-shadow-title-text'>{s.subtitle}</h5>
-                                        <p className='text-6xl font-bold text-theme-old-green-light drop-shadow-title-text'>{s.extra}</p>
+                                        <h5 className='text-6xl font-chela font-bold animation-show-left text-theme-old-green-light drop-shadow-title-text'>{s.subtitle}</h5>
+                                        <p className='text-6xl font-chela font-bold animation-show-left text-theme-old-green-light drop-shadow-title-text'>{s.extra}</p>
                                         <a href={s.href} className=''>
-                                            <button className='p-5 font-bold mt-20 bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-white rounded-lg'>
+                                            <button className='p-5 animation-show-items font-bold mt-20 bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light text-white rounded-lg'>
                                                 Mas Información
                                             </button>
                                         </a>

@@ -55,7 +55,30 @@ body{
 }
 
 
+.animation-show-items{
+  animation: showElement ease-in-out;
+  animation-duration: 1s;  
+}
 
+
+.animation-show-left{
+  animation: moveLeft linear forwards;
+  animation-duration: 0.9s;
+}
+
+
+
+@keyframes moveLeft {
+  from{
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  
+}
 
 
 .scroll-item{
@@ -65,6 +88,19 @@ body{
   animation-duration: 0.5s;
 }
 
+.font-caveat{
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700px;
+  font-style: normal;
+}
+
+
+.font-chela{
+  font-family: "Chela One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .scroll-items-left{
   animation: showElementLeft linear forwards;
@@ -96,6 +132,16 @@ body{
     transform: translateX(-300%);
   }
   
+}
+
+
+@keyframes showElement {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 
