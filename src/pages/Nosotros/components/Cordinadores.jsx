@@ -38,7 +38,7 @@ export const Cordinadores = () => {
                         cordinadores.map((d, i ) => (
                             <div key={i} className="mx-auto my-10 rounded-2xl scroll-item-right shadow-lg">
                                 <div>
-                                    <img src={d.img} className="w-70 rounded-t-2xl mx-auto"  alt="" />
+                                    <img src={d.img} className="w-70 rounded-t-2xl mx-auto"  alt="Imagen de la persona encargada de la especializacion o de la formacion." />
                                 </div>
                                 <div>
                                     <h1 className="my-4">{d.nombre}</h1>
