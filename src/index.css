@@ -88,20 +88,6 @@ body{
   animation-duration: 0.5s;
 }
 
-.font-caveat{
-  font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700px;
-  font-style: normal;
-}
-
-
-.font-chela{
-  font-family: "Chela One", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .scroll-items-left{
   animation: showElementLeft linear forwards;
   animation-timeline: view();
@@ -138,9 +124,11 @@ body{
 @keyframes showElement {
   from{
     opacity: 0;
+    transform: scale(0);
   }
   to{
     opacity: 1;
+    transform: scale(0.9);
   }
 }
 

@@ -53,14 +53,6 @@ export const Nav = () => {
                 {
                     label: "Centro de Padres",
                     href: "/centro-padres"
-                },
-                {
-                    label: "Redes Sociales",
-                    href: "/redes-sociales"
-                },
-                {
-                    label: "Noticias",
-                    href: "/noticias"
                 }
             ]
         },

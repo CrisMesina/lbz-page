@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chela+One&display=swap');
 @import "tailwindcss";
+
+
 
 
 /* PROPIEDADES CUSTOMS */
@@ -56,7 +59,15 @@
   --color-color-text: #F5F6FA;
 
 
+  /* --------------------------------------------- */
+  /* --------------                 -------------- */
+  /* --------------------------------------------- */
+
 
   --drop-shadow-title-text: 0 1.2px 1.2px rgba(0, 0, 0, 0.8);
-}
 
+
+
+  --font-theme-chela: "Chela One", system-ui;
+  --font-theme-caveat: "Caveat", cursive;
+}
