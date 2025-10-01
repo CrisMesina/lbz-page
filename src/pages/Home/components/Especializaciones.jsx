@@ -15,7 +15,7 @@ export const Especializaciones = () => {
         {
             id: 2,
             img: "/Logo.png",
-            title: "Adminstracion",
+            title: "Administracion",
             animation: "scroll-items-left",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
             href: "/administracion",

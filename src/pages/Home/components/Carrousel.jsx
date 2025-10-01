@@ -14,7 +14,7 @@ export const Carrousel = () => {
         {
             id: 2,
             img: "hero2-min.avif",
-            title: "Especialidad Agropecuaria",
+            title: "Especialidad Programación",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
             href: "/"
@@ -22,7 +22,7 @@ export const Carrousel = () => {
         {
             id: 3,
             img: "/hero3-min.avif",
-            title: "Especialidad Agropecuaria",
+            title: "Especialidad Administración",
             subtitle: "Preparate para los nuevos desafios",
             extra: "Te esperamos",
             href: "/"

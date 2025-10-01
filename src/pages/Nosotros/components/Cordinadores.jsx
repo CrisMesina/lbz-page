@@ -6,7 +6,7 @@ export const Cordinadores = () => {
         {
             id: 1,
             nombre: "Juan Perez",
-            img: "/director.avif",
+            img: "/c_admin.avif",
             cargo: "Director"
         },
         {

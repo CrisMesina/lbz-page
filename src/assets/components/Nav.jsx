@@ -86,7 +86,7 @@ export const Nav = () => {
             <div className='grid md:grid-cols-3 grid-cols-2 h-20 bg-white shadow-lg'>
                 <div className=' text-mint relative'>
                     <a href="/">
-                        <img src="/Logo.png" className='absolute left-1/7 top-0 shadow-lg w-30 h-30 bg-white rounded-b-2xl p-3' alt="" /> 
+                        <img src="/Logo.png" className='absolute left-1/7 top-0 shadow-lg w-30 h-30 bg-white rounded-b-2xl p-3' alt="Logo del la institucion Liceo Berta Zamorano Lizana. Está ubicado en Coltauco, es un liceo Publico el cual acepta a todo tipo de gente. Se incorporó la especializacion de Programación" /> 
                     </a>
                 </div>
 

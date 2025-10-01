@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
 @import "tailwindcss";
 
 
@@ -70,4 +71,5 @@
 
   --font-theme-chela: "Chela One", system-ui;
   --font-theme-caveat: "Caveat", cursive;
+  --font-theme-zalando : "Zalando Sans Expanded", sans-serif;
 }

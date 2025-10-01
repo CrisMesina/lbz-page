@@ -53,7 +53,7 @@ export const Convenios = () => {
                         <div className='grupo'>
                             <div className='carta'>
                                 <a href={c.href}>
-                                    <img src={c.img} alt={c.name} className='w-full h-full object-contain'/>
+                                    <img src={c.img} alt={c.alt} className='w-full h-full object-contain'/>
                                 </a>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ export const Convenios = () => {
                         <div className='grupo' aria-hidden="true">
                             <div className='carta'>
                                 <a href={c.href}>
-                                    <img src={c.img} alt={c.name} className='w-full h-full object-contain'/>
+                                    <img src={c.img} alt={c.alt} className='w-full h-full object-contain'/>
                                 </a>
                             </div>
                         </div>

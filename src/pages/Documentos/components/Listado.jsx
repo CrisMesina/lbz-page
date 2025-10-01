@@ -43,6 +43,34 @@ const archivos = [
         download:"/Logo-png",
         alt: "Directorio de descarga del archivo '  ' "
     },
+    {
+        id:7,
+        name:"Documento 1",
+        img:"/Logo.png",
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
+    },
+    {
+        id:8,
+        name:"Documento 1",
+        img:"/Logo.png",
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
+    },
+    {
+        id:9,
+        name:"Documento 1",
+        img:"/Logo.png",
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
+    },
+    {
+        id:10,
+        name:"Documento 1",
+        img:"/Logo.png",
+        download:"/Logo-png",
+        alt: "Directorio de descarga del archivo '  ' "
+    },
 ]
 
 export const Listado = () => {
