@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const Especializaciones = () => {
+
+
+    const [hovered, setIsHovered] = useState(null);
+
 
     const especializaciones = [
         {
@@ -49,11 +53,14 @@ export const Especializaciones = () => {
             <div className='flex flex-wrap my-20'>
                 {
                     especializaciones.map((e, i) =>(
-                        <div key={i} className={` ${e.animation} opacity-0 mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-105`}>
-                            <div className='relative'>
-                                <img src={e.img} className='absolute w-30 h-30 hover:scale-105 rounded-full shadow-lg shadow-theme-old-green-dark left-25 -bottom-10' alt="imagen de prueba" />
-                            </div>
+                        <div key={i} className={` ${e.animation} bg-white opacity-0 mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-105
+                            ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''}`}
+                            onMouseEnter={() => setIsHovered(i)}
+                            onMouseLeave={() => setIsHovered(null)}
+                        >
+                            
                             <div className='flex-col text-center mt-10 p-4'>
+                                <img src={e.img} className='absolute w-30 h-30 hover:scale-105 rounded-full shadow-lg shadow-theme-old-green-dark left-27 -top-15' alt="imagen de prueba" />
                                 <h1 className='font-bold my-5'>{e.title}</h1>
                                 <p>{e.text}</p>
                                 <a href={e.href}>

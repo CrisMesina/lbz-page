@@ -17,7 +17,7 @@ export const Home = () => {
                 <div className='min-h-screen'>
                     <Carrousel/>
                 </div>
-                <div className='min-h-screen bg-gray-300'>
+                <div className='min-h-screen bg-theme-gris'>
                     <Recomendaciones/>
                 </div>
                 <div className='min-h-screen'>
