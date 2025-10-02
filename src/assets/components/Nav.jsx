@@ -25,6 +25,7 @@ export const Nav = () => {
         }
     ), [])
 
+
     const [openDropDown, setOpenDropdown] = useState(null);
     const [openMenu, setOpenMenu] = useState(null);
     const [resMenu, setResMenu] = useState(null);
@@ -110,7 +111,7 @@ export const Nav = () => {
                                                 >
                                                     {opt.label}
                                                 </a>
-                                            ))}
+                                            ))}xx
                                         </div>
                                     )}
                                 </div>

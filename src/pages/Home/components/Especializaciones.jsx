@@ -53,7 +53,7 @@ export const Especializaciones = () => {
             <div className='flex flex-wrap my-20'>
                 {
                     especializaciones.map((e, i) =>(
-                        <div key={i} className={` ${e.animation} bg-white opacity-0 mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-105
+                        <div key={i} className={` ${e.animation} bg-white opacity-0 mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-110
                             ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''}`}
                             onMouseEnter={() => setIsHovered(i)}
                             onMouseLeave={() => setIsHovered(null)}
