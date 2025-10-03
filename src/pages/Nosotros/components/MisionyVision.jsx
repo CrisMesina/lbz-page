@@ -3,7 +3,7 @@ import React from 'react'
 export const MisionyVision = () => {
     return(
         <>
-            <div className='flex flex-col md:flex-row'>
+            <div className='flex flex-col md:flex-row text-white'>
                 <div className='text-center mx-auto w-full h-96 p-2 scroll-items-left'>
                     <h1 className='text-5xl mt-4 lg:mt-20'>Misión</h1>
                     <p className=' mt-1 mb-2 p-8 text-start'>
