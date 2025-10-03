@@ -46,12 +46,12 @@ export const Convenios = () => {
 
     return (
         <>
-            <h1 className='text-center font-bold my-15 text-5xl scroll-items-down'>Convenios</h1>
+            <h1 className='text-center font-bold text-white my-15 text-5xl scroll-items-down'>Convenios</h1>
             <div className='carousel scroll-items-left'>
                 {
                     conv.map((c, i) =>(
                         <div className='grupo'>
-                            <div className='carta'>
+                            <div className='carta bg-white'>
                                 <a href={c.href}>
                                     <img src={c.img} alt={c.alt} className='w-full h-full object-contain'/>
                                 </a>
@@ -61,7 +61,7 @@ export const Convenios = () => {
                 }
                 {
                     conv.map((c, i) =>(
-                        <div className='grupo' aria-hidden="true">
+                        <div className='grupo' >
                             <div className='carta'>
                                 <a href={c.href}>
                                     <img src={c.img} alt={c.alt} className='w-full h-full object-contain'/>

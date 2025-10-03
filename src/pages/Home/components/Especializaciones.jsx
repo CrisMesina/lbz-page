@@ -48,9 +48,9 @@ export const Especializaciones = () => {
     return(
         <>
             <div className='flex h-20'>
-                <h1 className='mx-auto my-auto font-bold md:text-4xl  text-2xl text-black'>¿No sabes que estudiar?</h1>
+                <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl text-white'>¿No sabes que estudiar?</h1>
             </div>
-            <div className='flex flex-wrap my-20'>
+            <div className='grid grid-cols-4 my-20'>
                 {
                     especializaciones.map((e, i) =>(
                         <div key={i} className={` ${e.animation} bg-white opacity-0 mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-110
