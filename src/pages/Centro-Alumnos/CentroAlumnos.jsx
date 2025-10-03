@@ -14,7 +14,7 @@ export const CentroAlumnos = () => {
                 <div className='min-h-screen'>
                    <Hero/>
                 </div>
-                <div className='min-h-screen'>
+                <div className='min-h-screen text-white'>
                     <h1 className='p-5 text-4xl font-bold text-center'>Ultimas Publicaciones</h1>
                 </div>
                 <div className='min-h-screen'>

@@ -34,7 +34,7 @@ export const Directiva = () => {
     
     return(
         <>
-            <div className='text-center'>
+            <div className='text-center text-white'>
                 <h1 className="text-5xl mb-20 font-bold">Equipo Directivo</h1>
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 mx-auto">
                     {

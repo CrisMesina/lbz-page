@@ -7,7 +7,7 @@ import { Footer } from '../../assets/components/Footer'
 export const CentroPadres = () => {
     return(
         <>
-            <div className='min-h-screen'>
+            <div className='min-h-screen text-white'>
                 <div className='sticky top-0 z-10'>
                     <Nav/>
                 </div>

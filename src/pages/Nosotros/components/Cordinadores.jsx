@@ -31,7 +31,7 @@ export const Cordinadores = () => {
 
     return(
         <>
-           <div className='text-center'>
+           <div className='text-center text-white'>
                 <h1 className="text-5xl mb-20 font-bold">Cordinadores</h1>
                 <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
                     {

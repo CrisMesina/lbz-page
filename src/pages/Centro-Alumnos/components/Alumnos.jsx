@@ -39,8 +39,8 @@ export const Alumnos = () => {
 
     return (
         <>
-            <h1 className='text-center font-bold text-4xl'>¿Quienes forman parte del centro de Alumnos</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5'>
+            <h1 className='text-center font-bold text-4xl text-white'>¿Quienes forman parte del centro de Alumnos</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 text-white'>
                     {listado.map((a, i) =>(
                         <div key={i} className='w-60 shadow-lg mx-auto my-5 rounded-t-2xl rounded-b-2xl text-center'>
                             <div>

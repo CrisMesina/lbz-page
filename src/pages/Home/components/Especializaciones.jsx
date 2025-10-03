@@ -50,10 +50,10 @@ export const Especializaciones = () => {
             <div className='flex h-20'>
                 <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl text-white'>¿No sabes que estudiar?</h1>
             </div>
-            <div className='grid grid-cols-4 my-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20'>
                 {
                     especializaciones.map((e, i) =>(
-                        <div key={i} className={` ${e.animation} bg-white opacity-0 mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-110
+                        <div key={i} className={` bg-white mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-110
                             ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''}`}
                             onMouseEnter={() => setIsHovered(i)}
                             onMouseLeave={() => setIsHovered(null)}

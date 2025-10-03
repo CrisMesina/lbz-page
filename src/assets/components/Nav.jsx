@@ -111,7 +111,7 @@ export const Nav = () => {
                                                 >
                                                     {opt.label}
                                                 </a>
-                                            ))}xx
+                                            ))}
                                         </div>
                                     )}
                                 </div>
