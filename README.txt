@@ -1,23 +1,25 @@
-SECCIONES
-    - ESPECIALIDADES: CIENTIFICO HUMANISTA Y TECNICO PROFESIONAL
-            TECNICO PROFESIONAL SE COMPONE DE : 1. Agropecuaria, 2. Administracion y 3. Programacion. (PREGUNTAR SOBRE MATERIAS/RAMOS QUE PASAN EN CADA UNO).
-            EXPLICAR MEDIANTE TEXTO LOS BENEFICIOS DE CADA UNO.
+# Tareas para dia Lunes 6/10/2025
 
-    - NOTICIAS DE: CENTRO DE ALUMNOS/PADRES, PROFESORES, DIRECTOR. ETC(COMUNICADOS Y DEMAS).
-    - "MALLA SOBRE ESPECIALIDADES TECNICO PROFESIONAL"
-    - CONTACTANOS (MISION Y VISION)
-    - FOOTER
-    - NAVEGADOR (CON MENUS DESPLEGABLES EN ALGUNAS DE LAS OPCIONES)
-    - CALENDARIO CON FECHAS IMPORTANTES
-    - GALERIA CON IMAGENES.
-    - LISTADO DE PROFESORES
-    - SECCION EXPLICATIVA SOBRE PROCESO PARA HACER PRACTICA EN EL LICEO (OPCION MIA).
-    - EXPLICACION DE TECNICO PROFESIONAL MEDIANTE VIDEOS (PARA ALUMNOS DE 2DO AÑO)
-    - NOSOTROS (MUESTRA DE SECCION UTP, DIRECTOR DE INSTITUCION Y DEMAS 'LOS MAS IMPORTANTES' y la forma de contactarlos)
-    - MEDIANTE UN MAILTO, PODER MANDAR UN CORREO A LAS PERSONAS INFLUYENTES DEL LICEO.
-    - 
+## Realizarlas en la mañana
+[x] Definir colores para la pagina.
+[x] Quitar animaciones
+[] Hacer uso de "dark:" para que al momento de cambiar el modo del navegador, se apliquen los colores asignados para cada modo.
+[x] Arreglar apartado Especializaciones (NO SE VEN LAS LOGOS ESPECIALIZACIONES. SE VEN SOLO AL HACCER HOVER...)
+[x] Cambiar seccion Hero del inicio
+[x] Cambiar nav
 
-SACAR IDEAS DE LA PAGINA QUE HABIA ANTERIORMENTE.
+## Realizar en la tarde
+
+[] Buscar imagenes para colocar en cada apartado.
+[x] Cambiar formato de las imagenes a .avif
+[] Buscar fuentes mejores para la pagina.
+
+
+
+## Realizar pasado las 16:00
+
+[] Repasar NodeJS o Django (por si llegan a pedir el apartado de noticias)
+
 
 
 <script>document.write(new Date().getFullYear());</script>
