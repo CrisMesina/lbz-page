@@ -1,14 +1,15 @@
 
 import { Footer } from '../../assets/components/Footer'
-import { Nav } from '../../assets/components/Nav'
 import { Contactos } from './components/Contactos'
+import { Navegador } from '../../assets/components/Navegador'
 
 
 export const Contacto = () => {
     return(
         <>
             <div className='sticky top-0 z-10'>
-                <Nav/>
+                {/*<Nav/>*/}
+                <Navegador/>
             </div>
             <div className='min-h-screen'>
                 <div className='relative'>

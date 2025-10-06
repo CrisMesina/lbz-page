@@ -50,17 +50,19 @@ export const Especializaciones = () => {
             <div className='flex h-20'>
                 <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl text-white'>¿No sabes que estudiar?</h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20' >
                 {
                     especializaciones.map((e, i) =>(
                         <div key={i} className={` bg-white mx-auto w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-110
-                            ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''}`}
+                            ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''} ${e.animation} scroll-item `}
                             onMouseEnter={() => setIsHovered(i)}
                             onMouseLeave={() => setIsHovered(null)}
                         >
                             
                             <div className='flex-col text-center mt-10 p-4'>
-                                <img src={e.img} className='absolute w-30 h-30 hover:scale-105 rounded-full shadow-lg shadow-theme-old-green-dark left-27 -top-15' alt="imagen de prueba" />
+                                <div className='relative justify-center'>
+                                    <img src={e.img} className='absolute w-30 h-30 rounded-full shadow-lg shadow-theme-old-green-dark left-22 -top-30 border' alt="imagen de prueba" />
+                                </div>
                                 <h1 className='font-bold my-5'>{e.title}</h1>
                                 <p>{e.text}</p>
                                 <a href={e.href}>

@@ -32,7 +32,7 @@ export const Footer = () => {
     return(
         <>
             <footer>
-                <div className='grid md:grid-cols-3 grid-cols-1 bg-white text-center h-auto justify-center items-center'>
+                <div className='grid md:grid-cols-3 grid-cols-1 bg-theme-blue text-white border-t ring-2 text-center h-auto justify-center items-center'>
                     <div className='flex h-full'>
                         <img src="/Logo.png" className='object-contain w-32' alt="" />
                         <div className='flex p-3 flex-col text-start mx-5'>

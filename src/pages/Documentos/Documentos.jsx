@@ -1,13 +1,13 @@
 
-import { Nav } from '../../assets/components/Nav'
 import { Listado } from './components/Listado'
 import { Footer } from '../../assets/components/Footer'
+import { Navegador } from '../../assets/components/Navegador'
 
 export const Documentos = () => {
     return (
         <>
             <div className='sticky top-0 z-10'>
-                <Nav/>
+                <Navegador/>
             </div>
             <div className='min-h-screen'>
                 <div className='relative'>
@@ -16,7 +16,7 @@ export const Documentos = () => {
                     <img src="/hero1-min.avif" className='object-cover h-screen w-full' alt="" />
                 </div>
             </div>
-            <div className='min-h-screen'>
+            <div className='min-h-screen text-white'>
                 <Listado/>
             </div>
             <div>

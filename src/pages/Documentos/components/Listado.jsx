@@ -82,7 +82,7 @@ export const Listado = () => {
             <div className='grid md:grid-cols-2 lg:grid-cols-5 grid-cols-1 '>
                 {
                     archivos.map((a, i) =>(
-                        <div className=" w-70 md:w-80 my-10 scroll-item h-auto mx-auto shadow-lg rounded-2xl">
+                        <div className=" w-70 md:w-80 my-10 scroll-item h-auto mx-auto shadow-lg shadow-blue-900 rounded-2xl">
                             <a href="" download={a.download}>
                                 <img src={a.img} className="rounded-t-2xl mx-auto" alt="" />
                             </a>

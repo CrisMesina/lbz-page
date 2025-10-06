@@ -47,7 +47,7 @@ export const Recomendaciones = () => {
 
     return(
         <>
-            <div className='md:grid md:grid-cols-2 grid-cols-1'>
+            <div className='md:grid md:grid-cols-2 grid-cols-1' id='recomendaciones'>
                 {recomendaciones.map((r, i) =>(
                     <div key={i} className={`flex mx-2 delay-300 md:mx-5 md:my-20`}>
                         <img src={r.img} className=' brightness-75 w-20 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt="" />

@@ -1,5 +1,4 @@
-
-import { Nav } from '../../assets/components/Nav'
+import { Navegador } from '../../assets/components/Navegador'
 import { Hero } from './components/Hero'
 import { Padres } from './components/Padres'
 import { Footer } from '../../assets/components/Footer'
@@ -9,7 +8,7 @@ export const CentroPadres = () => {
         <>
             <div className='min-h-screen text-white'>
                 <div className='sticky top-0 z-10'>
-                    <Nav/>
+                    <Navegador/>
                 </div>
                 <div className='min-h-screen'>
                    <Hero/>

@@ -1,15 +1,15 @@
 
-import { Nav } from '../../assets/components/Nav'
 import { Hero } from './components/Hero'
 import { Alumnos } from './components/Alumnos'
 import { Footer } from '../../assets/components/Footer'
+import { Navegador } from '../../assets/components/Navegador'
 
 export const CentroAlumnos = () => {
     return(
         <>
             <div className='min-h-screen'>
                 <div className='sticky top-0 z-10'>
-                    <Nav/>
+                    <Navegador/>
                 </div>
                 <div className='min-h-screen'>
                    <Hero/>

@@ -1,5 +1,4 @@
-import React from 'react'
-import { Nav } from '../../../assets/components/Nav'
+
 import { Malla } from './components/Malla'
 
 export const Programacion = () => {
@@ -7,7 +6,8 @@ export const Programacion = () => {
         <>
             <div className='min-h-screen'>
                 <div className='sticky top-0 z-10'>
-                    <Nav/>
+                    {/*<Nav/>*/}
+                    <Navegador/>
                 </div>
 
                 <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2'>

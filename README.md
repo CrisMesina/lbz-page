@@ -1,12 +1,21 @@
-# React + Vite
+# Tareas para dia Lunes 6/10/2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Realizarlas en la mañana
+[] Definir colores para la pagina. Realizar en otro documento .md : LISTADO DE COLORES USADOS
+[] Quitar animaciones en dispositivos moviles y aplicar animaciones en computadores, tables, etc.
+[] Hacer uso de "dark:" para que al momento de cambiar el modo del navegador, se apliquen los colores asignados para cada modo.
+[] Arreglar apartado Especializaciones (NO SE VEN LAS LOGOS ESPECIALIZACIONES. SE VEN SOLO AL HACCER HOVER...)
+[] Cambiar seccion Hero del inicio. Hacer algo mas "moderno y llamativo"
+[x] Cambiar navegador
 
-Currently, two official plugins are available:
+## Realizar en la tarde
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[] Buscar imagenes para colocar en cada apartado.
+[] Cambiar formato de las imagenes a .avif
+[] Buscar fuentes mejores para la pagina.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Realizar pasado las 16:00
+
+[] Repasar NodeJS o Django (por si llegan a pedir el apartado de noticias)
