@@ -86,37 +86,3 @@ body::-webkit-scrollbar{
 }
 
 /* ---------------------- CSS CONVENIOS FIN ---------------------- */
-
-/* ---------------------- CSS ANIMACIONES (TRANSLATE) ---------------------- */
-
-.animation-show-left{
-  animation: elementLeft 0.9s linear forwards;
-}
-
-
-@keyframes elementLeft {
-  0%{
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-.animation-show-right{
-  animation: elementRight 0.9s linear forwards;
-}
-
-@keyframes elementRight {
-  0%{
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  
-}
