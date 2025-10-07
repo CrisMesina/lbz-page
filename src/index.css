@@ -6,6 +6,10 @@ body{
   background: #05172f;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 
 .underline-animate{
     position: relative;
@@ -98,6 +102,10 @@ body{
   animation-duration: 1s;
 }
 
+.animation-right-to-left {
+  animation: showElementRight 0.9s linear forwards;
+}
+
 
 
 @keyframes moveLeft {
@@ -152,12 +160,10 @@ body{
 @keyframes showElementRight {
   from{
     opacity: 0;
-    transform: hidden;
     transform: translateX(50%);
   }
   to{
     opacity: 1;
-    transform: block;
     transform: translateX(0);
   }
 
