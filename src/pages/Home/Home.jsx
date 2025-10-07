@@ -17,7 +17,7 @@ export const Home = () => {
                     <Navegador/>
                 </div>
                 <div className='h-screen grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                    <div className='md:mx-10 w-full my-10 md:my-20 lg:my-72 xs:my-0 text-center px-20'>
+                    <div className='md:mx-10 w-full my-10 md:my-20 lg:my-50 xs:my-0 text-center px-20'>
                         <Welcome/>
                     </div>
                     <div className='absolute bottom-10 left-1/2 -translate-x-1/2'>

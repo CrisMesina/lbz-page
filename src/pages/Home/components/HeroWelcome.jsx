@@ -6,7 +6,7 @@ export const HeroWelcome = () => {
         <>
             <div className=''>
                 <svg
-                className="absolute top-0 right-0 h-full 2xl:w-250 z-0 animation-show-right"
+                className="absolute top-0 right-0 h-full 2xl:w-250 lg:w-230 z-0 animation-show-right"
                 viewBox="0 0 1000 562"
                 preserveAspectRatio="none"
                 style={{ pointerEvents: 'none' }}

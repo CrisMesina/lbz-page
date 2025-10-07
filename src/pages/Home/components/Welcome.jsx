@@ -8,7 +8,7 @@ export const Welcome = () => {
                 <HeroWelcome/>
             </div>
             <div className='mx-auto'>
-                <h1 className='text-5xl dark:text-white animation-show-left md:text-center md:justify-center mt-14 lg:text-center md:mt-90 lg:my-10 font-bold  text-theme-old-green-dark text-shadow-lg tracking-wide'
+                <h1 className='text-5xl dark:text-white animation-show-left md:text-center md:justify-center mt-14 lg:mt-0 lg:text-center md:mt-90 lg:my-10 font-bold  text-theme-old-green-dark text-shadow-lg tracking-wide'
                 >
                     Bievenido a nuestra Institución
                 </h1>
