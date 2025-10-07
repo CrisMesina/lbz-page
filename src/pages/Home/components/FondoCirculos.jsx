@@ -5,8 +5,8 @@ export const FondoCirculos = () => {
         <>
             {/* PRIMEROS DERECHA, DONDE ESTA LA IMAGEN */}
 
-            <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-1/3 z-2'></div>
-            <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-0 bottom-0 '></div>
+            <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-1/3 -z-1'></div>
+            <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-0 bottom-0'></div>
             <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-70 top-0 '></div>
 
             {/* CIRCULO EN MEDIO >:) */}
