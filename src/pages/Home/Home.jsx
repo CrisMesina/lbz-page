@@ -16,7 +16,7 @@ export const Home = () => {
                     {/*<Nav/>*/}
                     <Navegador/>
                 </div>
-                <div className='min-h-screen border grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
+                <div className='min-h-screen grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
                     <div className='md:mx-10 w-full my-10 md:my-20 lg:my-72 xs:my-0 text-center px-20'>
                         <Welcome/>
                     </div>
@@ -26,7 +26,7 @@ export const Home = () => {
                         </a>
                     </div>
                 </div>
-                <div className='min-h-screen bg-theme-gris'>
+                <div className='min-h-screen bg-theme-blue'>
                     <Recomendaciones/>
                 </div>
                 <div className='min-h-screen' id='especializaciones'>

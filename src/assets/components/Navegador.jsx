@@ -89,7 +89,7 @@ export const Navegador = () => {
                     className='p-2 text-white bg-black rounded-2xl absolute top-4 right-4'
                     onClick={() => setIsOpen(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
-                        <path fill="currentColor" d="M208.49 191.51a12 12 0 0 1-17 17L128 145l-63.51 63.49a12 12 0 0 1-17-17L111 128L47.51 64.49a12 12 0 0 1 17-17L128 111l63.51-63.52a12 12 0 0 1 17 17L145 128Z"/>
+                        <path fill="#8FC1A9" d="M208.49 191.51a12 12 0 0 1-17 17L128 145l-63.51 63.49a12 12 0 0 1-17-17L111 128L47.51 64.49a12 12 0 0 1 17-17L128 111l63.51-63.52a12 12 0 0 1 17 17L145 128Z"/>
                     </svg>
                 </button>
                 <div>
@@ -120,14 +120,7 @@ export const Navegador = () => {
                                     </div>
                                 </div>
                             ) : (
-                                <a 
-                                    key={i}
-                                    href={n.href} 
-                                    className='flex items-center gap-2 px-6 py-4 text-white border-b border-white/20 hover:bg-white/10'
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    <span>{n.label}</span>
-                                </a>
+                                ''
                             )}
                         </div>
                     ))}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FondoCirculos } from './FondoCirculos'
 
 export const Recomendaciones = () => {
 
@@ -61,7 +62,9 @@ export const Recomendaciones = () => {
                         </div>
                     </div>
                 ))}
+                
             </div>
+            <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-50 blur-2xl right-1/3 -z-0'></div>
         </>
     )
 }

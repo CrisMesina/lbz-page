@@ -17,7 +17,7 @@ export const FondoCirculos = () => {
 
 
             {/* DOS ULTIMOS IZQUIERDA, DONDE ESTA EL TEXTO */}
-            <div className='absolute w-50 h-50 bg-[#249382] rounded-full brightness-70 blur-xl left-1/4'></div>
+            <div className='absolute w-50 h-50 bg-[#249382] rounded-full brightness-70 blur-xl left-1/4 -z-2'></div>
             <div className='absolute w-50 h-50 bg-[#249382] rounded-full brightness-70 blur-xl top-0'></div>
             <div className='absolute w-50 h-50 bg-[#249382] rounded-full brightness-70 blur-xl bottom-20 '></div>
         </>
