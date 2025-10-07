@@ -26,4 +26,13 @@
 
 
 
+<div className='absolute hidden md:block md:w-140 inset-0 z-0 h-32 w-1/2 mx-auto my-10 bg-gradient-to-r from-green-700 to-green-900 brightness-70 rounded-xl text-white'>
+    <div className='grid grid-cols-3 my-13'>
+        <p className='mx-auto my-auto w-full h-full font-bold text-xl border-r'>Respeto</p>
+        <p className='mx-auto my-auto w-full h-full font-bold text-xl border-r'>Responsabilidad</p>
+        <p className='mx-auto my-auto w-full h-full font-bold text-xl'>Perseverancia</p>
+    </div>
+</div>
+
+
 
