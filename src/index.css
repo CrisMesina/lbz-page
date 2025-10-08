@@ -74,6 +74,13 @@ body::-webkit-scrollbar{
   animation-duration: 0.5s;
 }
 
+.scroll-items-right{
+  animation: showElementRight linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+  animation-duration: 0.5s;
+}
+
 
 @keyframes scrolling {
   0%{
@@ -121,6 +128,25 @@ body::-webkit-scrollbar{
   }
   100%{
     transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+
+.animate-translateY{
+  will-change: transform, opacity;
+  animation: translateY 0.9s linear forwards;
+}
+
+
+@keyframes translateY {
+  0%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
     opacity: 1;
   }
   

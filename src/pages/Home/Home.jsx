@@ -35,9 +35,6 @@ export const Home = () => {
                 <div>
                     <Sellos/>
                 </div>
-                <div>
-                    <Convenios/>
-                </div>
                 <div className='relative mt-20'>
                     <Footer/>
                 </div>

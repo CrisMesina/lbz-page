@@ -5,6 +5,7 @@ import { Ubicacion } from '../Nosotros/components/Ubicacion'
 import { Footer } from '../../assets/components/Footer'
 import { Navegador } from '../../assets/components/Navegador'
 import { Hero } from './components/Hero'
+import { Convenios } from '../Home/components/Convenios'
 
 export const Nosotros = () => {
     return( 
@@ -27,6 +28,9 @@ export const Nosotros = () => {
             </div>
             <div>
                 <Ubicacion/>
+            </div>
+            <div className='mb-20'>
+                <Convenios/>
             </div>
             <div>
                 <Footer/>

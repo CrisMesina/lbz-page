@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const navs = [
     {
@@ -62,6 +62,7 @@ export const Navegador = () => {
 
 
     const [isOpen, setIsOpen] = useState(false);
+
 
     return (
         <>
