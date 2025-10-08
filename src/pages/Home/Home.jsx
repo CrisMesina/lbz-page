@@ -1,12 +1,11 @@
 
 import { Footer } from '../../assets/components/Footer'
 import { Navegador } from '../../assets/components/Navegador'
-//import { Nav } from '../../assets/components/Nav'
-import { Convenios } from './components/Convenios'
 import { Especializaciones } from './components/Especializaciones'
 import { Recomendaciones } from './components/Recomendaciones'
 import { Sellos } from './components/Sellos'
 import { Welcome } from './components/Welcome'
+import { Listado } from '../Documentos/components/Listado'
 
 export const Home = () => {
     return(
@@ -34,6 +33,9 @@ export const Home = () => {
                 </div>
                 <div>
                     <Sellos/>
+                </div>
+                <div>
+                    <Listado/>
                 </div>
                 <div className='relative mt-20'>
                     <Footer/>

@@ -15,7 +15,7 @@ const navs = [
             },
             {
                 label: "Documentos",
-                href: "/documentos"
+                href: "/#documentos"
             }
         ]
     },

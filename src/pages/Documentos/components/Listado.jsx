@@ -56,33 +56,19 @@ const archivos = [
         img:"/Logo.png",
         download:"/Logo-png",
         alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:9,
-        name:"Documento 1",
-        img:"/Logo.png",
-        download:"/Logo-png",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:10,
-        name:"Documento 1",
-        img:"/Logo.png",
-        download:"/Logo-png",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
+    }
 ]
 
 export const Listado = () => {
     return(
         <>
             <div className=''>
-                <h1 className="text-start p-10 text-5xl font-bold">Descargas (pdf)</h1>            
+                <h1 className="text-center p-10 text-white text-5xl font-bold">Descargas (pdf)</h1>            
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-5 grid-cols-1 '>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 xl:grid-cols-5 grid-cols-1' id="documentos">
                 {
                     archivos.map((a, i) =>(
-                        <div className=" w-70 md:w-80 my-10 scroll-item h-auto mx-auto shadow-lg shadow-blue-900 rounded-2xl">
+                        <div className=" w-70 md:w-80 lg:w-72 xl:w-65 bg-white my-10 scroll-item h-auto mx-auto shadow-lg shadow-blue-900 rounded-2xl">
                             <a href="" download={a.download}>
                                 <img src={a.img} className="rounded-t-2xl mx-auto" alt="" />
                             </a>

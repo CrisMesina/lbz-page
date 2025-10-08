@@ -1,6 +1,6 @@
 
 import { Malla } from './components/Malla'
-
+import { Navegador } from '../../../assets/components/Navegador'
 export const Programacion = () => {
     return (
         <>
@@ -8,12 +8,13 @@ export const Programacion = () => {
                 <div className='sticky top-0 z-10'>
                     {/*<Nav/>*/}
                     <Navegador/>
+
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2'>
+                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2 text-white'>
                     <div className='w-full'>
-                        <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
-                        <p className='text-start p-4 '>
+                        <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark mt-20'>Introduccion</h1>
+                        <p className='text-center p-20 '>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem eaque esse animi. Ipsum nulla provident consequatur unde voluptatum nesciunt perferendis, eius doloremque recusandae perspiciatis! Molestiae odit amet ab fuga.
