@@ -65,14 +65,17 @@ export const Navegador = () => {
 
     return (
         <>
-            <button 
-                name='Navegador'
-                className='p-4 py-2 text-white bg-black rounded-2xl fixed top-4 left-4 z-10'
-                onClick={() => setIsOpen(true)}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2z"/>
-                </svg>
-            </button>
+            <div className='absolute'>
+                <button 
+                    name='Navegador'
+                    className='p-4 py-2 text-white bg-black rounded-2xl fixed top-4 left-4 z-10'
+                    onClick={() => setIsOpen(true)}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2z"/>
+                    </svg>
+                </button>
+                <a href="/" className='absolute left-25 top-7 text-white underline-animate'>Inicio</a>
+            </div>
             {/* RECORDAR: CON ESTE SE COLOCA EN NEGRO EL FONDO */}
             {isOpen && (
                 <div 
