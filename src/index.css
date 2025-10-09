@@ -76,9 +76,56 @@ body::-webkit-scrollbar{
 
 .scroll-items-right{
   animation: showElementRight linear forwards;
+  will-change: transform, opacity;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
+}
+
+.scroll-items-top{
+  animation: showElementTop linear forwards;
+  animation-timeline: view();
+  will-change: transform, opacity;
+  animation-range: entry 0% cover 30%;
+  animation-duration: 1s;
+}
+
+
+
+@keyframes showElementLeft {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes showElementRight {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+@keyframes showElementTop {
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
 }
 
 
@@ -151,3 +198,37 @@ body::-webkit-scrollbar{
   }
   
 }
+
+
+
+/* *--------------------- ANIMACIONES TRANSLATE FIN ------------------ */
+
+
+/* ---------------------- RELLENADO DE FONDO IZQ A DER ---------------------- */
+
+
+.fill-hover{
+  position: relative;
+  overflow: hidden;
+}
+
+.fill-hover::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #626969;
+  z-index: -1;
+  transition: width 0.9s cubic-bezier(.4, 0, .2, 1);
+}
+
+.fill-hover:hover::before{
+  width: 100%;
+}
+.fill-hover > * {
+  position: relative;
+  z-index: 1;
+}
+

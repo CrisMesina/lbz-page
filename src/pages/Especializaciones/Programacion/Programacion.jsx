@@ -35,10 +35,9 @@ export const Programacion = () => {
                         className='w-full h-96 lg:h-screen p-10' 
                         src="https://www.youtube.com/embed/-RV-KUR9xzk?si=QBdOVb7yMO2YE0Eb&amp;start=1" 
                         title="Video sobre especiazacion de programacion" 
-                        frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                     >
                     </iframe>
                 </div>             

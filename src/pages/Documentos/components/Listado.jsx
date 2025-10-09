@@ -3,60 +3,45 @@
 const archivos = [
     {
         id:1,
-        name:"Documento 1",
-        img:"/Logo.png",
+        name:"Nombre del Documento",
+        img:"/",
         download:"/Logo-png",
+        animation: "scroll-items-left",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:2,
-        name:"Documento 1",
-        img:"/Logo.png",
+        name:"Nombre del Documento",
+        img:"/",
         download:"/Logo-png",
+        animation: "scroll-items-left",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:3,
-        name:"Documento 1",
-        img:"/Logo.png",
+        name:"Nombre del Documento",
+        img:"/",
         download:"/Logo-png",
+        animation: "scroll-items-top",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:4,
-        name:"Documento 1",
-        img:"/Logo.png",
+        name:"Nombre del Documento",
+        img:"/",
         download:"/Logo-png",
+        animation: "scroll-items-right",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:5,
-        name:"Documento 1",
-        img:"/Logo.png",
+        name:"Nombre del Documento",
+        img:"/",
         download:"/Logo-png",
+        animation: "scroll-items-right",
         alt: "Directorio de descarga del archivo '  ' "
     },
-    {
-        id:6,
-        name:"Documento 1",
-        img:"/Logo.png",
-        download:"/Logo-png",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:7,
-        name:"Documento 1",
-        img:"/Logo.png",
-        download:"/Logo-png",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:8,
-        name:"Documento 1",
-        img:"/Logo.png",
-        download:"/Logo-png",
-        alt: "Directorio de descarga del archivo '  ' "
-    }
+    
 ]
 
 export const Listado = () => {
@@ -65,18 +50,19 @@ export const Listado = () => {
             <div className=''>
                 <h1 className="text-center p-10 text-white text-5xl font-bold">Descargas (pdf)</h1>            
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 xl:grid-cols-5 grid-cols-1' id="documentos">
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 xl:grid-cols-5 dark:text-white text-black grid-cols-1' id="documentos">
                 {
                     archivos.map((a, i) =>(
-                        <div className=" w-70 md:w-80 lg:w-72 xl:w-65 bg-white my-10 scroll-item h-auto mx-auto shadow-lg shadow-blue-900 rounded-2xl">
+                        <div className={`w-70 md:w-80 lg:w-72 xl:w-65 bg-gradient-to-b from-[#249382] transition-all duration-200 my-10 scroll-item hover:rotate-4 h-96 mx-auto shadow-lg
+                            shadow-blue-900 rounded-2xl ${a.animation} opacity-0 `} key={i}>
                             <a href="" download={a.download}>
-                                <img src={a.img} className="rounded-t-2xl mx-auto" alt="" />
+                                <img src={a.img} className="rounded-t-2xl mx-auto h-60" alt="" />
                             </a>
-                            <h1 className="text-start mx-10 my-10">{a.name}</h1>
-                            <div className="p-10 text-center">
+                            <h1 className="text-start mx-10 my-5">{a.name}</h1>
+                            <div className="p-4 text-center">
                                 <a href=""
                                     download={a.download}
-                                    className="p-4 rounded-xl shadow-lg hover:shadow-theme-old-green-medium font-bold 
+                                    className="p-4 rounded-xl skew-2 shadow-lg shadow-[#249382] hover:shadow-theme-old-green-medium font-bold 
                                         hover:bg-gradient-to-r hover:from-theme-old-green-dark hover:via-theme-old-green hover:to-theme-old-green-nav hover:bg-clip-text hover:text-transparent"
                                     >
                                     <button>Descargar PDF</button>
