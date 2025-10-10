@@ -40,27 +40,24 @@ export const Malla = () => {
     return (
         <>
             <div>
-                <h1 className='text-center my-5 font-bold text-2xl underline'>Malla Curricular</h1>
-                <div className="grid grid-cols-1 gap-4 p-5">
-                    <div className="shadow-xl rounded-b-2xl mb-10">
-                        <h1 className="text-center font-bold text-2xl italic">Tercer Año</h1>
-                        <div className="flex flex-col md:flex-row justify-center items-center my-20 gap-4">
-                            {tercero.map((t, i) =>(
-                                <div className="w-60 h-40 mx-auto flex text-center border-t-2 border-b-2 border-t-green-300 border-b-green-700 hover:scale-105 hover:shadow-green-200 hover:font-bold shadow-lg rounded-2xl ">
-                                    <p className="mx-auto my-auto">{t.ramo}</p>
-                                </div>
-                            ))}
-                        </div>
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2">
+                    <div>
+                        <h1 className="text-center dark:text-white text-black text-5xl font-bold">Tercer Año</h1>
+                        {tercero.map((item, index) => (
+                            <div key={index} className="bg-gray-200 border-l-green-600 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300  ">
+                                <p className="text-lg p-1 font-bold ">
+                                    {item.ramo}
+                                </p>
+                            </div>
+                        ))}
                     </div>
-                    <div className="shadow-xl rounded-b-2xl mb-10">
-                        <h1 className="text-center font-bold text-2xl italic">Cuarto Año</h1>
-                        <div className="flex flex-col md:flex-row justify-center items-center my-20 gap-4">
-                            {cuarto.map((t, i) =>(
-                                <div className="w-60 h-40 mx-auto flex text-center border-t-2 border-b-2 border-t-green-300 border-b-green-700 hover:scale-105 hover:shadow-green-200 hover:font-bold shadow-lg rounded-2xl ">
-                                    <p className="mx-auto my-auto">{t.ramo}</p>
-                                </div>
-                            ))}
-                        </div>
+                    <div>
+                        <h1 className="text-center dark:text-white text-black text-5xl font-bold">Cuarto Año</h1>
+                        {cuarto.map((item, index) => (
+                            <div key={index} className="bg-gray-200 border-l-green-600 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300">
+                                <p className="text-lg p-1 font-bold">{item.ramo}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

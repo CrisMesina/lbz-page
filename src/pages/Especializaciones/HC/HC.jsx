@@ -1,5 +1,6 @@
 
 import { Malla } from './components/Malla'
+import { Navegador } from '../../../assets/components/Navegador'
 
 export const HC = () => {
     return (
@@ -10,7 +11,7 @@ export const HC = () => {
                     <Navegador/>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2'>
+                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2 text-white'>
                     <div className='w-full'>
                         <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
                         <p className='text-start p-4 '>
@@ -33,11 +34,10 @@ export const HC = () => {
                     <iframe 
                         className='w-full h-96 lg:h-screen p-10' 
                         src="https://www.youtube.com/embed/-RV-KUR9xzk?si=QBdOVb7yMO2YE0Eb&amp;start=1" 
-                        title="Video sobre especiazacion de programacion" 
-                        frameborder="0" 
+                        title="Video sobre la formacion Cientifico Humanista" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen
+                        referrerPolicy="strict-origin-when-cross-origin" 
+                        allowFullScreen
                     >
                     </iframe>
                 </div>             
