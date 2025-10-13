@@ -9,7 +9,7 @@ export const Especializaciones = () => {
     const especializaciones = [
         {
             id: 1,
-            img: "/",
+            img: "/logo-hc.avif",
             title: "Cientifico Humanista",
             animation: "scroll-items-left",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
@@ -18,7 +18,7 @@ export const Especializaciones = () => {
         },
         {
             id: 2,
-            img: "/",
+            img: "/logo-administracion.avif",
             title: "Administracion",
             animation: "scroll-items-left",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
@@ -27,7 +27,7 @@ export const Especializaciones = () => {
         },
         {
             id: 3,
-            img: "/",
+            img: "/logo-agropecuaria.avif",
             title: "Agropecuaria",
             animation: "scroll-items-right",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
@@ -36,7 +36,7 @@ export const Especializaciones = () => {
         },
         {
             id: 4,
-            img: "/",
+            img: "/logo-programacion.avif",
             title: "Programacion",
             animation: "scroll-items-right",
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
@@ -48,30 +48,34 @@ export const Especializaciones = () => {
     return(
         <>
             <div className='flex h-20'>
-                <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl dark:text-white text-black'>¿No sabes que estudiar?</h1>
+                <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl dark:text-white text-white'>¿No sabes que estudiar?</h1>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20' >
                 {
                     especializaciones.map((e, i) =>(
-                        <div key={i} className={` bg-gradient-to-b from-[#249382] mx-auto opacity-0 skew-1 transition-all duration-300 hover:skew-0 w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md hover:scale-110
-                            ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''} ${e.animation} scroll-item dark:text-white text-black`}
-                            onMouseEnter={() => setIsHovered(i)}
-                            onMouseLeave={() => setIsHovered(null)}
-                        >
-                            
-                            <div className='flex-col text-center mt-10 p-4'>
-                                <div className='relative justify-center w-30'>
-                                    <img src={e.img} className='absolute w-30 h-30 rounded-full left-22 -top-30 bg-[#249382] p-1' />
+                        <>
+                            <div key={i} className={`  bg-gradient-to-b from-[#249382] mx-auto opacity-0 skew-1 group transition-all duration-300 hover:skew-0 w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md
+                                ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''} ${e.animation} scroll-item dark:text-white text-white`}
+                                onMouseEnter={() => setIsHovered(i)}
+                                onMouseLeave={() => setIsHovered(null)}
+                            >
+                                <div key={i} className=' bg-gradient-to-b from-theme-blue-bg to-[#249382] group-hover:rotate-4 mx-auto absolute -z-20  duration-300 hover:skew-0 w-80 h-96 rounded-xl '></div>
+
+                                <div className='flex-col text-center mt-10 p-4'>
+                                    <div className='relative justify-center w-30'>
+                                        <img src={e.img} className='absolute w-30 h-30 rounded-full left-22 -top-30 bg-[#249382] p-1' />
+                                    </div>
+                                    <h1 className='font-bold my-5'>{e.title}</h1>
+                                    <p>{e.text}</p>
+                                    <a href={e.href}>
+                                        <button className='shadow-md active:translate-y-2 shadow-green-600 hover:shadow-[#249382] hover:scale-105  cursor-pointer p-4 mt-5 rounded-xl w-32'>
+                                            Ver mas
+                                        </button>
+                                    </a>
                                 </div>
-                                <h1 className='font-bold my-5'>{e.title}</h1>
-                                <p>{e.text}</p>
-                                <a href={e.href}>
-                                    <button className='shadow-md active:translate-y-2 shadow-green-600 hover:shadow-[#249382] hover:scale-105  cursor-pointer p-4 mt-5 rounded-xl w-32'>
-                                        Ver mas
-                                    </button>
-                                </a>
+
                             </div>
-                        </div>
+                        </>
                     ))
                 }
             </div>

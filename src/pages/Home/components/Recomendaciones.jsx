@@ -54,7 +54,7 @@ export const Recomendaciones = () => {
                         <img src={r.img} className=' brightness-75 w-20 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt="" />
                         <div className='flex-col'>
                             <h1 className='text-theme-old-green  mx-2 p-1 font-extrabold text-xl mb-5'>{r.title}</h1>
-                            <p className='text-start text-black dark:text-white p-1 mx-2'>{r.texto}</p>
+                            <p className='text-start text-white dark:text-white p-1 mx-2'>{r.texto}</p>
                             <span className='flex p-1 mt-4 mx-2 text-[12px] italic'>
                                 <span className='text-theme-old-green font-bold '>{r.nombre}</span>, 
                                 <p className='font-theme-caveat font-bold text-white'>{r.cargo}</p>

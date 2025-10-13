@@ -23,8 +23,8 @@ export const CentroAlumnos = () => {
                 </div>
                 <div>
                     <div className='p-5 mx-auto'>
-                        <h1 className='text-4xl text-center font-bold p-3 text-black dark:text-white' id='conocerpadres'>Conoce a nuestro Centro de Alumnos</h1>
-                        <p className='p-35 text-xl text-start justify-between text-black dark:text-white'>
+                        <h1 className='text-4xl text-center font-bold p-3 text-white' id='conocerpadres'>Conoce a nuestro Centro de Alumnos</h1>
+                        <p className='p-35 text-xl text-start justify-between text-white'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
