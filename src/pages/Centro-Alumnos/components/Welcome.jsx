@@ -13,7 +13,7 @@ export const Welcome = () => {
                     Conoce a nuestro centro de alumnos
                 </h1>
                 <div className='flex mx-auto justify-center'>
-                    <a href="#padres" name="Ir a Padres" className='animation-show-left mt-20 p-5 font-bold 
+                    <a href="#alumnos" name="Ir a Alumnos" className='animation-show-left mt-20 p-5 font-bold 
                         bg-gradient-to-r from-theme-old-green-medium via-theme-old-green-dark to-theme-old-green-light 
                         dark:from-theme-blue dark:via-blue-700 dark:to-blue-950 text-white rounded-lg'>
                         Mas informacion

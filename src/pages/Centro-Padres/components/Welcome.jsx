@@ -8,7 +8,7 @@ export const Welcome = () => {
                 <HeroWelcome/>
             </div>
             <div className=''>
-                <h1 className='text-5xl dark:text-white text-center animation-show-left mt-50 lg:mt-0 lg:text-center md:mt-90 lg:my-10 font-bold  text-theme-old-green-dark text-shadow-lg'
+                <h1 className='text-5xl dark:text-white animation-show-left mt-50 lg:mt-0 lg:text-center md:mt-90 lg:my-10 font-bold  text-theme-old-green-dark text-shadow-lg'
                 >
                     Conoce a nuestro centro de padres
                 </h1>

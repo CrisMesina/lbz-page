@@ -1,23 +1,21 @@
-import React from 'react'
-import { FondoCirculos } from '../../Home/components/FondoCirculos'
+
 
 export const Hero = () => {
+
+
+
+
     return(
         <>
             
             <div>
-                <div className='w-full flex animate-translateY'>
+                <div className='w-full flex'>
                     <div className='absolute bottom-50 left-10 w-32 h-32 bg-[#249382] rounded-full brightness-50 blur-xl'></div>
                     <div className='absolute top-50 right-0 w-32 h-32 bg-[#249382] rounded-full brightness-50 blur-xl'></div>
                     <div className='absolute bottom-30 left-1/2 -translate-x-1/2 w-40 h-40 bg-[#249382] rounded-full brightness-50 blur-xl'></div>
-                    <svg width="100%" height="100%" viewBox="0 0 983 555" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="983" height="555"  fill="#008055"/>
-                        <path
-                            d="M0,0 Q491.5,700 983,0 L983,555 L0,555 Z"
-                            fill="#0A1B2B"
-                            
-                        />
-                    </svg>
+
+                    <div className='w-screen h-screen animate-translateY bg-green-300/40 clip'></div>
+
                     <div className='absolute top-1/4 left-1/4 w-1/2 text-center text-white'>
                         <h1 className='text-5xl font-bold mb-4 animate-translateY '>Sobre Nosotros</h1>
                         <p className='text-lg animate-translateY'>Conoce más sobre nuestra misión, visión y valores que nos guían en cada paso que damos.</p>
