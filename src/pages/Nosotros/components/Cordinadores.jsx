@@ -37,7 +37,7 @@ export const Cordinadores = () => {
         <>
            <div className='text-center text-white'>
                 <h1 className="text-5xl mb-20 font-bold">Cordinadores</h1>
-                <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4">
                     {
                         cordinadores.map((d, i ) => (
                             <div key={i} className={`mx-auto skew-1 transition-all duration-300 hover:scale-110 active:translate-y-1 hover:rotate-1 active:shadow-green-700 my-10 rounded-2xl shadow-lg ${d.animation} bg-gradient-to-b from-theme-blue to-[#249382]`}>

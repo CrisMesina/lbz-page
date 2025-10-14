@@ -2,6 +2,7 @@
 import { Listado } from './components/Listado'
 import { Footer } from '../../assets/components/Footer'
 import { Navegador } from '../../assets/components/Navegador'
+import { Welcome } from './components/Welcome'
 
 export const Documentos = () => {
     return (
@@ -9,11 +10,9 @@ export const Documentos = () => {
             <div className='sticky top-0 z-10'>
                 <Navegador/>
             </div>
-            <div className='min-h-screen'>
-                <div className='relative'>
-                    <h1 className='absolute text-6xl font-bold text-theme-old-green-dark top-1/2 left-1/20 drop-shadow-title-text'>Documentos importantes</h1>
-                    <p className='absolute text-6xl font-bold text-theme-old-green-light bottom-1/3 left-1/20'></p>
-                    <img src="/hero1-min.avif" className='object-cover h-screen w-full' alt="" />
+            <div className='h-screen grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
+                <div className='md:mx-10 w-full my-10 md:my-20 lg:my-50 xs:my-0 text-center px-20'>
+                    <Welcome/>
                 </div>
             </div>
             <div className='min-h-screen text-white'>

@@ -59,7 +59,7 @@ export const Especializaciones = () => {
                                 onMouseEnter={() => setIsHovered(i)}
                                 onMouseLeave={() => setIsHovered(null)}
                             >
-                                <div key={i} className=' bg-gradient-to-b from-theme-blue-bg to-[#249382] group-hover:rotate-4 mx-auto absolute -z-20  duration-300 hover:skew-0 w-80 h-96 rounded-xl '></div>
+                                <div key={i} className='bg-gradient-to-t from-blue-900/30 to-[#249382] group-hover:rotate-4 mx-auto absolute -z-10 duration-300 hover:skew-0 w-80 h-96 rounded-xl '></div>
 
                                 <div className='flex-col text-center mt-10 p-4'>
                                     <div className='relative justify-center w-30'>

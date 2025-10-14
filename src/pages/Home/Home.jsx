@@ -5,7 +5,7 @@ import { Especializaciones } from './components/Especializaciones'
 import { Recomendaciones } from './components/Recomendaciones'
 import { Sellos } from './components/Sellos'
 import { Welcome } from './components/Welcome'
-import { Listado } from '../Documentos/components/Listado'
+import { ListadoMuestra } from './components/ListadoDocumentosMuestra'
 
 export const Home = () => {
     return(
@@ -34,8 +34,13 @@ export const Home = () => {
                 <div>
                     <Sellos/>
                 </div>
-                <div>
-                    <Listado/>
+                <div className=''>
+                    <ListadoMuestra/>
+                    <div className='text-center my-10 '>
+                        <button className='text-white p-5 rounded-lg bg-gradient-to-r from-blue-950 to-blue-900/30 hover:translate-y-2 shadow-md shadow-amber-50'>
+                            <a href='/documentos'>Ver mas</a>
+                        </button>
+                    </div>
                 </div>
                 <div className='relative mt-20'>
                     <Footer/>

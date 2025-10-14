@@ -1,7 +1,6 @@
 import { MisionyVision } from '../Nosotros/components/MisionyVision'
 import { Directiva } from '../Nosotros/components/Directiva'
 import { Cordinadores } from '../Nosotros/components/Cordinadores'
-import { Ubicacion } from '../Nosotros/components/Ubicacion'
 import { Footer } from '../../assets/components/Footer'
 import { Navegador } from '../../assets/components/Navegador'
 import { Hero } from './components/Hero'
@@ -25,9 +24,6 @@ export const Nosotros = () => {
             </div>
             <div className='p-4'>
                 <Cordinadores/>
-            </div>
-            <div>
-                <Ubicacion/>
             </div>
             <div className='mb-20'>
                 <Convenios/>

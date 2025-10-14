@@ -12,7 +12,7 @@ export const CentroAlumnos = () => {
                     <Navegador/>
                 </div>
                 <div className='h-screen grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2'>
-                    <div className='md:mx-10 w-full my-10 md:my-20 lg:my-50 xs:my-0 text-center px-20'>
+                    <div className='w-full my-10 md:my-20 lg:my-50 xs:my-0 text-center px-20'>
                         <Welcome/>
                     </div>
                     <div className='absolute bottom-10 left-1/2 -translate-x-1/2'>
@@ -22,16 +22,18 @@ export const CentroAlumnos = () => {
                     </div>
                 </div>
                 <div>
-                    <div className='p-5 mx-auto'>
-                        <h1 className='text-4xl text-center font-bold p-3 text-white' id='conocerpadres'>Conoce a nuestro Centro de Alumnos</h1>
-                        <p className='p-35 text-xl text-start justify-between text-white'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
-
-                        </p>
+                    <div className='p-5 mx-auto grid grid-cols-1 md:grid-cols-2'>
+                        <div>
+                            <h1 className='text-4xl text-center font-bold p-3 text-white' id='conocerpadres'>Conoce a nuestro Centro de Alumnos</h1>
+                            <p className='lg:p-20 p-4 text-lg text-start justify-between text-white'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum debitis quisquam, commodi aliquam amet nihil delectus harum provident autem esse quaerat similique reprehenderit eligendi ullam possimus asperiores quis doloribus quos.
+                            </p>
+                        </div>
+                        <div className='flex my-20'>
+                            <img src="/hero-documentos.avif" className=' w-70 md:w-90 lg:w-120 mx-auto my-auto rounded-lg shadow-xl  shadow-amber-50 -skew-2 hover:skew-2 transition-all duration-300' alt="" />
+                        </div>
                     </div>
                 </div>
                 <div className='min-h-screen'>

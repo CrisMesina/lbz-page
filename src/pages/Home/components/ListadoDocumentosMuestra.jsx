@@ -40,51 +40,11 @@ const archivos = [
         download:"/Logo-png",
         animation: "scroll-items-right",
         alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:1,
-        name:"Nombre del Documento",
-        img:"/",
-        download:"/Logo-png",
-        animation: "scroll-items-left",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:2,
-        name:"Nombre del Documento",
-        img:"/",
-        download:"/Logo-png",
-        animation: "scroll-items-left",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:3,
-        name:"Nombre del Documento",
-        img:"/",
-        download:"/Logo-png",
-        animation: "scroll-items-top",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:4,
-        name:"Nombre del Documento",
-        img:"/",
-        download:"/Logo-png",
-        animation: "scroll-items-right",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:5,
-        name:"Nombre del Documento",
-        img:"/",
-        download:"/Logo-png",
-        animation: "scroll-items-right",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
+    }
     
 ]
 
-export const Listado = () => {
+export const ListadoMuestra = () => {
     return(
         <>
             <div className=''>
