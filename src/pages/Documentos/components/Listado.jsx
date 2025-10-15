@@ -6,7 +6,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-left",
+        animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -14,7 +14,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-left",
+        animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -22,7 +22,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-top",
+        animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -30,7 +30,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-right",
+        animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -38,7 +38,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-right",
+        animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -46,7 +46,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-left",
+        animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -54,7 +54,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-left",
+        animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -62,7 +62,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-top",
+        animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -70,7 +70,7 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-right",
+        animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -78,13 +78,16 @@ const archivos = [
         name:"Nombre del Documento",
         img:"/",
         download:"/Logo-png",
-        animation: "scroll-items-right",
+        animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     
 ]
 
 export const Listado = () => {
+
+    const isMobile = window.innerWidth < 768;
+
     return(
         <>
             <div className=''>
@@ -93,8 +96,8 @@ export const Listado = () => {
             <div className='grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 xl:grid-cols-5 text-white grid-cols-1' id="documentos">
                 {
                     archivos.map((a, i) =>(
-                        <div className={`w-70 md:w-80 lg:w-72 xl:w-65 bg-gradient-to-b from-[#249382] transition-all duration-200 my-10 scroll-item hover:rotate-4 h-96 mx-auto shadow-lg
-                            shadow-blue-900 rounded-2xl ${a.animation} opacity-0 `} key={i}>
+                        <div className={`w-70 md:w-80 lg:w-72 xl:w-65 bg-gradient-to-b from-[#249382] ${isMobile ? '' : a.animation} ${isMobile ? 'opacity-100' : ''} my-10 hover:rotate-4 h-96 mx-auto shadow-lg
+                            shadow-blue-900 rounded-2xl `} key={i}>
                             <a href="" download={a.download}>
                                 <img src={a.img} className="rounded-t-2xl mx-auto h-60" alt="" />
                             </a>
