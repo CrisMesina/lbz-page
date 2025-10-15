@@ -33,6 +33,9 @@ export const Cordinadores = () => {
         },
     ]
 
+    const isMobile = window.innerWidth < 768;
+
+
     return(
         <>
            <div className='text-center text-white'>
@@ -40,7 +43,7 @@ export const Cordinadores = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:grid-cols-4">
                     {
                         cordinadores.map((d, i ) => (
-                            <div key={i} className={`mx-auto ${window.screen.width < 768 ? 'bg-amber-700' : ''} skew-1 transition-all duration-300 hover:scale-110 active:translate-y-1 hover:rotate-1 active:shadow-green-700 my-10 rounded-2xl shadow-lg ${d.animation} bg-gradient-to-b from-theme-blue to-[#249382]`}>
+                            <div key={i} className={`mx-auto ${isMobile  ? '' : d.animation} skew-1 transition-all duration-300 hover:scale-110 active:translate-y-1 hover:rotate-1 active:shadow-green-700 my-10 rounded-2xl shadow-lg bg-gradient-to-b from-theme-blue to-[#249382]`}>
                                 <div>
                                     <img src={d.img} className="w-70 h-90 rounded-t-2xl  hover:scale-110 hover:-rotate-1 mx-auto bg-[#249382] p-2"   alt="Imagen de la persona encargada de la especializacion o de la formacion." />
                                 </div>

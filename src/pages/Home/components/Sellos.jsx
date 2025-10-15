@@ -1,6 +1,9 @@
 import React from 'react'
 
 export const Sellos = () => {
+
+    const isMobile = window.innerWidth < 768;
+
     return(
         <>
             <div className='flex items-center justify-center text-white'>
@@ -8,7 +11,7 @@ export const Sellos = () => {
                 
             </div>
             <div className='grid md:grid-cols-2 grid-cols-1  text-center mx-auto text-white'>
-                <div className='md:w-90 lg:w-120 mx-auto scroll-items-left'>
+                <div className={`md:w-90 lg:w-120 mx-auto ${isMobile ? '' : 'scroll-items-left'}`}>
                     <h1 className='text-2xl text-start p-4 font-extrabold mb-5'>Sello medioambientalista</h1>
                     <p className='text-start p-4 font-theme-zalando'>
                         Formar estudiantes que internalizan y actúan consecuentemente con la formación
@@ -20,7 +23,7 @@ export const Sellos = () => {
                         capaces de valorar y cuidar su entorno natural.
                     </p>
                 </div>
-                <div className='md:w-90 lg:w-120 mx-auto scroll-items-right'>
+                <div className={`md:w-90 lg:w-120 mx-auto ${isMobile ? '' : 'scroll-items-right'}`}>
                     <h1 className='text-2xl text-start p-4 font-extrabold mb-5'>Sello Mentalidad Emprendedora</h1>
                     <p className='text-start p-4 font-theme-zalando'>
                         Formar estudiantes con mentalidad de emprendimiento que le permita detectar

@@ -5,6 +5,7 @@ export const Especializaciones = () => {
 
     const [hovered, setIsHovered] = useState(null);
 
+    const isMobile = window.innerWidth < 768;
 
     const especializaciones = [
         {
@@ -55,7 +56,7 @@ export const Especializaciones = () => {
                     especializaciones.map((e, i) =>(
                         <>
                             <div key={i} className={`  bg-gradient-to-b from-[#249382] mx-auto opacity-0 skew-1 group transition-all duration-300 hover:skew-0 w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md
-                                ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''} ${e.animation} scroll-item dark:text-white text-white hover:scale-105`}
+                                ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''} ${isMobile ? 'opacity-100' : e.animation} scroll-item dark:text-white text-white hover:scale-105`}
                                 onMouseEnter={() => setIsHovered(i)}
                                 onMouseLeave={() => setIsHovered(null)}
                             >
