@@ -10,8 +10,8 @@ export const Hero = () => {
             
             <div>
                 <div className=" -z-10">
-                    <img src="/hero1-min.avif" className={`w-full brightness-50 hidden md:block h-screen object-cover bg-green-700/30 rounded-2xl p-2 ${isMobile ? '' : 'clip-invert animation-show-left'}`} alt="" />
-                    <div className={`w-full absolute  z-1 top-0 right-0 border-8 border-green-700/10 h-screen bg-[#249382] md:bg-green-700/30 ${isMobile ? '' : 'clip animation-show-right'}`}></div>
+                    <img src="/hero1-min.avif" className={`w-full brightness-50 hidden md:block h-screen object-cover bg-green-700/30 rounded-2xl p-2 ${isMobile ? '' : 'animation-show-left'}`} alt="" />
+                    <div className={`w-full absolute  z-1 top-0 right-0 border-8 border-green-700/10 h-screen bg-[#249382] md:bg-green-800 ${isMobile ? '' : 'clip animation-show-right'}`}></div>
 
                 </div>
                 <div className='w-full flex' id="nosotros">
