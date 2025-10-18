@@ -156,6 +156,41 @@ body::-webkit-scrollbar{
 }
 
 
+.animation-show-top-right{
+  will-change: trasnsform, opacity;
+  animation: slideTopRight 2s linear forwards;
+}
+
+
+.animation-popup{
+  will-change: transform, opacity;
+  animation: popup 1s linear forwards;
+}
+
+@keyframes popup{
+  0%{
+    opacity: 0;
+    filter: brightness(0%);
+  }
+  100%{
+    opacity: 1;
+    filter: brightness(50%);
+  }
+}
+
+@keyframes slideTopRight {
+  0%{
+    transform: translateY(-100%) translateX(100%); 
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  
+}
+
+
 @keyframes elementLeft {
   0%{
     transform: translateX(-50%);
@@ -165,7 +200,6 @@ body::-webkit-scrollbar{
     transform: translateX(0);
     opacity: 1;
   }
-  
 }
 
 @keyframes elementRight {
@@ -187,9 +221,10 @@ body::-webkit-scrollbar{
 }
 
 
+
 @keyframes translateY {
   0%{
-    transform: translateY(-100%);
+    transform: translateY(-300px);
     opacity: 0;
   }
   100%{
@@ -198,8 +233,6 @@ body::-webkit-scrollbar{
   }
   
 }
-
-
 
 /* *--------------------- ANIMACIONES TRANSLATE FIN ------------------ */
 
@@ -232,12 +265,58 @@ body::-webkit-scrollbar{
   z-index: 1;
 }
 
+/* ---------------------- RELLENADO DE FONDO IZQ A DER FIN ---------------------- */
+
+/* ---------------------- CLIP PATHS Y HERO CIRCULOS ---------------------- */
 
 .clip{
-  clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
 }
 
 
 .clip-invert{
   clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%);
 }
+
+.hero{
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(#61ba6d, #69bc5f, #0d4d03);
+  filter: brightness(50%);
+  filter: blur(5px);
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(7,24,40,0.05) inset;
+}
+
+/* Circulo de la izquierda */
+.hero::before{
+  width: 70vmin;
+  height: 70vmin;
+  left: -25vmin;
+  top: -30vmin;
+  animation: elementLeft 1s linear forwards;
+}
+
+/* Circulo de la derecha */
+.hero::after{
+  width: 62vmin;
+  height: 62vmin;
+  right: -18vmin;
+  bottom: -20vmin;
+  animation: elementRight 1s linear forwards;
+}
+
+.hero > .relative { z-index: 10; }
+
+
+/* ---------------------- CLIP PATHS Y HERO CIRCULOS FIN ---------------------- */
+
+
