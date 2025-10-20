@@ -1,5 +1,3 @@
-import React from 'react'
-import { FondoCirculos } from '../../Home/components/FondoCirculos'
 
 export const HeroWelcome = () => {
     return (
@@ -17,7 +15,9 @@ export const HeroWelcome = () => {
                 />
                 </svg>
                 <img src="/hero-welcome.png" className='absolute hidden lg:block right-0 bottom-0 xl:h-150 2xl:h-210 z-5 animation-show-right' alt="" />
-                <FondoCirculos/>
+                <div className="absolute left-10 top-1/2 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
+                <div className="absolute left-100 top-20 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
+                <div className="absolute left-120 top-120 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
                 <a href="/contactanos" name="Contactanos" className='absolute top-5 right-5 p-3 bg-gradient-to-r from-green-900 to-green-600 text-white font-bold 
                     rounded-lg z-10 hover:bg-gradient-to-r hover:from-green-700 hover:to-green-800 transition-colors animation-show-right duration-300'>
                     Contactanos

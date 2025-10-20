@@ -41,7 +41,7 @@ export const Malla = () => {
                     <div>
                         <h1 className="text-center text-white text-5xl font-bold">Tercer Año</h1>
                         {tercero.map((item, index) => (
-                            <div key={index} className="bg-gray-200 border-l-green-600 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300  ">
+                            <div key={index} className="bg-gray-200 w-96 mx-auto border-l-green-700 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300  ">
                                 <p className="text-lg p-1 font-bold ">
                                     {item.ramo}
                                 </p>
@@ -51,7 +51,7 @@ export const Malla = () => {
                     <div>
                         <h1 className="text-center text-white text-5xl font-bold">Cuarto Año</h1>
                         {cuarto.map((item, index) => (
-                            <div key={index} className="bg-gray-200 border-l-green-600 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300">
+                            <div key={index} className="bg-gray-200 w-96 mx-auto border-l-green-700 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300">
                                 <p className="text-lg p-1 font-bold">{item.ramo}</p>
                             </div>
                         ))}

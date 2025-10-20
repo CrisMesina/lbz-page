@@ -10,12 +10,12 @@ export const Hero = () => {
             <div>
                 <header
                     id="nosotros"
-                    className="hero relative overflow-hidden text-[#eaf5ff] h-screen flex items-center"
+                    className="hero relative overflow-hidden text-[#eaf5ff] z-1 h-screen flex items-center"
                 >
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl top-0 left-100 -z-1'></div>
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl bottom-0 left-200'></div>
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-0 '></div>
-                    <img src="/hero1-min.avif" className="absolute clip animation-popup w-full" alt="" />
+                    <img src="/hero1-min.avif" className={`absolute ${isMobile ? 'clip-horizontal h-screen object-cover' : 'clip w-full'} animation-popup `} alt="" />
                     <div className="relative z-10 max-w-4xl mx-auto text-center md:text-left">
                         <h1 className={`text-5xl leading-tight font-bold mb-4 ${!isMobile ? 'animate-translateY' : ''}`}>
                             Sobre Nosotros
@@ -34,6 +34,6 @@ export const Hero = () => {
                 </a>
 
             </div>
-        </>
-    )
+        </>
+    )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { FondoCirculos } from './FondoCirculos'
 
 export const HeroWelcome = () => {

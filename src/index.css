@@ -252,7 +252,7 @@ body::-webkit-scrollbar{
   top: 0;
   height: 100%;
   width: 0%;
-  background: #626969;
+  background: oklch(62.7% 0.194 149.214);
   z-index: -1;
   transition: width 0.9s cubic-bezier(.4, 0, .2, 1);
 }
@@ -276,6 +276,10 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
 
 .clip-invert{
   clip-path: polygon(60% 0, 0 0, 0 100%, 40% 100%);
+}
+
+.clip-horizontal{
+  clip-path: polygon(100% 25%, 100% 82%, 0 82%, 0 25%);
 }
 
 .hero{
