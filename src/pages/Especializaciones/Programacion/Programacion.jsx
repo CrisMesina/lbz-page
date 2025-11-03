@@ -15,9 +15,11 @@ export const Programacion = () => {
                     <div className='w-full'>
                         <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark mt-20'>Introduccion</h1>
                         <p className='text-start p-4 md:p-20 '>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem eaque esse animi. Ipsum nulla provident consequatur unde voluptatum nesciunt perferendis, eius doloremque recusandae perspiciatis! Molestiae odit amet ab fuga.
+                            La especialización en Programación del Liceo Berta Zamorano Lizana forma a los desarrolladores del futuro, brindando una educación técnica de vanguardia en el mundo de la tecnología y la informática. Esta modalidad está diseñada para estudiantes apasionados por la innovación digital y el desarrollo de soluciones tecnológicas.
+                            <br/><br/>
+                            Durante su formación, los estudiantes aprenden múltiples lenguajes de programación, desarrollo web, bases de datos y metodologías ágiles de desarrollo. Desarrollan competencias en soporte de usuario, fundamentos de redes y resolución de problemas técnicos, manteniéndose al día con las últimas tendencias tecnológicas.
+                            <br/><br/>
+                            Nuestros egresados están preparados para continuar estudios en carreras como Ingeniería en Informática, Desarrollo de Software, o para emprender proyectos tecnológicos propios. La industria digital ofrece infinitas oportunidades para quienes dominan estas competencias del siglo XXI.
                         </p>
                     </div>  
                     <div className='p-4'>

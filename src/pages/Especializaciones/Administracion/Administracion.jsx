@@ -15,9 +15,11 @@ export const Administracion = () => {
                     <div className='w-full'>
                         <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
                         <p className='text-start p-4 md:p-20'>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem eaque esse animi. Ipsum nulla provident consequatur unde voluptatum nesciunt perferendis, eius doloremque recusandae perspiciatis! Molestiae odit amet ab fuga.
+                            La especialización en Administración del Liceo Berta Zamorano Lizana forma futuros líderes empresariales con una sólida base en gestión, finanzas y emprendimiento. Esta modalidad está diseñada para estudiantes con visión de negocios que desean comprender el funcionamiento del mundo empresarial desde una perspectiva práctica y actualizada.
+                            <br/><br/>
+                            Durante su formación, los estudiantes desarrollan competencias en contabilidad, marketing, recursos humanos, gestión de proyectos y análisis financiero. Aprenden a tomar decisiones estratégicas, liderar equipos de trabajo y identificar oportunidades de negocio en un mercado cada vez más competitivo y globalizado.
+                            <br/><br/>
+                            Nuestros egresados están preparados para continuar estudios superiores en carreras como Administración de Empresas, Contabilidad, Ingeniería Comercial, Marketing, o para emprender sus propios proyectos empresariales con las herramientas y conocimientos necesarios para el éxito.
                         </p>
                     </div>  
                     <div className='p-4'>

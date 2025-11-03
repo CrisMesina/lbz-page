@@ -13,7 +13,7 @@ export const Especializaciones = () => {
             img: "/logo-hc.avif",
             title: "Cientifico Humanista",
             animation: "scroll-items-left",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
+            text: "Formación integral que combina conocimientos científicos y humanísticos. Desarrolla pensamiento crítico, habilidades de investigación y competencias comunicativas para continuar estudios universitarios en diversas áreas del conocimiento.",
             href: "/hc",
             alt: "Logo de la especializacion/formacion : Cientifico Humanista(HC)"
         },
@@ -22,7 +22,7 @@ export const Especializaciones = () => {
             img: "/logo-administracion.avif",
             title: "Administracion",
             animation: "scroll-items-left",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
+            text: "Especialización enfocada en gestión empresarial, contabilidad y recursos humanos. Prepara para liderar organizaciones, manejar finanzas y desarrollar habilidades emprendedoras en el mundo de los negocios.",
             href: "/administracion",
             alt: "Logo de la especializacion/formacion : Administracion "               
         },
@@ -31,7 +31,7 @@ export const Especializaciones = () => {
             img: "/logo-agropecuaria.avif",
             title: "Agropecuaria",
             animation: "scroll-items-right",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
+            text: "Formación técnica en producción agrícola y ganadera. Desarrolla competencias en manejo de cultivos, crianza de animales, tecnologías sustentables y gestión de recursos naturales para el sector agroalimentario.",
             href: "/agropecuaria",
             alt: "Logo de la especializacion/formacion : Agropecuaria"
         },
@@ -40,7 +40,7 @@ export const Especializaciones = () => {
             img: "/logo-programacion.avif",
             title: "Programacion",
             animation: "scroll-items-right",
-            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, quibusdam dolor! Inventore itaque nostrum magnam nam doloremque ex veritatis perspiciatis impedit harum! Architecto doloribus delectus quis, facere nostrum labore provident!",
+            text: "Especialización en desarrollo de software y tecnologías digitales. Enseña programación, bases de datos, desarrollo web y aplicaciones móviles, preparando para la industria tecnológica del futuro.",
             href: "/programacion",
             alt: "Logo de la especializacion/formacion : Programacion"
         }

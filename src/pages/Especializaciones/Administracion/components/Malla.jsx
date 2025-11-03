@@ -3,37 +3,37 @@ export const Malla = () => {
     
     const tercero = [
         {
-            ramo: "Manejo de suelo y residuos"
+            ramo: "Utilizacion de informacion contable"
         },
         {
-            ramo: "Manejo de técnicas de riego"
+            ramo: "Gestion comercial y tributaria"
         },
         {
-            ramo: "Técnicas de reproducción vegetal"
+            ramo: "Procesos administrativos"
         },
         {
-            ramo: "Alimentación y pesaje pecuario",
+            ramo: "Organizacion de oficinas",
         },
         {
-            ramo: "Control de plagas y enfermedades"
+            ramo: "Aplicaciones informaticas para la gestion administrativa"
         }
     ]
 
     const cuarto = [
         {
-            ramo: "Manejo de suelo y residuos"
+            ramo: "Legislacion laboral"
         },
         {
-            ramo: "Manejo de técnicas de riego"
+            ramo: "Calculo de remuneracion, finiquitos y obligaciones laborales"
         },
         {
-            ramo: "Técnicas de reproducción vegetal"
+            ramo: "Desarrollo y bienestar del personal"
         },
         {
-            ramo: "Alimentación y pesaje pecuario",
+            ramo: "Dotacion de personal",
         },
         {
-            ramo: "Control de plagas y enfermedades"
+            ramo: "Emprendimiento y empleabilidad"
         }
     ]
     

@@ -52,6 +52,11 @@ const cuenta = [
                 label: "Docente",
                 href: "https://login.lirmi.com/login",
                 blank: "_blank"
+            },
+            {
+                label: "Administrativo",
+                href: "/login",
+                blank: "_blank"     
             }
         ]
     }
@@ -60,8 +65,15 @@ const cuenta = [
 
 export const Navegador = () => {
 
-
     const [isOpen, setIsOpen] = useState(false);
+    const [expandedMenus, setExpandedMenus] = useState({});
+
+    const toggleMenu = (menuKey) => {
+        setExpandedMenus(prev => ({
+            ...prev,
+            [menuKey]: !prev[menuKey]
+        }));
+    };
 
 
     return (
@@ -74,8 +86,9 @@ export const Navegador = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m1 5a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2z"/>
                     </svg>
+                    
                 </button>
-                <a href="/" className='absolute left-25 top-7 text-white underline-animate'>Inicio</a>
+                <a href="/" className='absolute left-25 top-7 text-white bg-black/60 p-2 rounded-xl font-bold underline-animate'>Inicio</a>
             </div>
             {/* RECORDAR: CON ESTE SE COLOCA EN NEGRO EL FONDO */}
             {isOpen && (
@@ -101,54 +114,72 @@ export const Navegador = () => {
                 </div>
                 <div className='mt-10'>
                     {navs.map((n, i) =>(
-                        <div className=''>
+                        <div key={i} className=''>
                             {n.options ? (
-                                <div key={i} className='border-b border-white/20'>
-                                    <div className='flex items-center justify-between px-6 py-4 text-white cursor-pointer hover:bg-white/10'>
+                                <div className='border-b border-white/20'>
+                                    <div 
+                                        className='flex items-center justify-between px-6 py-4 text-white cursor-pointer hover:bg-white/10'
+                                        onClick={() => toggleMenu(`nav-${i}`)}
+                                    >
                                         <div className='flex items-center gap-2'>
                                             <span>{n.label}</span>
                                         </div>
-                                        <span>+</span>
+                                        <span className={`transition-transform duration-300 ${expandedMenus[`nav-${i}`] ? 'rotate-45' : ''}`}>+</span>
                                     </div>
-                                    <div className='bg-white/10'>
-                                        {n.options.map((o, j) => (
-                                            <a 
-                                                key={j}
-                                                href={o.href} 
-                                                className='block px-12 py-3 text-white hover:bg-white/20'
-                                                onClick={() => setIsOpen(false)}
-                                            >
-                                                {o.label}
-                                            </a>
-                                        ))}
-                                    </div>
+                                    {expandedMenus[`nav-${i}`] && (
+                                        <div className='bg-white/10'>
+                                            {n.options.map((o, j) => (
+                                                <a 
+                                                    key={j}
+                                                    href={o.href} 
+                                                    className='block px-12 py-3 text-white hover:bg-white/20'
+                                                    onClick={() => setIsOpen(false)}
+                                                >
+                                                    {o.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
                                 </div>
                             ) : (
-                                ''
+                                <div className='border-b border-white/20'>
+                                    <a 
+                                        href={n.href}
+                                        className='block px-6 py-4 text-white hover:bg-white/10'
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        {n.label}
+                                    </a>
+                                </div>
                             )}
                         </div>
                     ))}
                     {cuenta.map((c, k) => (
                         <div key={k} className='border-b border-white/20'>
-                            <div className='flex items-center justify-between px-6 py-4 text-white cursor-pointer hover:bg-white/10'>
+                            <div 
+                                className='flex items-center justify-between px-6 py-4 text-white cursor-pointer hover:bg-white/10'
+                                onClick={() => toggleMenu(`cuenta-${k}`)}
+                            >
                                 <div className='flex items-center gap-2'>
                                     <span>{c.label}</span>
                                 </div>
-                                <span>+</span>
+                                <span className={`transition-transform duration-300 ${expandedMenus[`cuenta-${k}`] ? 'rotate-45' : ''}`}>+</span>
                             </div>
-                            <div className='bg-white/10'>
-                                {c.options.map((co, l) => (
-                                    <a 
-                                        key={l}
-                                        href={co.href} 
-                                        target={co.blank}
-                                        className='block px-12 py-3 text-white hover:bg-white/20'
-                                        onClick={() => setIsOpen(false)}
-                                    >
-                                        {co.label}
-                                    </a>
-                                ))}
-                            </div>
+                            {expandedMenus[`cuenta-${k}`] && (
+                                <div className='bg-white/10'>
+                                    {c.options.map((co, l) => (
+                                        <a 
+                                            key={l}
+                                            href={co.href} 
+                                            target={co.blank}
+                                            className='block px-12 py-3 text-white hover:bg-white/20'
+                                            onClick={() => setIsOpen(false)}
+                                        >
+                                            {co.label}
+                                        </a>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

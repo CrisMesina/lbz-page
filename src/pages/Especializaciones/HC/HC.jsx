@@ -15,9 +15,11 @@ export const HC = () => {
                     <div className='w-full'>
                         <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
                         <p className='text-start p-2 lg:p-20 '>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem eaque esse animi. Ipsum nulla provident consequatur unde voluptatum nesciunt perferendis, eius doloremque recusandae perspiciatis! Molestiae odit amet ab fuga.
+                            La formación Científico Humanista en el Liceo Berta Zamorano Lizana está diseñada para estudiantes que buscan una educación integral y equilibrada, preparándolos para enfrentar los desafíos del mundo universitario y profesional. Esta modalidad combina de manera armoniosa las ciencias exactas con las humanidades, desarrollando tanto el pensamiento lógico-matemático como las habilidades comunicativas y de análisis crítico.
+                            <br/><br/>
+                            Nuestros estudiantes de HC exploran áreas como matemáticas, física, química, biología, lenguaje, historia, filosofía e idiomas extranjeros, construyendo una base sólida de conocimientos que les permite acceder a cualquier carrera universitaria. El enfoque pedagógico promueve la investigación, el debate académico y el desarrollo de competencias transversales esenciales para el siglo XXI.
+                            <br/><br/>
+                            Con esta formación, nuestros egresados están preparados para destacar en carreras como medicina, ingeniería, derecho, pedagogía, psicología, entre muchas otras, contando con las herramientas necesarias para ser profesionales íntegros y ciudadanos comprometidos con la sociedad.
                         </p>
                     </div>  
                     <div className='p-4 my-auto'>

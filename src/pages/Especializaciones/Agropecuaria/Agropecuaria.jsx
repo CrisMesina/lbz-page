@@ -15,9 +15,11 @@ export const Agropecuaria = () => {
                     <div className='w-full'>
                         <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
                         <p className='text-start p-2 md:p-20 '>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore reprehenderit sequi deserunt tempore? Cupiditate deleniti blanditiis, maiores explicabo maxime facilis iure adipisci, qui fugiat sit a culpa quibusdam numquam? Dicta?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab exercitationem eaque esse animi. Ipsum nulla provident consequatur unde voluptatum nesciunt perferendis, eius doloremque recusandae perspiciatis! Molestiae odit amet ab fuga.
+                            La especialización Agropecuaria del Liceo Berta Zamorano Lizana prepara a los estudiantes para liderar el futuro del sector agroalimentario con conocimientos técnicos sólidos y una visión sustentable. Esta formación combina la teoría con la práctica, enfocándose en la producción agrícola, ganadera y el manejo responsable de los recursos naturales.
+                            <br/><br/>
+                            Los estudiantes desarrollan competencias en cultivos, crianza de animales, tecnologías agrícolas modernas, gestión de suelos, sistemas de riego, y producción orgánica. Aprenden sobre biotecnología aplicada, seguridad alimentaria y emprendimiento rural, preparándose para enfrentar los desafíos de la agricultura del siglo XXI.
+                            <br/><br/>
+                            Esta especialización abre las puertas a carreras universitarias como Agronomía, Medicina Veterinaria, Ingeniería en Alimentos, Biotecnología, o permite el desarrollo de proyectos productivos propios en el sector agrícola y ganadero, contribuyendo al desarrollo sustentable del país.
                         </p>
                     </div>  
                     <div className='p-4'>

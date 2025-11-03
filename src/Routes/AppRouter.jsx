@@ -10,25 +10,46 @@ import { Programacion } from '../pages/Especializaciones/Programacion/Programaci
 import { Agropecuaria } from '../pages/Especializaciones/Agropecuaria/Agropecuaria'
 import { Administracion } from '../pages/Especializaciones/Administracion/Administracion'
 import { HC } from '../pages/Especializaciones/HC/HC'
+import { Formulario } from '../pages/Formulario'
+import { NoticiaDetail } from '../pages/Noticias/NoticiaDetail'
+import { LoginForm } from '../assets/components/LoginForm'
+import { ProtectedRoute } from './ProtectedRoutes'
+import { AuthProvider } from '../hooks/useAuth'
+
+
 
 export const AppRouter = () => {
     return(
         <>
-            <BrowserRouter>
-                <Routes>
+            <AuthProvider>
+                <BrowserRouter>
+                    <Routes>
 
-                    <Route path='/' element={<Home/>} />
-                    <Route path='/nosotros' element={<Nosotros/>}/>
-                    <Route path='/contactanos' element={<Contacto/>}/>
-                    <Route path='/documentos' element={<Documentos/>}/>
-                    <Route path='/centro-alumnos' element={<CentroAlumnos/>}/>
-                    <Route path='/centro-padres' element={<CentroPadres/>}/>
-                    <Route path='/programacion' element={<Programacion/>}/>
-                    <Route path='/agropecuaria' element={<Agropecuaria/>}/>
-                    <Route path='/administracion' element={<Administracion/>}/>
-                    <Route path='/hc' element={<HC/>}/>
-                </Routes>
-            </BrowserRouter>
+                        <Route path='/' element={<Home/>} />
+                        <Route path='/nosotros' element={<Nosotros/>}/>
+                        <Route path='/contactanos' element={<Contacto/>}/>
+                        <Route path='/documentos' element={<Documentos/>}/>
+                        <Route path='/centro-alumnos' element={<CentroAlumnos/>}/>
+                        <Route path='/centro-padres' element={<CentroPadres/>}/>
+                        <Route path='/programacion' element={<Programacion/>}/>
+                        <Route path='/agropecuaria' element={<Agropecuaria/>}/>
+                        <Route path='/administracion' element={<Administracion/>}/>
+                        <Route path='/hc' element={<HC/>}/>
+
+
+
+                        <Route path='/noticias/:id' element={<NoticiaDetail/>}/>
+                        <Route path='/login' element={<LoginForm/>}/>
+
+                        <Route path='/admin/form' element={
+                            <ProtectedRoute requireAdmin={true}>
+                                <Formulario/>
+                            </ProtectedRoute>
+                        }/>
+
+                    </Routes>
+                </BrowserRouter>
+            </AuthProvider>
         </>
     )
 }
