@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from '../pages/Home/Home'
 import { Documentos } from '../pages/Documentos/Documentos'
@@ -10,11 +10,12 @@ import { Programacion } from '../pages/Especializaciones/Programacion/Programaci
 import { Agropecuaria } from '../pages/Especializaciones/Agropecuaria/Agropecuaria'
 import { Administracion } from '../pages/Especializaciones/Administracion/Administracion'
 import { HC } from '../pages/Especializaciones/HC/HC'
-import { Formulario } from '../pages/Formulario'
+import { Formulario } from '../pages/Admin/components/Formulario'
 import { NoticiaDetail } from '../pages/Noticias/NoticiaDetail'
 import { LoginForm } from '../assets/components/LoginForm'
 import { ProtectedRoute } from './ProtectedRoutes'
 import { AuthProvider } from '../hooks/useAuth'
+import { Dashboard } from '../pages/Admin/Dashboard'
 
 
 
@@ -38,14 +39,19 @@ export const AppRouter = () => {
 
 
 
-                        <Route path='/noticias/:id' element={<NoticiaDetail/>}/>
+                        <Route path='/noticias/:id' element={<NoticiaDetail/>}/>'
                         <Route path='/login' element={<LoginForm/>}/>
 
-                        <Route path='/admin/form' element={
+                        <Route path='/admin/' element={
                             <ProtectedRoute requireAdmin={true}>
-                                <Formulario/>
+                                <Dashboard/>
                             </ProtectedRoute>
                         }/>
+                        
+
+                        <Route path='/admin/form/' element={<ProtectedRoute requireAdmin={true}>
+                            <Formulario/>
+                        </ProtectedRoute>}/>
 
                     </Routes>
                 </BrowserRouter>

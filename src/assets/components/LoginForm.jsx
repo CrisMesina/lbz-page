@@ -52,7 +52,7 @@ export const LoginForm = () => {
                 login(userData, data.token);
 
                 if (tokenPayload.rol === 'admin' || (Array.isArray(tokenPayload.rol) && tokenPayload.rol.includes('admin'))) {
-                    navigate('/admin/form');
+                    navigate('/admin/');
                 } else {
                     navigate('/');
                 }

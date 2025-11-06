@@ -17,7 +17,7 @@ export const ProtectedRoute = ({ children, requireAdmin = false }) => {
     }
 
     if (requireAdmin && !isAdmin()) {
-        return <Navigate to="/admin/form" replace />;
+        return <Navigate to="/admin/" replace />;
     }
 
     return children;

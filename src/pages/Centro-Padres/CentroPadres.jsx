@@ -37,12 +37,6 @@ export const CentroPadres = () => {
                     <Padres/>
                 </div>
                 <div>
-                    <div className='flex justify-center items-center mt-20 mb-10'>
-                        <h1 className='text-4xl font-bold text-center my-10'>Noticias</h1>
-                    </div>
-                    <Noticias/>
-                </div>
-                <div>
                     <Footer/>
                 </div>
             </div>

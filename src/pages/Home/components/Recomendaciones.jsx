@@ -16,7 +16,7 @@ export const Recomendaciones = () => {
         {
             id : 2,
             title: "Buena convivencia",
-            img : "/tea3.avif",
+            img : "/",
             texto : "Creemos que la convivencia es parte de un todo, donde los principales actores de este establecimiento y proceso educativo son nuestros estudiantes. Ellos a partir de un pensamiento critico y reflexivo pueden desarrollar el aprendizaje colaborativo, enfrentar distintas problemáticas y junto con ello crear los espacios en los cuales se genere el desarrollo de habilidades individuales y grupales.",
             nombre : "Juan Perez",
             animation: "scroll-items-down",
@@ -26,7 +26,7 @@ export const Recomendaciones = () => {
         {
             id : 3,
             title: "Oportunidades despues de egresar",
-            img : "/c_progra-min.avif",
+            img : "/c_admin.avif",
             texto : "Después que egresar apoyamos a nuestros alumnos en buscar el lugar de práctica y realizamos con ellos un plan de seguimiento, hay empresas que ofrecen cupos laborales para algunos estudiantes. Recuerda siempre que puedes continuar estudiando y ser un profesional de nivel superior o universitario. También te puedes desempeñar en empresas agrícolas de la zona o comenzar tu propio negocio.",
             nombre : "Juan Perez",
             animation: "scroll-items-down",
@@ -52,7 +52,7 @@ export const Recomendaciones = () => {
             <div className='md:grid md:grid-cols-2 grid-cols-1' id='recomendaciones'>
                 {recomendaciones.map((r, i) =>(
                     <div key={i} className={`flex mx-2 ${isMobile ? '': 'scroll-items-top delay-300'} md:mx-5  md:my-20`}>
-                        <img src={r.img} className='object-cover brightness-75 w-20 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt="" />
+                        <img src={r.img.length < 2? '/default-profile.jpg' : r.img} className='object-cover brightness-75 w-20 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt="" />
                         <div className='flex-col'>
                             <h1 className='text-theme-old-green  mx-2 p-1 font-extrabold text-xl mb-5'>{r.title}</h1>
                             <p className='text-start text-white dark:text-white p-1 mx-2'>{r.texto}</p>

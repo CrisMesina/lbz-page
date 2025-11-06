@@ -1,12 +1,11 @@
-import React from 'react'
 
-export const    Contactos = () => {
+export const  Contactos = () => {
 
     const contactos = [
         {
             id:1,
             name: "Juan Perez",
-            img: "/tea3.avif",
+            img: "/",
             email: "director@director.cl",
             cargo: "director",
             telefono: "+56912345678"            
@@ -14,7 +13,7 @@ export const    Contactos = () => {
         {
             id:2,
             name: "Juan Perez",
-            img: "/tea3.jpg",
+            img: "/",
             style: "lg:w-1/2",
             email: "director@director.cl",
             cargo: "director",
@@ -22,7 +21,7 @@ export const    Contactos = () => {
         {
             id:3,
             name: "Institucion",
-            img: "/tea3.jpg",
+            img: "/",
             email: "director@director.cl",
             cargo: "director",
             telefono: "+56912345678"
@@ -43,7 +42,7 @@ export const    Contactos = () => {
                                 <div className='h-1/2 rounded-t-xl bg-gradient-to-r from-theme-old-green via-theme-mint to-theme-old-green-nav'></div>{/* Fondo Superior */}
                                     <div className='bottom-1/4 bg-white w-80 left-1 absolute'> {/* Informacion Contacto */}
                                         <div className='relative rounded-full'>
-                                            <img src="/tea3.avif" className='rounded-full hover:scale-105 z-1 bg-white p-2 absolute w-25 bottom-13 h-25 left-1/3'  alt="" />
+                                            <img src={`${c.img.length < 2 ? "/default-profile.jpg" : c.img}`} className='rounded-full hover:scale-105 z-1 bg-white p-2 absolute w-25 bottom-13 h-25 left-1/3'  alt="" />
                                         </div>
                                     </div>
                                     <div className='relative h-1/2 bg-white rounded-b-xl'> {/* Fondo Inferior */}

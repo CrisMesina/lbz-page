@@ -324,3 +324,9 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
 /* ---------------------- CLIP PATHS Y HERO CIRCULOS FIN ---------------------- */
 
 
+
+.trash{
+  fill: red;
+}
+
+

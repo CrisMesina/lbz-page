@@ -29,7 +29,7 @@ export const Directiva = () => {
         {
             id: 4,
             nombre: "Juan Perez",
-            img: "/",
+            img: "/default-profile.jpg",
             cargo: "Director",
             alt: `Una imagen de nuestr@ '  ', del Liceo Berta Zamorano Lizana`,
             animataion: "scroll-items-right"
@@ -48,7 +48,7 @@ export const Directiva = () => {
                         directiva.map((d, i ) => (
                             <div key={i} className={`mx-auto rounded-2xl -skew-1 active:shadow-green-700 active:translate-y-1 hover:rotate-1 ${isMobile ? '' : d.animataion} transition-all duration-300 hover:scale-110 shadow-lg bg-gradient-to-b from-theme-blue to-[#249382]`}>
                                 <div>
-                                    <img src={d.img} className="w-70 h-90 p-2 rounded-t-2xl bg-[#249382] mx-auto hover:-rotate-1 hover:scale-110 transition-all duration-150"  alt={d.alt} />
+                                    <img src={d.img} className="w-70 h-90 p-2 object-cover rounded-t-2xl bg-[#249382] mx-auto hover:-rotate-1 hover:scale-110 transition-all duration-150"  alt={d.alt} />
                                 </div>
                                 <div>
                                     <h1 className="my-4">{d.nombre}</h1>

@@ -33,7 +33,7 @@ export const CentroAlumnos = () => {
                         </div>
                     </div>
                 </div>
-                <div className='min-h-screen'>
+                <div className='mt-5' id='alumnos'>
                     <Alumnos/>
                 </div>
                 <div>
