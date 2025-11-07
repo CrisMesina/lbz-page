@@ -11,6 +11,10 @@ export const HC = () => {
                     <Navegador/>
                 </div>
 
+                <div>
+                    
+                </div>
+
                 <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2 text-white'>
                     <div className='w-full'>
                         <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
@@ -24,26 +28,13 @@ export const HC = () => {
                     </div>  
                     <div className='p-4 my-auto'>
                         {/* COLOCAR UNA IMAGEN O UN CARROUSEL DE IMAGENES (PUEDEN SER LAS DE PUERTAS ABIERTAS) */}
-                        <img src="/programacion-min.avif" className='mx-auto object-cover w-140 h-120 bg-theme-blue-bg/70 p-2    rounded-2xl my-5 hidden lg:block' />
+                        <img src="/img-hc.avif" className='mx-auto object-cover w-140 h-120 bg-theme-blue-bg/70 p-2 rounded-2xl my-5 hidden lg:block' />
                     </div>
                 </div>
 
                 <div className='min-h-screen p-5'>
                     <Malla/>
                 </div>   
-
-                <div>
-                    <iframe 
-                        className='w-full h-96 lg:h-screen p-10' 
-                        src="https://www.youtube.com/embed/-RV-KUR9xzk?si=QBdOVb7yMO2YE0Eb&amp;start=1" 
-                        title="Video sobre la formacion Cientifico Humanista" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerPolicy="strict-origin-when-cross-origin" 
-                        allowFullScreen
-                    >
-                    </iframe>
-                </div>             
-                
             </div>
         </>
     )

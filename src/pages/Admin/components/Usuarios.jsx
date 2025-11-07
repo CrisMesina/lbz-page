@@ -48,7 +48,7 @@ export const Usuarios = () => {
             if(!response.ok){
                 let errorMessage = `Error ${response.status}: ${response.statusText}`;
                 
-                // Clonar la respuesta para poder leerla múltiples veces si es necesario
+               
                 const responseClone = response.clone();
                 
                 try {
@@ -67,7 +67,7 @@ export const Usuarios = () => {
                 throw new Error(errorMessage);
             }
             
-            // Recargar la lista de usuarios después de eliminar
+            
             cargarUsuarios();
             
             return { success: true}

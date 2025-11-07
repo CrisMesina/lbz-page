@@ -31,19 +31,6 @@ export const Programacion = () => {
                 <div className='min-h-screen p-5'>
                     <Malla/>
                 </div>   
-
-                <div>
-                    <iframe 
-                        className='w-full h-96 lg:h-screen p-10' 
-                        src="https://www.youtube.com/embed/-RV-KUR9xzk?si=QBdOVb7yMO2YE0Eb&amp;start=1" 
-                        title="Video sobre especiazacion de programacion" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerPolicy="strict-origin-when-cross-origin" 
-                        allowFullScreen
-                    >
-                    </iframe>
-                </div>             
-                
             </div>
         </>
     )
