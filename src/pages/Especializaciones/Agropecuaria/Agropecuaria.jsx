@@ -1,34 +1,45 @@
 
 import { Malla } from './components/Malla'
 import { Navegador } from '../../../assets/components/Navegador'
+import { Hero } from './components/Hero'
+import { Introduccion } from './components/Introduccion'
 
 export const Agropecuaria = () => {
     return (
         <>
-            <div className='min-h-screen'>
+            <div className='min-h-screen bg-gradient-to-b from-theme-blue-bg via-theme-blue to-theme-blue-bg'>
                 <div className='sticky top-0 z-10'>
                     {/*<Nav/>*/}
                     <Navegador/>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2 text-white'>
-                    <div className='w-full'>
-                        <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
-                        <p className='text-start p-2 md:p-20 '>
-                            La especialización Agropecuaria del Liceo Berta Zamorano Lizana prepara a los estudiantes para liderar el futuro del sector agroalimentario con conocimientos técnicos sólidos y una visión sustentable. Esta formación combina la teoría con la práctica, enfocándose en la producción agrícola, ganadera y el manejo responsable de los recursos naturales.
-                            <br/><br/>
-                            Los estudiantes desarrollan competencias en cultivos, crianza de animales, tecnologías agrícolas modernas, gestión de suelos, sistemas de riego, y producción orgánica. Aprenden sobre biotecnología aplicada, seguridad alimentaria y emprendimiento rural, preparándose para enfrentar los desafíos de la agricultura del siglo XXI.
-                            <br/><br/>
-                            Esta especialización abre las puertas a carreras universitarias como Agronomía, Medicina Veterinaria, Ingeniería en Alimentos, Biotecnología, o permite el desarrollo de proyectos productivos propios en el sector agrícola y ganadero, contribuyendo al desarrollo sustentable del país.
-                        </p>
-                    </div>  
-                    <div className='p-4'>
-                        {/* COLOCAR UNA IMAGEN O UN CARROUSEL DE IMAGENES (PUEDEN SER LAS DE PUERTAS ABIERTAS) */}
-                        <img src="/agro.avif" className='mx-auto rounded-2xl my-30 hidden lg:block ' />
+                <div className='relative h-screen flex items-center justify-center overflow-hidden'>
+                    <div className='absolute w-96 h-96 bg-[#249382] rounded-full brightness-70 blur-3xl -top-20 -left-20 opacity-30 animate-pulse'></div>
+                    <div className='absolute w-80 h-80 bg-theme-old-green-medium rounded-full brightness-70 blur-3xl bottom-10 right-10 opacity-20'></div>
+                    
+                    <div className='absolute inset-0 z-0'>
+                        <img 
+                            src="/agro2.JPG" 
+                            className='w-full h-full object-cover opacity-20' 
+                            alt="Agropecuaria"
+                        />
+                        <div className='absolute inset-0 bg-gradient-to-b from-theme-blue-bg/80 via-transparent to-theme-blue-bg'></div>
+                    </div>
+
+                    <div className='relative z-10 text-center px-4 max-w-5xl mx-auto'>
+                        <Hero/>
                     </div>
                 </div>
 
-                <div className='min-h-screen p-5'>
+                <div id='introduccion' className='min-h-screen flex items-center py-20'>
+                    <Introduccion/>
+                </div>
+
+                <div id='malla' className='min-h-screen p-5 py-20'>
+                    <div className='text-center mb-16'>
+                        <h2 className='text-5xl font-bold text-white mb-4'>Malla Curricular</h2>
+                        <div className='h-1 w-32 bg-gradient-to-r from-[#249382] to-theme-old-green-light rounded-full mx-auto'></div>
+                    </div>
                     <Malla/>
                 </div>     
             </div>

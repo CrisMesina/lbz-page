@@ -3,7 +3,7 @@ export const Malla = () => {
     
     const tercero = [
         {
-            ramo: "Programación y  Base de datos"
+            ramo: "Programación y Base de datos"
         },
         {
             ramo: "Instalación y configuración de equipos informáticos"
@@ -12,7 +12,7 @@ export const Malla = () => {
             ramo: "Soporte a usuarios y productividad"
         },
         {
-            ramo: "Sistemas operativos",
+            ramo: "Sistemas operativos"
         }
     ]
 
@@ -21,7 +21,7 @@ export const Malla = () => {
             ramo: "Emprendimiento y empleabilidad programación"
         },
         {
-            ramo: "Diseño de bases de datos relaciones"
+            ramo: "Diseño de bases de datos relacionales"
         },
         {
             ramo: "Programación Orientada a Objetos"
@@ -36,25 +36,78 @@ export const Malla = () => {
     
     return (
         <>
-            <div>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2">
-                    <div>
-                        <h1 className="text-center text-white text-5xl font-bold">Tercer Año</h1>
-                        {tercero.map((item, index) => (
-                            <div key={index} className="bg-gray-200 w-96 mx-auto border-l-green-700 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300  ">
-                                <p className="text-lg p-1 font-bold ">
-                                    {item.ramo}
-                                </p>
+            <div className="container mx-auto">
+
+                <div className="relative">
+
+                    <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#249382] via-theme-old-green-light to-[#249382] opacity-30"></div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 p-4">
+                        {/* Tercer Año */}
+                        <div className="relative">
+                            <div className="z-5 bg-gradient-to-r from-[#249382] to-theme-old-green-light p-6 rounded-2xl shadow-2xl mb-8">
+                                <div className="flex items-center justify-center gap-3">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-[#249382]">3°</span>
+                                    </div>
+                                    <h2 className="text-3xl md:text-4xl font-bold text-white">Tercer Año</h2>
+                                </div>
                             </div>
-                        ))}
-                    </div>
-                    <div>
-                        <h1 className="text-center text-white text-5xl font-bold">Cuarto Año</h1>
-                        {cuarto.map((item, index) => (
-                            <div key={index} className="bg-gray-200 w-96 mx-auto border-l-green-700 hover:text-white fill-hover hover:font-bold border-l-8 skew-1 hover:rotate-1 text-black m-4 p-4 rounded-2xl shadow-lg hover:scale-105 hover:shadow-lg hover:shadow-blue-900 transition-all duration-300">
-                                <p className="text-lg p-1 font-bold">{item.ramo}</p>
+                            <div className="space-y-4">
+                                {tercero.map((item, index) => (
+                                    <div 
+                                        key={index} 
+                                        className="group relative bg-gradient-to-br from-theme-blue-bg/80 to-theme-blue/50 backdrop-blur-sm border-2 border-[#249382]/30 hover:border-[#249382] p-5 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-[#249382]/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                                    >
+
+                                        <div className="absolute inset-0 bg-gradient-to-r from-[#249382]/0 via-[#249382]/10 to-[#249382]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        
+                                        <div className="relative flex items-center gap-4">
+                                            <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-[#249382] to-theme-old-green-light rounded-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                            </div>
+                                            <div className="flex-1">
+                                                <p className="text-white font-semibold text-lg leading-tight">
+                                                    {item.ramo}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
+
+                        {/* Cuarto Año */}
+                        <div className="relative">
+                            <div className="z-5 bg-gradient-to-r from-theme-old-green-light to-[#249382] p-6 rounded-2xl shadow-2xl mb-8">
+                                <div className="flex items-center justify-center gap-3">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                        <span className="text-2xl font-bold text-[#249382]">4°</span>
+                                    </div>
+                                    <h2 className="text-3xl md:text-4xl font-bold text-white">Cuarto Año</h2>
+                                </div>
+                            </div>
+                            <div className="space-y-4">
+                                {cuarto.map((item, index) => (
+                                    <div 
+                                        key={index} 
+                                        className="group relative bg-gradient-to-br from-theme-blue-bg/80 to-theme-blue/50 backdrop-blur-sm border-2 border-theme-old-green-light/30 hover:border-theme-old-green-light p-5 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-theme-old-green-light/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                                    >
+
+                                        <div className="absolute inset-0 bg-gradient-to-r from-theme-old-green-light/0 via-theme-old-green-light/10 to-theme-old-green-light/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                                        
+                                        <div className="relative flex items-center gap-4">
+                                            <div className="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-theme-old-green-light to-[#249382] rounded-lg shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                            </div>
+                                            <div className="flex-1">
+                                                <p className="text-white font-semibold text-lg leading-tight">
+                                                    {item.ramo}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

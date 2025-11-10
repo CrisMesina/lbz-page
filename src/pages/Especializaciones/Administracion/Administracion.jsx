@@ -1,34 +1,50 @@
 
 import { Malla } from './components/Malla'
 import { Navegador } from '../../../assets/components/Navegador'
+import { Introduccion } from './components/Introduccion'
+import { Hero } from './components/Hero'
 
 export const Administracion = () => {
     return (
         <>
-            <div className='min-h-screen'>
+            <div className='min-h-screen bg-gradient-to-b from-theme-blue-bg via-theme-blue to-theme-blue-bg'>
                 <div className='sticky top-0 z-10'>
                     {/*<Nav/>*/}
                     <Navegador/>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2 text-white'>
-                    <div className='w-full'>
-                        <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark my-10'>Introduccion</h1>
-                        <p className='text-start p-4 md:p-20'>
-                            La especialización en Administración del Liceo Berta Zamorano Lizana forma futuros líderes empresariales con una sólida base en gestión, finanzas y emprendimiento. Esta modalidad está diseñada para estudiantes con visión de negocios que desean comprender el funcionamiento del mundo empresarial desde una perspectiva práctica y actualizada.
-                            <br/><br/>
-                            Durante su formación, los estudiantes desarrollan competencias en contabilidad, marketing, recursos humanos, gestión de proyectos y análisis financiero. Aprenden a tomar decisiones estratégicas, liderar equipos de trabajo y identificar oportunidades de negocio en un mercado cada vez más competitivo y globalizado.
-                            <br/><br/>
-                            Nuestros egresados están preparados para continuar estudios superiores en carreras como Administración de Empresas, Contabilidad, Ingeniería Comercial, Marketing, o para emprender sus propios proyectos empresariales con las herramientas y conocimientos necesarios para el éxito.
-                        </p>
-                    </div>  
-                    <div className='p-4'>
-                        {/* COLOCAR UNA IMAGEN O UN CARROUSEL DE IMAGENES (PUEDEN SER LAS DE PUERTAS ABIERTAS) */}
-                        <img src="/programacion.avif" className='mx-auto rounded-2xl my-5 hidden lg:block ' />
+
+                <div className='relative h-screen flex items-center justify-center overflow-hidden'>
+
+                    <div className='absolute w-96 h-96 bg-[#249382] rounded-full brightness-70 blur-3xl -top-20 -left-20 opacity-30 animate-pulse'></div>
+                    <div className='absolute w-80 h-80 bg-theme-old-green-medium rounded-full brightness-70 blur-3xl bottom-10 right-10 opacity-20'></div>
+                    
+
+                    <div className='absolute inset-0 z-0'>
+                        <img 
+                            src="/c_admin.avif" 
+                            className='w-full h-full object-cover opacity-20' 
+                            alt="Administración"
+                        />
+                        <div className='absolute inset-0 bg-gradient-to-b from-theme-blue-bg/80 via-transparent to-theme-blue-bg'></div>
                     </div>
+
+                    <div className='relative z-10 text-center px-4 max-w-5xl mx-auto'>
+                        <Hero/>
+                    </div>
+
                 </div>
 
-                <div className='min-h-screen p-5'>
+                
+                <div id='introduccion' className='min-h-screen flex items-center py-20'>
+                    <Introduccion/>
+                </div>
+
+                <div id='malla' className='min-h-screen p-5 py-20'>
+                    <div className='text-center mb-16'>
+                        <h2 className='text-5xl font-bold text-white mb-4'>Malla Curricular</h2>
+                        <div className='h-1 w-32 bg-gradient-to-r from-[#249382] to-theme-old-green-light rounded-full mx-auto'></div>
+                    </div>
                     <Malla/>
                 </div>   
             </div>

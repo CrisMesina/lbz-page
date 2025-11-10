@@ -1,34 +1,49 @@
 
 import { Malla } from './components/Malla'
 import { Navegador } from '../../../assets/components/Navegador'
+import { Hero } from './components/Hero'
+import { Introduccion } from './components/Introduccion'
+
 export const Programacion = () => {
     return (
         <>
-            <div className='min-h-screen'>
+            <div className='min-h-screen bg-gradient-to-b from-theme-blue-bg via-theme-blue to-theme-blue-bg'>
                 <div className='sticky top-0 z-10'>
                     {/*<Nav/>*/}
                     <Navegador/>
-
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 p-2 text-white'>
-                    <div className='w-full'>
-                        <h1 className='text-3xl font-bold text-center mx-auto text-theme-old-green-dark mt-20'>Introduccion</h1>
-                        <p className='text-start p-4 md:p-20 '>
-                            La especialización en Programación del Liceo Berta Zamorano Lizana forma a los desarrolladores del futuro, brindando una educación técnica de vanguardia en el mundo de la tecnología y la informática. Esta modalidad está diseñada para estudiantes apasionados por la innovación digital y el desarrollo de soluciones tecnológicas.
-                            <br/><br/>
-                            Durante su formación, los estudiantes aprenden múltiples lenguajes de programación, desarrollo web, bases de datos y metodologías ágiles de desarrollo. Desarrollan competencias en soporte de usuario, fundamentos de redes y resolución de problemas técnicos, manteniéndose al día con las últimas tendencias tecnológicas.
-                            <br/><br/>
-                            Nuestros egresados están preparados para continuar estudios en carreras como Ingeniería en Informática, Desarrollo de Software, o para emprender proyectos tecnológicos propios. La industria digital ofrece infinitas oportunidades para quienes dominan estas competencias del siglo XXI.
-                        </p>
-                    </div>  
-                    <div className='p-4'>
-                        {/* COLOCAR UNA IMAGEN O UN CARROUSEL DE IMAGENES (PUEDEN SER LAS DE PUERTAS ABIERTAS) */}
-                        <img src="/programacion-min.avif" className='mx-auto rounded-2xl hidden lg:block my-5' alt='Imagen representativa de nuestra especializacion en Programaicon, la foto fue tomada en un dia de puertas abiertas.'/>
+                <div className='relative h-screen flex items-center justify-center overflow-hidden'>
+
+                    <div className='absolute w-96 h-96 bg-[#249382] rounded-full brightness-70 blur-3xl -top-20 -left-20 opacity-30 animate-pulse'></div>
+                    <div className='absolute w-80 h-80 bg-theme-old-green-medium rounded-full brightness-70 blur-3xl bottom-10 right-10 opacity-20'></div>
+                
+                    <div className='absolute inset-0 z-0'>
+                        <img 
+                            src="/programacion-min.avif" 
+                            className='w-full h-full object-cover opacity-20' 
+                            alt="Programación"
+                        />
+                        <div className='absolute inset-0 bg-gradient-to-b from-theme-blue-bg/80 via-transparent to-theme-blue-bg'></div>
                     </div>
+
+                    <div className='relative z-10 text-center px-4 max-w-5xl mx-auto'>
+                       <Hero/>
+                    </div>
+
                 </div>
 
-                <div className='min-h-screen p-5'>
+
+                <div id='introduccion' className='min-h-screen flex items-center py-20'>
+                    <Introduccion/>
+                </div>
+
+                {/* Sección Malla Curricular */}
+                <div id='malla' className='min-h-screen p-5 py-20'>
+                    <div className='text-center mb-16'>
+                        <h2 className='text-5xl font-bold text-white mb-4'>Malla Curricular</h2>
+                        <div className='h-1 w-32 bg-gradient-to-r from-[#249382] to-theme-old-green-light rounded-full mx-auto'></div>
+                    </div>
                     <Malla/>
                 </div>   
             </div>

@@ -16,14 +16,6 @@ export const Footer = () => {
             href: "/nosotros",
         },
         {
-            label: "Comunicados",
-            href: "/comunicados"
-        },
-        {
-            label: "Profesores",
-            href: "/profesores"
-        },
-        {
             label: "Documentos",
             href: "/documentos  "
         }

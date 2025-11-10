@@ -282,6 +282,7 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
   clip-path: polygon(100% 25%, 100% 82%, 0 82%, 0 25%);
 }
 
+/*
 .hero{
 
   position: relative;
@@ -300,7 +301,9 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
   box-shadow: 0 0 0 4px rgba(7,24,40,0.05) inset;
 }
 
-/* Circulo de la izquierda */
+
+/* Circulo de la izquierda 
+
 .hero::before{
   width: 70vmin;
   height: 70vmin;
@@ -309,7 +312,8 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
   animation: elementLeft 1s linear forwards;
 }
 
-/* Circulo de la derecha */
+/* Circulo de la derecha 
+
 .hero::after{
   width: 62vmin;
   height: 62vmin;
@@ -320,6 +324,7 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
 
 .hero > .relative { z-index: 10; }
 
+*/
 
 /* ---------------------- CLIP PATHS Y HERO CIRCULOS FIN ---------------------- */
 

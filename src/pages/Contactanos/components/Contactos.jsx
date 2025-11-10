@@ -7,8 +7,7 @@ export const  Contactos = () => {
             name: "Juan Perez",
             img: "/",
             email: "director@director.cl",
-            cargo: "director",
-            telefono: "+56912345678"            
+            cargo: "director",          
         },
         {
             id:2,
@@ -38,8 +37,8 @@ export const  Contactos = () => {
                 <div className='w-full mt-10'>
                     <div className='grid grid-cols-1 md:grid-cols-3 bg-gradient-to-r from-blue-950 to-theme-blue-bg rounded-lg shadow-md shadow-blue-700'>
                         {contactos.map((c, i)=>(
-                            <div className='relative mx-auto w-80 rounded-xl my-20 h-96 shadow-lg shadow-amber-50/70'>{/* Contenedor Principal */}
-                                <div className='h-1/2 rounded-t-xl bg-gradient-to-r from-theme-old-green via-theme-mint to-theme-old-green-nav'></div>{/* Fondo Superior */}
+                            <div className='relative mx-auto w-80 rounded-xl my-20 h-96 shadow-lg shadow-theme-old-green-light'>{/* Contenedor Principal */}
+                                <div className='h-1/2 rounded-t-xl bg-gradient-to-t from-green-950 via-green-700 to-theme-old-green-nav'></div>{/* Fondo Superior */}
                                     <div className='bottom-1/4 bg-white w-80 left-1 absolute'> {/* Informacion Contacto */}
                                         <div className='relative rounded-full'>
                                             <img src={`${c.img.length < 2 ? "/default-profile.jpg" : c.img}`} className='rounded-full hover:scale-105 z-1 bg-white p-2 absolute w-25 bottom-13 h-25 left-1/3'  alt="" />
