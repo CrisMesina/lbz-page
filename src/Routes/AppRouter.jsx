@@ -30,7 +30,6 @@ export const AppRouter = () => {
                     <Route path='/administracion' element={<Administracion/>}/>
                     <Route path='/hc' element={<HC/>}/>
 
-
                 </Routes>
             </BrowserRouter>
 

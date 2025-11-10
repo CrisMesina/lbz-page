@@ -4,17 +4,17 @@ export const  Contactos = () => {
     const contactos = [
         {
             id:1,
-            name: "Juan Perez",
-            img: "/utp.avif",
-            email: "director@director.cl",
+            name: "Secretaria",
+            img: "/",
+            telefono: "+56 7 2245 1739",
             cargo: "director",          
         },
         {
             id:2,
-            name: "Juan Perez",
-            img: "/director.avif",
+            name: "Inspectoria",
+            img: "/",
             style: "lg:w-1/2",
-            email: "director@director.cl",
+            telefono: "+56 7 2245 2430",
             cargo: "director",
         },
         {
