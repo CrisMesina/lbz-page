@@ -51,7 +51,7 @@ export const Especializaciones = () => {
             <div className='flex h-20'>
                 <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl dark:text-white text-white'>¿No sabes que estudiar?</h1>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20' >
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20' id='especializaciones' >
                 {
                     especializaciones.map((e, i) =>(
                         <>

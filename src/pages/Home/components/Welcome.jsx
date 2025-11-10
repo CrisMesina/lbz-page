@@ -22,22 +22,26 @@ export const Welcome = () => {
                     <img src="/portadaIndex2.avif" className={`absolute ${isMobile ? 'clip-horizontal h-screen object-cover' : 'clip w-full'} animation-popup `} alt="" />
                     <div className='absolute inset-0 bg-gradient-to-b from-theme-blue-bg/80 via-transparent to-theme-blue-bg'></div>
                     <div className="relative z-10 max-w-4xl mx-auto text-center md:text-left">
-                        <h1 className={`text-5xl leading-tight font-bold mb-4 ${!isMobile ? 'animate-translateY' : ''}`}>
-                            ¡Forja Tu Futuro Aquí!
+                        <h1 className='text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl'>
+                            Berta Zamorano Lizana
                         </h1>
-                        <h5 className={`${!isMobile ? 'animate-translateY' : ''} text-white text-3xl text-center my-10 font-theme-chela font-bold `}>
-                            En el Liceo Berta Zamorano Lizana te ofrecemos
-                            <span className="text-theme-old-green-dark brightness-150"> 4 caminos hacia el éxito</span>
-                        </h5>
-                        <p className={`${!isMobile ? 'animate-translateY' : ''} text-center text-2xl font-bold`}>
-                            ¿Cuál será tu especialización?
+                        <p className='text-xl md:text-2xl text-theme-celeste-claro mb-8 font-light max-w-3xl mx-auto'>
+                            ¡Bienvenidos al Liceo Berta Zamorano Lizana! Donde la excelencia académica y el desarrollo integral de nuestros estudiantes son nuestra prioridad.
                         </p>
+                        <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
+                            <a href='#recomendaciones'>
+                                <button className='bg-gradient-to-r from-[#249382] to-theme-old-green-light hover:from-theme-old-green-light hover:to-[#249382] text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-[#249382]/50 transition-all duration-300 hover:scale-105'>
+                                    Conoce más
+                                </button>
+                            </a>
+                            <a href='#especializaciones'>
+                                <button className='border-2 border-[#249382] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#249382]/20 transition-all duration-300 hover:scale-105'>
+                                    Ver Especializaciones
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </header>
-
-                <a href="#recomendaciones" name="Descubre más sobre nosotros" className='cursor-pointer'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className='animate-bounce absolute bottom-0 z-10 left-175' width="80" height="80" viewBox="0 0 24 24" fill="#000000"><g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="white" d="M10.5 16.035L7.404 12.94a1.5 1.5 0 1 0-2.122 2.121l5.657 5.657a1.5 1.5 0 0 0 2.122 0l5.657-5.656a1.5 1.5 0 1 0-2.122-2.122L13.5 16.035V4.5a1.5 1.5 0 0 0-3 0v11.535Z"/></g></svg>
-                </a>
 
             </div>
         </>
