@@ -8,7 +8,7 @@ export const Recomendaciones = () => {
             title: "Excelentes Profesores",
             img : "/director.avif",
             texto : "Contamos con los mejores profesores a nivel regional, Nuestros profesores se caracterizan por tener un perfil proactivo y ético. Estan llenos de entusiamo por enseñar y hacer que nuestros alumnos lleguen a la cima del exito.",
-            nombre : "Juan Perez",
+            nombre : "Marcos Allende    ",
             animation: "scroll-items-down",
             cargo : "Director",
             alt: "Imagen de la persona que entrega la recomendacion de nuestra institucion"
@@ -28,9 +28,9 @@ export const Recomendaciones = () => {
             title: "Oportunidades despues de egresar",
             img : "/c_admin.avif",
             texto : "Después que egresar apoyamos a nuestros alumnos en buscar el lugar de práctica y realizamos con ellos un plan de seguimiento, hay empresas que ofrecen cupos laborales para algunos estudiantes. Recuerda siempre que puedes continuar estudiando y ser un profesional de nivel superior o universitario. También te puedes desempeñar en empresas agrícolas de la zona o comenzar tu propio negocio.",
-            nombre : "Juan Perez",
+            nombre : "Cesar ...",
             animation: "scroll-items-down",
-            cargo : "Director",
+            cargo : "Coordinador de Administracion",
             alt: "Imagen de la persona que entrega la recomendacion de nuestra institucion" 
         },
         {
