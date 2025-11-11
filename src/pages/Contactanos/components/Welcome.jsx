@@ -22,7 +22,7 @@ export const Welcome = () => {
                     <img src="/hero1-min.avif" className={`absolute ${isMobile ? 'clip-horizontal h-screen object-cover' : 'clip w-full'} animation-popup `} alt="" />
                     <div className="relative z-10 max-w-4xl mx-auto text-center md:text-left">
                         <h1 className={`text-5xl leading-tight font-bold mb-4 ${!isMobile ? 'animate-translateY' : ''}`}>
-                            Interesado en trabajar con nosotros?
+                            ¿Estás interesado en trabajar con nosotros?
                         </h1>
                         <p className={`${!isMobile ? 'animate-translateY' : ''} text-[clamp(.95rem,1.2vw,1.15rem)] opacity-90`}>
                             Contacta con nuestro equipo para explorar oportunidades de colaboración y crecimiento conjunto.

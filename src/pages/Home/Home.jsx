@@ -33,7 +33,7 @@ export const Home = () => {
                     <ListadoMuestra/>
                     <div className='text-center my-10 '>
                         <button className='text-white p-5 rounded-lg bg-gradient-to-r from-blue-950 to-blue-900/30 hover:translate-y-2 shadow-md shadow-amber-50'>
-                            <a href='/documentos'>Ver mas</a>
+                            <a href='/documentos'>Ver más</a>
                         </button>
                     </div>
                 </div>

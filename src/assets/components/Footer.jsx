@@ -8,7 +8,7 @@ export const Footer = () => {
             href: "/nosotros"
         },
         {
-            label :"Contactanos",
+            label :"Contáctanos",
             href: "/contactanos"
         },
         {
@@ -36,7 +36,7 @@ export const Footer = () => {
                     </div>
                     <div className='flex h-full'>
                         <div className='flex p-3 flex-col text-center mx-auto'>
-                            <h1 className='mt-4 font-bold text-lg'>Contactanos</h1>
+                            <h1 className='mt-4 font-bold text-lg'>Contáctanos</h1>
                             <div className='p-4 text-start'>
                                 <p className='mt-8 italic'>Republica de Chile N°233 Coltauco-Chile</p>
                                 <p className='mt-8 italic'>Secretaria: +56722451739</p>

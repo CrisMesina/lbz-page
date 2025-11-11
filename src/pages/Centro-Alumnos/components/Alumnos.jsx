@@ -9,7 +9,7 @@ export const Alumnos = () => {
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
-            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
+            alt: "Imagen de nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 2,
@@ -17,7 +17,7 @@ export const Alumnos = () => {
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
-            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
+            alt: "Imagen de nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 3,
@@ -25,7 +25,7 @@ export const Alumnos = () => {
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
-            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
+            alt: "Imagen de nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 4,
@@ -33,13 +33,13 @@ export const Alumnos = () => {
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
-            alt: "Imagen ude nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
+            alt: "Imagen de nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
     ]
 
     return (
         <>
-            <h1 className='text-center font-bold text-4xl text-white' id="alumnos">¿Quienes forman parte del centro de Alumnos</h1>
+            <h1 className='text-center font-bold text-4xl text-white' id="alumnos">¿Quiénes forman parte del centro de Alumnos?</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 text-white'>
                     {listado.map((a, i) =>(
                         <div key={i} className='w-60 skew-1 text-white  shadow-lg active:shadow-green-600 bg-gradient-to-b from-theme-blue hover:scale-105 to-[#249382] mx-auto my-5 rounded-t-2xl rounded-b-2xl text-center'>

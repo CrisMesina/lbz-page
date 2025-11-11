@@ -11,20 +11,20 @@ export const Especializaciones = () => {
         {
             id: 1,
             img: "/logo-hc.avif",
-            title: "Cientifico Humanista",
+            title: "Científico Humanista",
             animation: "scroll-items-left",
             text: "Formación integral que combina conocimientos científicos y humanísticos. Desarrolla pensamiento crítico, habilidades de investigación y competencias comunicativas para continuar estudios universitarios en diversas áreas del conocimiento.",
             href: "/hc",
-            alt: "Logo de la especializacion/formacion : Cientifico Humanista(HC)"
+            alt: "Logo de la especialización/formación : Científico Humanista(HC)"
         },
         {
             id: 2,
             img: "/logo-administracion.avif",
-            title: "Administracion",
+            title: "Administración",
             animation: "scroll-items-left",
             text: "Especialización enfocada en gestión empresarial, contabilidad y recursos humanos. Prepara para liderar organizaciones, manejar finanzas y desarrollar habilidades emprendedoras en el mundo de los negocios.",
             href: "/administracion",
-            alt: "Logo de la especializacion/formacion : Administracion "               
+            alt: "Logo de la especialización/formación : Administración"               
         },
         {
             id: 3,
@@ -33,23 +33,23 @@ export const Especializaciones = () => {
             animation: "scroll-items-right",
             text: "Formación técnica en producción agrícola y ganadera. Desarrolla competencias en manejo de cultivos, crianza de animales, tecnologías sustentables y gestión de recursos naturales para el sector agroalimentario.",
             href: "/agropecuaria",
-            alt: "Logo de la especializacion/formacion : Agropecuaria"
+            alt: "Logo de la especialización/formación : Agropecuaria"
         },
         {
             id: 4,
             img: "/logo-programacion.avif",
-            title: "Programacion",
+            title: "Programación",
             animation: "scroll-items-right",
             text: "Especialización en desarrollo de software y tecnologías digitales. Enseña programación, bases de datos, desarrollo web y aplicaciones móviles, preparando para la industria tecnológica del futuro.",
             href: "/programacion",
-            alt: "Logo de la especializacion/formacion : Programacion"
+            alt: "Logo de la especialización/formación : Programación"
         }
     ]
 
     return(
         <>
             <div className='flex h-20'>
-                <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl dark:text-white text-white'>¿No sabes que estudiar?</h1>
+                <h1 className='mx-auto my-auto font-bold md:text-4xl text-2xl dark:text-white text-white'>¿No sabes qué estudiar?</h1>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-20' id='especializaciones' >
                 {
@@ -70,7 +70,7 @@ export const Especializaciones = () => {
                                     <p>{e.text}</p>
                                     <a href={e.href}>
                                         <button className='shadow-md active:translate-y-2 shadow-green-600 hover:shadow-[#249382] hover:scale-105  cursor-pointer p-4 mt-5 rounded-xl w-32'>
-                                            Ver mas
+                                            Ver más
                                         </button>
                                     </a>
                                 </div>

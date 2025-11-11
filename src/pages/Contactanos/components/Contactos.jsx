@@ -6,23 +6,20 @@ export const  Contactos = () => {
             id:1,
             name: "Secretaria",
             img: "/",
-            telefono: "+56 7 2245 1739",
-            cargo: "director",          
+            telefono: "+56 7 2245 1739",          
         },
         {
             id:2,
-            name: "Inspectoria",
+            name: "Inspectoría",
             img: "/",
             style: "lg:w-1/2",
             telefono: "+56 7 2245 2430",
-            cargo: "director",
         },
         {
             id:3,
-            name: "Institucion",
+            name: "Institución",
             img: "/Logo.png",
             email: "director@director.cl",
-            cargo: "director",
             telefono: "+56912345678"
         },
   
@@ -47,11 +44,11 @@ export const  Contactos = () => {
                                     <div className='relative h-1/2 bg-white rounded-b-xl'> {/* Fondo Inferior */}
                                         <div className='flex flex-col'>
                                             <h1 className='text-center mt-13 font-theme-zalando'>{c.name}</h1>
-                                            <h2 className='text-center mt-2 font-theme-caveat'>{c.cargo}</h2>
-                                            <div className={`grid  ${c.telefono ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                                            <div className={`grid  ${c.telefono ? 'grid-cols-2' : 'grid-cols-1'} my-4`}>
                                                 <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
-                                                    <button 
-                                                        className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Enviar correo a ${c.name}`} >
+                                                    <button
+                                                        className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Enviar correo a ${c.name}`} 
+                                                    >
                                                         <img src="/email-icon.svg" className='w-6 h-6 inline mx-2' alt="" />
                                                         Correo
                                                     </button>
@@ -73,7 +70,7 @@ export const  Contactos = () => {
                         ))}
                     </div>
                 </div>
-            <div className='w-full p-2 bg-gradient-to-r from-blue-950 to-theme-blue-bg h-14 rounded-lg mt-10 shadow-md shadow-blue-700'></div>
+                <div className='w-full p-2 bg-gradient-to-r from-blue-950 to-theme-blue-bg h-14 rounded-lg mt-10 shadow-md shadow-blue-700'></div>
 
             </div>
         </>

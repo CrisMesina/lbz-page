@@ -18,7 +18,7 @@ export const MisionyVision = () => {
                 <div className={`text-center mx-auto w-full h-110 bg-black text-white p-2 ${isMobile ? '' : 'scroll-items-right'}`}>
                     <h1 className='text-5xl mt-4 lg:mt-20'>Visión</h1>
                     <p className='mt-1 mb-2 p-8 text-start'>
-                        La VISIÓN de nuestro Liceo Berta zamorano Lizana entrega a los estudiantes una formación continua, innovadora, emprendedora y en permanente 
+                        La VISIÓN de nuestro Liceo Berta Zamorano Lizana entrega a los estudiantes una formación continua, innovadora, emprendedora y en permanente 
                         actualización en pos de su bienestar personal y de su comunidad, desarrollando 
                         estudiantes y adultos integrales, con valores sólidos, habilidades y competencias necesarias, para incorporarse eficientemente en la
                         educación superior, en el mundo laboral y sector productivo.
