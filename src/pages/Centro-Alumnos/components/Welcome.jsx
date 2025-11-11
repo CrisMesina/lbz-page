@@ -14,7 +14,7 @@ export const Welcome = () => {
                 >
                     <a href="/contactanos" name="Contactanos" className='absolute top-5 right-5 p-3 bg-gradient-to-r from-green-900 to-green-600 text-white font-bold 
                         rounded-lg z-10 hover:bg-gradient-to-r hover:from-green-700 hover:to-green-800 transition-colors animation-show-right duration-300'>
-                        Contactanos
+                        ¡Contáctanos Ya!
                     </a>
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl top-0 left-100 -z-1'></div>
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl bottom-0 left-200'></div>
