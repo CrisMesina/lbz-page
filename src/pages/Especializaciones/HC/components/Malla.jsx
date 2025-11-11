@@ -46,18 +46,20 @@ export const Malla = () => {
 
         }
     ]
+
+
+    const isMobile = window.innerWidth < 768;
     
     return (
         <>
             <div className="container mx-auto">
-
                 <div className="relative">
                     <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#249382] via-theme-old-green-light to-[#249382] opacity-30"></div>
                     
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 p-4">
                         {/* Tercer Año */}
                         <div className="relative">
-                            <div className="z-5 bg-gradient-to-r from-[#249382] to-theme-old-green-light p-6 rounded-2xl shadow-2xl mb-8">
+                            <div className={`z-5 bg-gradient-to-r from-[#249382] to-theme-old-green-light p-6 rounded-2xl shadow-2xl mb-8 ${isMobile ? '' : 'scroll-items-top'}`}>
                                 <div className="flex items-center justify-center gap-3">
                                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                         <span className="text-2xl font-bold text-[#249382]">3°</span>
@@ -69,9 +71,8 @@ export const Malla = () => {
                                 {tercero.map((item, index) => (
                                     <div 
                                         key={index} 
-                                        className="group relative bg-gradient-to-br from-theme-blue-bg/80 to-theme-blue/50 backdrop-blur-sm border-2 border-[#249382]/30 hover:border-[#249382] p-5 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-[#249382]/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                                        className={`group relative bg-gradient-to-br ${isMobile ? '' : 'scroll-items-left'} from-theme-blue-bg/80 to-theme-blue/50 backdrop-blur-sm border-2 border-[#249382]/30 hover:border-[#249382] p-5 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-[#249382]/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1`}
                                     >
-
                                         <div className="absolute inset-0 bg-gradient-to-r from-[#249382]/0 via-[#249382]/10 to-[#249382]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         
                                         <div className="relative flex items-center gap-4">
@@ -90,7 +91,7 @@ export const Malla = () => {
 
                         {/* Cuarto Año */}
                         <div className="relative">
-                            <div className="z-5 bg-gradient-to-r from-theme-old-green-light to-[#249382] p-6 rounded-2xl shadow-2xl mb-8">
+                            <div className={`z-5 bg-gradient-to-r from-theme-old-green-light to-[#249382] p-6 rounded-2xl shadow-2xl mb-8 ${isMobile ? '' : 'scroll-items-top'}`}>
                                 <div className="flex items-center justify-center gap-3">
                                     <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                         <span className="text-2xl font-bold text-[#249382]">4°</span>
@@ -102,9 +103,8 @@ export const Malla = () => {
                                 {cuarto.map((item, index) => (
                                     <div 
                                         key={index} 
-                                        className="group relative bg-gradient-to-br from-theme-blue-bg/80 to-theme-blue/50 backdrop-blur-sm border-2 border-theme-old-green-light/30 hover:border-theme-old-green-light p-5 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-theme-old-green-light/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
+                                        className="group relative scroll-items-right bg-gradient-to-br from-theme-blue-bg/80 to-theme-blue/50 backdrop-blur-sm border-2 border-theme-old-green-light/30 hover:border-theme-old-green-light p-5 rounded-xl shadow-lg hover:shadow-2xl hover:shadow-theme-old-green-light/30 transition-all duration-300 hover:scale-105 hover:-translate-y-1"
                                     >
-
                                         <div className="absolute inset-0 bg-gradient-to-r from-theme-old-green-light/0 via-theme-old-green-light/10 to-theme-old-green-light/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                                         
                                         <div className="relative flex items-center gap-4">
