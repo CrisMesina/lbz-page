@@ -20,7 +20,7 @@ export const HC = () => {
                     
                     <div className='absolute inset-0 z-0'>
                         <img 
-                            src="/src/imgs/img-hc.avif" 
+                            src="/img-hc.avif" 
                             className='w-full h-full object-cover opacity-20' 
                             alt="Científico Humanista"
                         />

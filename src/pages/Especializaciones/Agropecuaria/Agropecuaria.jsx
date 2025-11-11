@@ -19,7 +19,7 @@ export const Agropecuaria = () => {
                     
                     <div className='absolute inset-0 z-0'>
                         <img 
-                            src="/src/imgs/agro2.avif" 
+                            src="/agro2.avif" 
                             className='w-full h-full object-cover opacity-20' 
                             alt="Agropecuaria"
                         />
