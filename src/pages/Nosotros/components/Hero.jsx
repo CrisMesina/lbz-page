@@ -20,11 +20,12 @@ export const Hero = () => {
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl bottom-0 left-200'></div>
                     <div className='absolute w-70 h-70 bg-[#249382] rounded-full brightness-70 blur-xl right-0 '></div>
                     <img src="/portadaIndex.avif" className={`absolute ${isMobile ? 'clip-horizontal h-screen object-cover' : 'clip w-full'} animation-popup `} alt="" />
+                    <div className='absolute inset-0 bg-gradient-to-b from-theme-blue-bg/80 via-transparent to-theme-blue-bg'></div>
                     <div className="relative z-10 max-w-4xl mx-auto text-center md:text-left">
-                        <h1 className={`text-5xl leading-tight font-bold mb-4 ${!isMobile ? 'animate-translateY' : ''}`}>
+                        <h1 className='text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl'>
                             Sobre Nosotros
                         </h1>
-                        <p className={`${!isMobile ? 'animate-translateY' : ''} text-[clamp(.95rem,1.2vw,1.15rem)] opacity-90`}>
+                        <p className='text-xl md:text-2xl text-theme-celeste-claro mb-8 font-light max-w-3xl mx-auto'>
                             Conoce más sobre nuestra misión, visión y valores que nos guían en cada paso que damos.
                         </p>
                     </div>
