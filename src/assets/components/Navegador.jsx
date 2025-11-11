@@ -52,11 +52,6 @@ const cuenta = [
                 label: "Docente",
                 href: "https://login.lirmi.com/login",
                 blank: "_blank"
-            },
-            {
-                label: "Administrativo",
-                href: "/login",
-                blank: "_blank"     
             }
         ]
     }
@@ -110,7 +105,7 @@ export const Navegador = () => {
                     </svg>
                 </button>
                 <div>
-                    <img src="/Logo.png" className='w-40 p-4 mx-auto' alt="" />
+                    <img src="/src/imgs/Logo.png" className='w-40 p-4 mx-auto' alt="" />
                 </div>
                 <div className='mt-10'>
                     {navs.map((n, i) =>(

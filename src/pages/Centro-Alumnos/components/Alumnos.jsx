@@ -5,7 +5,7 @@ export const Alumnos = () => {
     const listado = [
         {
             id: 1,
-            image: "/",
+            image: "/", // ubicación de imagenes -> /src/imgs/
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
@@ -13,7 +13,7 @@ export const Alumnos = () => {
         },
         {
             id: 2,
-            image: "/",
+            image: "/", // ubicación de imagenes -> /src/imgs/
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
@@ -21,7 +21,7 @@ export const Alumnos = () => {
         },
         {
             id: 3,
-            image: "/",
+            image: "/", // ubicación de imagenes -> /src/imgs/
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
@@ -29,7 +29,7 @@ export const Alumnos = () => {
         },
         {
             id: 4,
-            image: "/",
+            image: "/", // ubicación de imagenes -> /src/imgs/
             name: "Juan Perez",
             curso: "2do Medio",
             cargo: "presidente",
@@ -44,7 +44,7 @@ export const Alumnos = () => {
                     {listado.map((a, i) =>(
                         <div key={i} className='w-60 skew-1 text-white  shadow-lg active:shadow-green-600 bg-gradient-to-b from-theme-blue hover:scale-105 to-[#249382] mx-auto my-5 rounded-t-2xl rounded-b-2xl text-center'>
                             <div>
-                                <img src={a.image.length < 2 ? '/default-profile.avif' : a.image} alt={a.alt} className='rounded-t-2xl p-2 w-60 h-60 bg-[#249382] hover:scale-110' />
+                                <img src={a.image.length < 2 ? '/src/imgs/default-profile.avif' : a.image} alt={a.alt} className='rounded-t-2xl p-2 w-60 h-60 bg-[#249382] hover:scale-110' />
                             </div>
                             <div className='p-5'>
                                 <h1>{a.name}</h1>

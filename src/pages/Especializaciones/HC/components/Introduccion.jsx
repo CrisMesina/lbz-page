@@ -52,7 +52,7 @@ export const Introduccion = () => {
                     <div className='relative order-1 lg:order-2'>
                         <div className='absolute -inset-4 bg-gradient-to-r from-[#249382] to-theme-old-green-light rounded-3xl blur-xl opacity-30'></div>
                         <img 
-                            src={`${imgIntro.length > 0 ? "/default-profile.avif" :  imgIntro }`}
+                            src={`${imgIntro.length > 0 ? "/src/imgs/default-profile.avif" :  imgIntro }`}
                             className='relative rounded-2xl shadow-2xl w-full h-auto object-cover border-4 border-[#249382]/30 hover:scale-105 transition-transform duration-500' 
                             alt="Formación Científico Humanista"
                         />

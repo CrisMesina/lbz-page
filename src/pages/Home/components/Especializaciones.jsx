@@ -10,7 +10,7 @@ export const Especializaciones = () => {
     const especializaciones = [
         {
             id: 1,
-            img: "/logo-hc.avif",
+            img: "/src/imgs/logo-hc.avif",
             title: "Científico Humanista",
             animation: "scroll-items-left",
             text: "Formación integral que combina conocimientos científicos y humanísticos. Desarrolla pensamiento crítico, habilidades de investigación y competencias comunicativas para continuar estudios universitarios en diversas áreas del conocimiento.",
@@ -19,7 +19,7 @@ export const Especializaciones = () => {
         },
         {
             id: 2,
-            img: "/logo-administracion.avif",
+            img: "/src/imgs/logo-administracion.avif",
             title: "Administración",
             animation: "scroll-items-left",
             text: "Especialización enfocada en gestión empresarial, contabilidad y recursos humanos. Prepara para liderar organizaciones, manejar finanzas y desarrollar habilidades emprendedoras en el mundo de los negocios.",
@@ -28,7 +28,7 @@ export const Especializaciones = () => {
         },
         {
             id: 3,
-            img: "/logo-agropecuaria.avif",
+            img: "/src/imgs/logo-agropecuaria.avif",
             title: "Agropecuaria",
             animation: "scroll-items-right",
             text: "Formación técnica en producción agrícola y ganadera. Desarrolla competencias en manejo de cultivos, crianza de animales, tecnologías sustentables y gestión de recursos naturales para el sector agroalimentario.",
@@ -37,7 +37,7 @@ export const Especializaciones = () => {
         },
         {
             id: 4,
-            img: "/logo-programacion.avif",
+            img: "/src/imgs/logo-programacion.avif",
             title: "Programación",
             animation: "scroll-items-right",
             text: "Especialización en desarrollo de software y tecnologías digitales. Enseña programación, bases de datos, desarrollo web y aplicaciones móviles, preparando para la industria tecnológica del futuro.",

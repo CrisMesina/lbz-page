@@ -4,7 +4,7 @@ const archivos = [
     {
         id:1,
         name:"Nombre del Documento",
-        img:"/",
+        img:"", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-left scroll-item transition-all duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -12,7 +12,7 @@ const archivos = [
     {
         id:2,
         name:"Nombre del Documento",
-        img:"/",
+        img:"", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-left scroll-item transition-all duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -20,7 +20,7 @@ const archivos = [
     {
         id:3,
         name:"Nombre del Documento",
-        img:"/",
+        img:"", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-top scroll-item transition-all duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -28,7 +28,7 @@ const archivos = [
     {
         id:4,
         name:"Nombre del Documento",
-        img:"/",
+        img:"", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-right scroll-item transition-all duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -36,7 +36,7 @@ const archivos = [
     {
         id:5,
         name:"Nombre del Documento",
-        img:"/",
+        img:"", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-right scroll-item transition-all duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -59,7 +59,7 @@ export const ListadoMuestra = () => {
                         <div className={`w-70 md:w-80 lg:w-72 xl:w-65 bg-gradient-to-b from-[#249382] my-10 ${isMobile ? '' : a.animation} ${isMobile ? 'opacity-100' : ''} hover:rotate-4 h-96 mx-auto shadow-lg
                             shadow-blue-900 rounded-2xl opacity-0 `} key={i}>
                             <a href="" download={a.download}>
-                                <img src={a.img.length < 2 ? "/documento-defecto.png" : a.img} className="rounded-t-2xl mx-auto h-60" alt={a.alt} />
+                                <img src={a.img.length < 2 ? "/src/imgs/documento-defecto.png" : a.img} className="rounded-t-2xl mx-auto h-60" alt={a.alt} />
                             </a>
                             <h1 className="text-start mx-10 my-5">{a.name}</h1>
                             <div className="p-4 text-center">

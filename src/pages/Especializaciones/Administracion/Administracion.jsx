@@ -22,7 +22,7 @@ export const Administracion = () => {
 
                     <div className='absolute inset-0 z-0'>
                         <img 
-                            src="/c_admin.avif" 
+                            src="/src/imgs/c_admin.avif" 
                             className='w-full h-full object-cover opacity-20' 
                             alt="Administración"
                         />

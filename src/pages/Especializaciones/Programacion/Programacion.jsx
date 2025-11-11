@@ -20,7 +20,7 @@ export const Programacion = () => {
                 
                     <div className='absolute inset-0 z-0'>
                         <img 
-                            src="/programacion-min.avif" 
+                            src="/src/imgs/programacion.avif" 
                             className='w-full h-full object-cover opacity-20' 
                             alt="Programación"
                         />

@@ -6,28 +6,28 @@ export const Coordinadores = () => {
         {
             id: 1,
             nombre: "Cesar Silva",
-            img: "/c_admin.avif",
+            img: "/src/imgs/c_admin.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinador de Administración",
             animation: "scroll-items-left"
         },
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/c_agro-min.avif",
+            img: "/src/imgs/c_agro-min.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinadora de Agropecuaria",
             animation: "scroll-items-left"
         },
         {
             id: 3,
-            nombre: "Juan Perez",
-            img: "/",
+            nombre: "Maria Rudolph",
+            img: "/", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinadora de Científico Humanista",
             animation: "scroll-items-right"
         },
         {
             id: 4,
             nombre: "Alex Carreño",
-            img: "/c_progra-min.avif",
+            img: "/src/imgs/c_progra-min.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinador de Programación",
             animation: "scroll-items-right"
         },
@@ -45,7 +45,7 @@ export const Coordinadores = () => {
                         coordinadores.map((d, i ) => (
                             <div key={i} className={`mx-auto ${isMobile  ? '' : d.animation} skew-1 transition-all duration-300 hover:scale-110 active:translate-y-1 hover:rotate-1 active:shadow-green-700 my-10 rounded-2xl shadow-lg bg-gradient-to-b from-theme-blue to-[#249382]`}>
                                 <div>
-                                    <img src={d.img.length < 2 ? "/default-profile.avif" : d.img} className="w-70 h-90 rounded-t-2xl object-cover hover:scale-110 hover:-rotate-1 mx-auto bg-[#249382] p-2"   alt="Imagen de la persona encargada de la especialización o de la formación." />
+                                    <img src={d.img.length < 2 ? "/src/imgs/default-profile.avif" : d.img} className="w-70 h-90 rounded-t-2xl object-cover hover:scale-110 hover:-rotate-1 mx-auto bg-[#249382] p-2"   alt="Imagen de la persona encargada de la especialización o de la formación." />
                                 </div>
                                 <div>
                                     <h1 className="my-4">{d.nombre}</h1>
