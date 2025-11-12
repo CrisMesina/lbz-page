@@ -108,7 +108,7 @@ export const Navegador = () => {
                     </svg>
                 </button>
                 <div>
-                    <img src="/Logo.png" className='w-40 p-4 mx-auto' alt="Logo de la institución" />
+                    <img src="/Logo.png" className='w-40 h-auto p-4 mx-auto' alt="Logo de la institución" />
                 </div>
                 <div className='mt-10'>
                     {navs.map((n, i) =>(
