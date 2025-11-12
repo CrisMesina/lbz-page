@@ -88,7 +88,7 @@ export const Navegador = () => {
             {/* RECORDAR: CON ESTE SE COLOCA EN NEGRO EL FONDO */}
             {isOpen && (
                 <div 
-                    className="fixed inset-0 bg-black opacity-70 z-20"
+                    className="fixed inset-0 bg-black opacity-20 transition-all duration-75 z-20"
                     onClick={() => setIsOpen(false)}
                 />
             )}
