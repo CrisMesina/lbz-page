@@ -76,6 +76,7 @@ export const Navegador = () => {
             <div className='absolute'>
                 <button 
                     name="menu-open"
+                    aria-label="Abrir menú de navegación"
                     className='p-4 py-2 text-white bg-black rounded-2xl fixed top-4 left-4 z-10'
                     onClick={() => setIsOpen(true)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -99,6 +100,7 @@ export const Navegador = () => {
             >
                 <button 
                     name="menu-close"
+                    aria-label="Cerrar menú de navegación"
                     className='p-2 text-white bg-black rounded-2xl absolute top-4 right-4'
                     onClick={() => setIsOpen(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">

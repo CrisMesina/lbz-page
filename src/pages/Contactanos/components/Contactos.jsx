@@ -48,6 +48,7 @@ export const  Contactos = () => {
                                                 <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                     <button
                                                         name="send-mail"
+                                                        aria-label={`Enviar correo a ${c.name}`}
                                                         className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Enviar correo a ${c.name}`} 
                                                     >
                                                         <img src="/email-icon.svg" className='w-6 h-6 inline mx-2' alt="Icono de correo electrónico" />
@@ -58,6 +59,7 @@ export const  Contactos = () => {
                                                     <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                         <button
                                                             name="call-contact"
+                                                            aria-label={`Llamar a ${c.name}`}
                                                             className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Llamar a ${c.name}`}>
                                                             <img src="/phone-call.svg" className='w-6 h-6 inline mx-2' alt="Icono de teléfono" />
                                                             Llamar

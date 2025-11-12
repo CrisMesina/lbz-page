@@ -68,7 +68,7 @@ export const ListadoMuestra = () => {
                                     className="p-4 rounded-xl skew-2 shadow-lg shadow-[#249382] hover:shadow-theme-old-green-medium font-bold 
                                         hover:bg-gradient-to-r hover:from-theme-old-green-dark hover:via-theme-old-green hover:to-theme-old-green-nav hover:bg-clip-text hover:text-transparent"
                                     >
-                                    <button name="download-pdf">Descargar PDF</button>
+                                    <button name="download-pdf" aria-label="Descargar documento PDF">Descargar PDF</button>
                                 </a>
                             </div>
                         </div>

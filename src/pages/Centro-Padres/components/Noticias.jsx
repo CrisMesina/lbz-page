@@ -32,7 +32,7 @@ export const Noticias = () => {
                         </p>
                         <div>    
                             <a href={`noticias/${n.id}`} >
-                                <button name="leer-mas-noticia" className='flex justify-center items-center border mx-auto p-2 w-32' >
+                                <button name="leer-mas-noticia" aria-label="Leer más sobre la noticia" className='flex justify-center items-center border mx-auto p-2 w-32' >
                                     Leer más
                                 </button>
                             </a>

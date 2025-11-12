@@ -11,12 +11,12 @@ export const Hero = () => {
             </p>
             <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
                 <a href='#introduccion'>
-                    <button name="info-agro" className='bg-gradient-to-r from-[#249382] to-theme-old-green-light hover:from-theme-old-green-light hover:to-[#249382] text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-[#249382]/50 transition-all duration-300 hover:scale-105'>
+                    <button name="info-agro" aria-label="Conocer más sobre Agropecuaria" className='bg-gradient-to-r from-[#249382] to-theme-old-green-light hover:from-theme-old-green-light hover:to-[#249382] text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-[#249382]/50 transition-all duration-300 hover:scale-105'>
                         Conoce más
                     </button>
                 </a>
                 <a href='#malla'>
-                    <button name="malla-agro" className='border-2 border-[#249382] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#249382]/20 transition-all duration-300 hover:scale-105'>
+                    <button name="malla-agro" aria-label="Ver malla curricular de Agropecuaria" className='border-2 border-[#249382] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#249382]/20 transition-all duration-300 hover:scale-105'>
                         Ver Malla Curricular
                     </button>
                 </a>

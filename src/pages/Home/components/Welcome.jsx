@@ -30,12 +30,12 @@ export const Welcome = () => {
                         </p>
                         <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
                             <a href='#recomendaciones'>
-                                <button name="conoce-mas" className='bg-gradient-to-r from-[#249382] to-theme-old-green-light hover:from-theme-old-green-light hover:to-[#249382] text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-[#249382]/50 transition-all duration-300 hover:scale-105'>
+                                <button name="conoce-mas" aria-label="Conoce más sobre el liceo" className='bg-gradient-to-r from-[#249382] to-theme-old-green-light hover:from-theme-old-green-light hover:to-[#249382] text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-[#249382]/50 transition-all duration-300 hover:scale-105'>
                                     Conoce más
                                 </button>
                             </a>
                             <a href='#especializaciones'>
-                                <button name="ver-especializaciones" className='border-2 border-[#249382] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#249382]/20 transition-all duration-300 hover:scale-105'>
+                                <button name="ver-especializaciones" aria-label="Ver especializaciones disponibles" className='border-2 border-[#249382] text-white font-bold py-4 px-8 rounded-xl hover:bg-[#249382]/20 transition-all duration-300 hover:scale-105'>
                                     Ver Especializaciones
                                 </button>
                             </a>

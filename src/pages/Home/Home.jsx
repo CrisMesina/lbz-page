@@ -32,7 +32,7 @@ export const Home = () => {
                 <div className=''>
                     <ListadoMuestra/>
                     <div className='text-center my-10 '>
-                        <button name="verMas-documentos" className='text-white p-5 rounded-lg bg-gradient-to-r from-blue-950 to-blue-900/30 hover:translate-y-2 shadow-md shadow-amber-50'>
+                        <button name="verMas-documentos" aria-label="Ver más documentos" className='text-white p-5 rounded-lg bg-gradient-to-r from-blue-950 to-blue-900/30 hover:translate-y-2 shadow-md shadow-amber-50'>
                             <a href='/documentos'>Ver más</a>
                         </button>
                     </div>
