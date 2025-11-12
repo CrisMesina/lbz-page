@@ -237,35 +237,6 @@ body::-webkit-scrollbar{
 /* *--------------------- ANIMACIONES TRANSLATE FIN ------------------ */
 
 
-/* ---------------------- RELLENADO DE FONDO IZQ A DER ---------------------- */
-
-
-.fill-hover{
-  position: relative;
-  overflow: hidden;
-}
-
-.fill-hover::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 0%;
-  background: oklch(62.7% 0.194 149.214);
-  z-index: -1;
-  transition: width 0.9s cubic-bezier(.4, 0, .2, 1);
-}
-
-.fill-hover:hover::before{
-  width: 100%;
-}
-.fill-hover > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* ---------------------- RELLENADO DE FONDO IZQ A DER FIN ---------------------- */
 
 /* ---------------------- CLIP PATHS Y HERO CIRCULOS ---------------------- */
 
@@ -282,56 +253,7 @@ clip-path: polygon(100% 0, 100% 44%, 0 100%, 0 45%);
   clip-path: polygon(100% 25%, 100% 82%, 0 82%, 0 25%);
 }
 
-/*
-.hero{
-
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before,
-.hero::after{
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background: linear-gradient(#61ba6d, #69bc5f, #0d4d03);
-  filter: brightness(50%);
-  filter: blur(5px);
-  z-index: 1;
-  box-shadow: 0 0 0 4px rgba(7,24,40,0.05) inset;
-}
-
-
-/* Circulo de la izquierda 
-
-.hero::before{
-  width: 70vmin;
-  height: 70vmin;
-  left: -25vmin;
-  top: -30vmin;
-  animation: elementLeft 1s linear forwards;
-}
-
-/* Circulo de la derecha 
-
-.hero::after{
-  width: 62vmin;
-  height: 62vmin;
-  right: -18vmin;
-  bottom: -20vmin;
-  animation: elementRight 1s linear forwards;
-}
-
-.hero > .relative { z-index: 10; }
-
-*/
 
 /* ---------------------- CLIP PATHS Y HERO CIRCULOS FIN ---------------------- */
-
-
-
-.trash{
-  fill: red;
-}
 
 
