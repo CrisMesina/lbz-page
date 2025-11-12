@@ -75,7 +75,7 @@ export const Navegador = () => {
         <>
             <div className='absolute'>
                 <button 
-                    name='Navegador'
+                    name="abrir-menu-navegacion"
                     className='p-4 py-2 text-white bg-black rounded-2xl fixed top-4 left-4 z-10'
                     onClick={() => setIsOpen(true)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -98,6 +98,7 @@ export const Navegador = () => {
                 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
             >
                 <button 
+                    name="cerrar-menu-navegacion"
                     className='p-2 text-white bg-black rounded-2xl absolute top-4 right-4'
                     onClick={() => setIsOpen(false)}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
@@ -105,7 +106,7 @@ export const Navegador = () => {
                     </svg>
                 </button>
                 <div>
-                    <img src="/Logo.png" className='w-40 p-4 mx-auto' alt="" />
+                    <img src="/Logo.png" className='w-40 p-4 mx-auto' alt="Logo de la institución" />
                 </div>
                 <div className='mt-10'>
                     {navs.map((n, i) =>(

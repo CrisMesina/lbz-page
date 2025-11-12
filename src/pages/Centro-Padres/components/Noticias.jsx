@@ -24,7 +24,7 @@ export const Noticias = () => {
                             <p>{n.fecha}</p>
                         </div>
                         <div>
-                            <img src={`http://localhost:3000${n.imagen}`} className='w-full h-60 object-cover rounded-xl' alt="" />
+                            <img src={`http://localhost:3000${n.imagen}`} className='w-full h-60 object-cover rounded-xl' alt={`Imagen de la noticia: ${n.title}`} />
                         </div>
                         <h1 className='text-xl text-center font-bold p-3 text-white'>{n.title}</h1>
                         <p className='p-2 text-md text-center my-5 justify-between text-white'>
@@ -32,7 +32,7 @@ export const Noticias = () => {
                         </p>
                         <div>    
                             <a href={`noticias/${n.id}`} >
-                                <button className='flex justify-center items-center border mx-auto p-2 w-32' >
+                                <button name="leer-mas-noticia" className='flex justify-center items-center border mx-auto p-2 w-32' >
                                     Leer más
                                 </button>
                             </a>

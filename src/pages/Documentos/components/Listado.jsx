@@ -108,7 +108,7 @@ export const Listado = () => {
                                     className="p-4 rounded-xl skew-2 shadow-lg shadow-[#249382] hover:shadow-theme-old-green-medium font-bold 
                                         hover:bg-gradient-to-r hover:from-theme-old-green-dark hover:via-theme-old-green hover:to-theme-old-green-nav hover:bg-clip-text hover:text-transparent"
                                     >
-                                    <button>Descargar PDF</button>
+                                    <button name="descargar-pdf-listado">Descargar PDF</button>
                                 </a>
                             </div>
                         </div>

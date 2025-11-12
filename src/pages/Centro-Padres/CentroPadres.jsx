@@ -29,7 +29,7 @@ export const CentroPadres = () => {
                             </p>
                         </div>
                         <div className='flex mt-20 md:mt-0'>
-                            <img src="/hero-documentos.avif" className='w-70 md:w-96 lg:w-120 mx-auto my-auto rounded-lg shadow-xl  shadow-amber-50 -skew-2 hover:skew-2 transition-all duration-300' alt="" />
+                            <img src="/hero-documentos.avif" className='w-70 md:w-96 lg:w-120 mx-auto my-auto rounded-lg shadow-xl  shadow-amber-50 -skew-2 hover:skew-2 transition-all duration-300' alt="Imagen representativa del Centro de Padres" />
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ export const HeroWelcome = () => {
                     fill="#249382"
                 />
                 </svg>
-                <img src="/alumnos.avif" className='absolute hidden lg:block right-0 bottom-0 xl:h-150 2xl:h-210 z-0 animation-show-right' alt="" />
+                <img src="/alumnos.avif" className='absolute hidden lg:block right-0 bottom-0 xl:h-150 2xl:h-210 z-0 animation-show-right' alt="Ilustración de estudiantes del liceo" />
                <div className="absolute left-10 top-1/2 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
                <div className="absolute left-100 top-20 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
                 <div className="absolute left-120 top-120 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>

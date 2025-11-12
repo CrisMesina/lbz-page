@@ -14,7 +14,7 @@ export const HeroWelcome = () => {
                     fill="#249382"
                 />
                 </svg>
-                <img src="/hero-welcome.png" className='absolute hidden lg:block right-0 bottom-0 xl:h-150 2xl:h-210 z-5 animation-show-right' alt="" />
+                <img src="/hero-welcome.png" className='absolute hidden lg:block right-0 bottom-0 xl:h-150 2xl:h-210 z-5 animation-show-right' alt="Ilustración de bienvenida para contacto" />
                 <div className="absolute left-10 top-1/2 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
                 <div className="absolute left-100 top-20 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>
                 <div className="absolute left-120 top-120 w-32 h-32 bg-[#249382] rounded-full blur-2xl"></div>

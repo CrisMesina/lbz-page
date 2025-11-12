@@ -38,7 +38,7 @@ export const  Contactos = () => {
                                 <div className='h-1/2 rounded-t-xl bg-gradient-to-t from-green-950 via-green-700 to-theme-old-green-nav'></div>{/* Fondo Superior */}
                                     <div className='bottom-1/4 bg-white w-80 left-1 absolute'> {/* Informacion Contacto */}
                                         <div className='relative rounded-full'>
-                                            <img src={`${c.img.length < 2 ? "/default-profile.avif" : c.img}`} className='rounded-full object-cover hover:scale-105 z-1 bg-white p-2 absolute w-25 bottom-13 h-25 left-1/3'  alt="" />
+                                            <img src={`${c.img.length < 2 ? "/default-profile.avif" : c.img}`} className='rounded-full object-cover hover:scale-105 z-1 bg-white p-2 absolute w-25 bottom-13 h-25 left-1/3'  alt={`Foto de perfil de ${c.name}`} />
                                         </div>
                                     </div>
                                     <div className='relative h-1/2 bg-white rounded-b-xl'> {/* Fondo Inferior */}
@@ -47,17 +47,19 @@ export const  Contactos = () => {
                                             <div className={`grid  ${c.telefono ? 'grid-cols-2' : 'grid-cols-1'} my-4`}>
                                                 <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                     <button
+                                                        name="enviar-correo-contacto"
                                                         className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Enviar correo a ${c.name}`} 
                                                     >
-                                                        <img src="/email-icon.svg" className='w-6 h-6 inline mx-2' alt="" />
+                                                        <img src="/email-icon.svg" className='w-6 h-6 inline mx-2' alt="Icono de correo electrónico" />
                                                         Correo
                                                     </button>
                                                 </a>
                                                 {c.telefono &&(
                                                     <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                         <button
+                                                            name="llamar-contacto"
                                                             className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Llamar a ${c.name}`}>
-                                                            <img src="/phone-call.svg" className='w-6 h-6 inline mx-2' alt="" />
+                                                            <img src="/phone-call.svg" className='w-6 h-6 inline mx-2' alt="Icono de teléfono" />
                                                             Llamar
                                                         </button>
                                                     </a>
