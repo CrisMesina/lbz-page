@@ -47,7 +47,7 @@ export const  Contactos = () => {
                                             <div className={`grid  ${c.telefono ? 'grid-cols-2' : 'grid-cols-1'} my-4`}>
                                                 <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                     <button
-                                                        name="enviar-correo-contacto"
+                                                        name="send-mail"
                                                         className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Enviar correo a ${c.name}`} 
                                                     >
                                                         <img src="/email-icon.svg" className='w-6 h-6 inline mx-2' alt="Icono de correo electrónico" />
@@ -57,7 +57,7 @@ export const  Contactos = () => {
                                                 {c.telefono &&(
                                                     <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                         <button
-                                                            name="llamar-contacto"
+                                                            name="call-contact"
                                                             className='mx-auto flex shadow-lg p-4 rounded-xl cursor-pointer hover:scale-105 hover:shadow-blue-950' title={`Llamar a ${c.name}`}>
                                                             <img src="/phone-call.svg" className='w-6 h-6 inline mx-2' alt="Icono de teléfono" />
                                                             Llamar

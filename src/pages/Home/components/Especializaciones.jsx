@@ -69,7 +69,7 @@ export const Especializaciones = () => {
                                     <h1 className='font-bold my-5'>{e.title}</h1>
                                     <p>{e.text}</p>
                                     <a href={e.href}>
-                                        <button name="ver-mas-especializacion" className='shadow-md active:translate-y-2 shadow-green-600 hover:shadow-[#249382] hover:scale-105  cursor-pointer p-4 mt-5 rounded-xl w-32'>
+                                        <button name="especializacion" className='shadow-md active:translate-y-2 shadow-green-600 hover:shadow-[#249382] hover:scale-105  cursor-pointer p-4 mt-5 rounded-xl w-32'>
                                             Ver más
                                         </button>
                                     </a>
