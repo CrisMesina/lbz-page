@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from '../pages/Home/Home'
 import { Documentos } from '../pages/Documentos/Documentos'

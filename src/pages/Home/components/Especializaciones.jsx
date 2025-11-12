@@ -64,7 +64,7 @@ export const Especializaciones = () => {
 
                                 <div className='flex-col text-center mt-10 p-4'>
                                     <div className='relative justify-center w-30'>
-                                        <img src={e.img} className='absolute w-30 h-30 rounded-full left-22 -top-30 bg-[#249382] p-1' alt={e.alt} />
+                                        <img src={e.img} className='absolute w-auto h-30 rounded-full left-22 -top-30 bg-[#249382] p-1' alt={e.alt} />
                                     </div>
                                     <h1 className='font-bold my-5'>{e.title}</h1>
                                     <p>{e.text}</p>
