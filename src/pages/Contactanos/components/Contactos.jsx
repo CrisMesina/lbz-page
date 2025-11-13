@@ -19,7 +19,7 @@ export const  Contactos = () => {
             id:3,
             name: "Institución",
             img: "/Logo.png", // ubicacion de imagenes -> /src/imgs/
-            email: "director@director.cl",
+            email: "liceobzl@daemcoltauco.cl",
             telefono: "+56912345678"
         },
   
@@ -44,8 +44,9 @@ export const  Contactos = () => {
                                     <div className='relative h-1/2 bg-white rounded-b-xl'> {/* Fondo Inferior */}
                                         <div className='flex flex-col'>
                                             <h1 className='text-center mt-13 font-theme-zalando'>{c.name}</h1>
-                                            <div className={`grid  ${c.telefono ? 'grid-cols-2' : 'grid-cols-1'} my-4`}>
-                                                <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
+                                            <div className={`grid  ${c.telefono && c.email ? 'grid-cols-2' : 'grid-cols-1'} my-4`}>
+                                                {c.email &&(
+                                                    <a href={`mailto:${c.email}`} className='flex p-2 w-auto mx-auto'>
                                                     <button
                                                         name="send-mail"
                                                         aria-label={`Enviar correo a ${c.name}`}
@@ -55,6 +56,7 @@ export const  Contactos = () => {
                                                         Correo
                                                     </button>
                                                 </a>
+                                                )}
                                                 {c.telefono &&(
                                                     <a href={`tel:${c.telefono}`} className='flex p-2 w-auto mx-auto'>
                                                         <button

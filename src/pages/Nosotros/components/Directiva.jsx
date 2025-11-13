@@ -5,7 +5,7 @@ export const Directiva = () => {
         {
             id: 1,
             nombre: "Marcos Allendes",
-            img: "/director.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/director.avif", 
             cargo: "Director",
             alt: `Una imagen de nuestro 'DIRECTOR', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-left"
@@ -13,7 +13,7 @@ export const Directiva = () => {
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/inspectora.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/inspectora.avif", 
             cargo: "Inspectora General",
             alt: `Una imagen de nuestra ' INSPECTORA GENERAL ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-left"
@@ -21,7 +21,7 @@ export const Directiva = () => {
         {
             id: 3,
             nombre: "Daniela Reveco",
-            img: "/utp.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/utp.avif", 
             cargo: "Jefa de UTP",
             alt: `Una imagen de nuestra ' JEFA DE UTP ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-right"
@@ -29,8 +29,8 @@ export const Directiva = () => {
         {
             id: 4,
             nombre: "Joselyn Soto",
-            img: "/", // ubicación de imagenes -> /src/imgs/
-            cargo: "Director",
+            img: "/", 
+            cargo: "Evaluadora",
             alt: `Una imagen de nuestro '  ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-right"
         },

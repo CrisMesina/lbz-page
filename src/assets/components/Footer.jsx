@@ -41,7 +41,7 @@ export const Footer = () => {
                                 <p className='mt-8 italic'>Republica de Chile N°233 Coltauco-Chile</p>
                                 <p className='mt-8 italic'>Secretaria: +56722451739</p>
                                 <p className='mt-8 italic'>Inspectoria: +56722452430</p>
-                                <p className='mt-8 italic'>liceobzl@daemcoltauco.com</p>
+                                <p className='mt-8 italic'>liceobzl@daemcoltauco.cl</p>
                             </div>
                         </div>
                     </div>

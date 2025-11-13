@@ -56,7 +56,7 @@ export const Coordinadores = () => {
             id: 4,
             nombre: "Joselyn Soto",
             img: "/", // ubicación de imagenes -> /src/imgs/
-            cargo: "Director",
+            cargo: "Evaluadora",
             alt: `Una imagen de nuestro '  ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-right"
         }, 
