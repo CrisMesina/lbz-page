@@ -3,47 +3,43 @@ export const Malla = () => {
     
     const tercero = [
         {
-            ramo: "Lengua y Literatura",
+            ramo: "Taller de Literatura",
         },
         {
-            ramo: "Matemática",
+            ramo: "Promoción de Estilos de Vida Activos y Saludables",
         },
         {
-            ramo: "Inglés",
+            ramo: "Probabilidad y Estadística Descriptiva",
         },
         {
-            ramo: "Historia, Geografía y Ciencias Sociales",
+            ramo: "Interpretación Musucal",
         },
         {
-            ramo: "Ciencias Naturales (Biología, Física, Química)"
+            ramo: "Geografía, Territorio y Desafios Socio Ambientales"
         },
         {
-            ramo: "Educación Física y Salud",
+            ramo: "Biología de los Ecosistemas",
         }
     ]
 
     const cuarto = [
         {
-            ramo: "Lengua y Literatura",
+            ramo: "Lectura y escritura Especializada",
         },
         {
-            ramo: "Matemática",
+            ramo: "Ciencias del Ejercicio Fisico y Deportivo",
         },
         {
-            ramo: "Inglés",
+            ramo: "Limites, derivadas e Integrales",
         },
         {
-            ramo: "Historia y Ciencias Sociales",
+            ramo: "Filosofía Política",
         },
         {
-            ramo: "Filosofía",
+            ramo: "Economía y sociedad",
         },
         {
-            ramo: "Ciencias (Biología, Física, Química)",
-        },
-        {
-            ramo: "Educación Ciudadana",
-
+            ramo: "Bología Celular y Molecuar",
         }
     ]
 

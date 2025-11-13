@@ -8,7 +8,7 @@ export const Recomendaciones = () => {
             title: "Excelentes Profesores",
             img : "/director.avif",
             texto : "Contamos con los mejores profesores a nivel regional, Nuestros profesores se caracterizan por tener un perfil proactivo y ético. Están llenos de entusiasmo por enseñar y hacer que nuestros alumnos lleguen a la cima del éxito.",
-            nombre : "Marcos Allende    ",
+            nombre : "Marcos Allendes",
             animation: "scroll-items-down",
             cargo : "Director",
             alt: "Imagen de la persona que entrega la recomendacion de nuestra institucion"
@@ -18,9 +18,9 @@ export const Recomendaciones = () => {
             title: "Buena convivencia",
             img : "/",
             texto : "Creemos que la convivencia es parte de un todo, donde los principales actores de este establecimiento y proceso educativo son nuestros estudiantes. Ellos a partir de un pensamiento crítico y reflexivo pueden desarrollar el aprendizaje colaborativo, enfrentar distintas problemáticas y junto con ello crear los espacios en los cuales se genere el desarrollo de habilidades individuales y grupales.",
-            nombre : "Juan Perez",
+            nombre : "Marisol Miranda",
             animation: "scroll-items-down",
-            cargo : "Director",
+            cargo : "Encargada de Convivencia Escolar",
             alt: "Imagen de la persona que entrega la recomendacion de nuestra institucion" 
         },
         {

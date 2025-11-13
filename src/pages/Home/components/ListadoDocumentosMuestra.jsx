@@ -53,7 +53,7 @@ export const ListadoMuestra = () => {
             <div className=''>
                 <h1 className="text-center p-10 text-white text-5xl font-bold">Descargas (pdf)</h1>            
             </div>
-            <div className='grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 xl:grid-cols-5 text-white grid-cols-1' id="documentos">
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 xl:grid-cols-4 text-white grid-cols-1' id="documentos">
                 {
                     archivos.map((a, i) =>(
                         <div className={`w-70 md:w-80 lg:w-72 xl:w-65 bg-gradient-to-b from-[#249382] my-10 ${isMobile ? '' : a.animation} ${isMobile ? 'opacity-100' : ''} hover:rotate-4 h-96 mx-auto shadow-lg
@@ -61,7 +61,7 @@ export const ListadoMuestra = () => {
                             <a href="" download={a.download}>
                                 <img src={a.img.length < 2 ? "/documento-defecto.png" : a.img} className="rounded-t-2xl w-auto mx-auto h-50" alt={a.alt} />
                             </a>
-                            <h1 className="text-center font-bold mx-10 my-5">{a.name}</h1>
+                            <h1 className="text- font-bold mx-10 my-5">{a.name}</h1>
                             <div className="p-4 text-center">
                                 <a href=""
                                     download={a.download}
