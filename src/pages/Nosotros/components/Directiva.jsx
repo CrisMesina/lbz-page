@@ -4,7 +4,7 @@ export const Directiva = () => {
     const directiva = [
         {
             id: 1,
-            nombre: "Marcos Allende",
+            nombre: "Marcos Allendes",
             img: "/director.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Director",
             alt: `Una imagen de nuestro 'DIRECTOR', del Liceo Berta Zamorano Lizana`,
@@ -28,7 +28,7 @@ export const Directiva = () => {
         },
         {
             id: 4,
-            nombre: "Juan Perez",
+            nombre: "Joselyn Soto",
             img: "/", // ubicación de imagenes -> /src/imgs/
             cargo: "Director",
             alt: `Una imagen de nuestro '  ', del Liceo Berta Zamorano Lizana`,

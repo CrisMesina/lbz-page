@@ -3,7 +3,7 @@
 const archivos = [
     {
         id:1,
-        name:"Nombre del Documento",
+        name:"Proyecto Educativo Institucional",
         img:"/",
         download:"/Logo-png",
         animation: "scroll-items-left transition-all scroll-item duration-200",
@@ -11,7 +11,7 @@ const archivos = [
     },
     {
         id:2,
-        name:"Nombre del Documento",
+        name:"Reglamento Interno de Convivencia Escolar",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-left transition-all scroll-item duration-200",
@@ -19,7 +19,7 @@ const archivos = [
     },
     {
         id:3,
-        name:"Nombre del Documento",
+        name:"Plan de Gestión de Convivencia Educativa",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-top transition-all scroll-item duration-200",
@@ -27,7 +27,7 @@ const archivos = [
     },
     {
         id:4,
-        name:"Nombre del Documento",
+        name:"Plan de Formación Ciudadana",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-right transition-all scroll-item duration-200",
@@ -35,50 +35,34 @@ const archivos = [
     },
     {
         id:5,
-        name:"Nombre del Documento",
+        name:"Plan Integral de Seguridad Educativa",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
-        id:1,
-        name:"Nombre del Documento",
+        id:6,
+        name:"Plan Local de Formación para el Desarrollo Profesional",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
-        id:2,
-        name:"Nombre del Documento",
+        id:7,
+        name:"Plan de Sexualidad, Afectividad y Género",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
-        id:3,
-        name:"Nombre del Documento",
+        id:8,
+        name:"Plan de Apoyo a la Inclusión",
         img:"/", // ubicacion de imagenes -> src/imgs/
         download:"/Logo-png",
         animation: "scroll-items-top transition-all scroll-item duration-200",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:4,
-        name:"Nombre del Documento",
-        img:"/", // ubicacion de imagenes -> src/imgs/
-        download:"/Logo-png",
-        animation: "scroll-items-right transition-all scroll-item duration-200",
-        alt: "Directorio de descarga del archivo '  ' "
-    },
-    {
-        id:5,
-        name:"Nombre del Documento",
-        img:"/", // ubicacion de imagenes -> src/imgs/
-        download:"/Logo-png",
-        animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     

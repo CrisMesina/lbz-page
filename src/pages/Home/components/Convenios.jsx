@@ -25,22 +25,33 @@ export const Convenios = () => {
         {
             id: 4,
             href: "#",
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyDGHefQfSb_12AsROBcwtbHFG4-G-Nq_wliEjbBVfD_nzY7U5DYtPY2kV5XPoOaVwcg&usqp=CAU",
+            img: "https://cftohiggins.cl/wp-content/uploads/2021/08/LOGO-HORIZONTAL-CFT.png",
             alt: "Imagen de muestra con el logo de la institución con la que tenemos el convenio: UOH"
         },
         {
             id: 5,
             href: "#",
-            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBHeebItLMu5vA37c-tT_SjcBfbBS5grffg&s",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyDGHefQfSb_12AsROBcwtbHFG4-G-Nq_wliEjbBVfD_nzY7U5DYtPY2kV5XPoOaVwcg&usqp=CAU",
             alt: "Imagen de muestra con el logo de la institución con la que tenemos el convenio: UOH"
         },
         {
             id: 6,
             href: "#",
-            img: "https://ucampus.uoh.cl/d/imglocal/favicon/android-chrome-512x512.png",
+            img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOBHeebItLMu5vA37c-tT_SjcBfbBS5grffg&s",
             alt: "Imagen de muestra con el logo de la institución con la que tenemos el convenio: UOH"
         },
-
+        {
+            id: 7,
+            href: "#",
+            img: "https://ucampus.uoh.cl/d/imglocal/favicon/android-chrome-512x512.png",
+            alt: "Imagen de muestra con el logo de la institución con la que tenemos el convenio: INACAP"
+        },
+        {
+            id: 8,
+            href: "#",
+            img: "https://cftohiggins.cl/wp-content/uploads/2021/08/LOGO-HORIZONTAL-CFT.png",
+            alt: "Imagen de muestra con el logo de la institución con la que tenemos el convenio: UOH"
+        },
 
     ]
     const isMobile = window.innerWidth < 768;
