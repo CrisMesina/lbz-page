@@ -38,11 +38,11 @@ export const Malla = () => {
     ]
 
 
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 528;
     
     return (
         <>
-            <div className="container mx-auto">
+            <div className="container mx-auto my-10">
                 <div className="relative">
                     <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#249382] via-theme-old-green-light to-[#249382] opacity-30"></div>
                     

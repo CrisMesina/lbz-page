@@ -49,12 +49,10 @@ export const Recomendaciones = () => {
 
     return(
         <>
-            <div className='md:grid md:grid-cols-2 grid-cols-1' id='recomendaciones'>
+            <div className='md:grid md:grid-cols-2 grid-cols-1 my-10' id='recomendaciones'>
                 {recomendaciones.map((r, i) =>(
-                    <div key={i} className={`flex mx-2 ${isMobile ? '': 'scroll-items-top delay-300'} md:mx-5  md:my-20`}>
-                        <div className="w-1/2 h-20 rounded-full">
-                            <img src={r.img.length < 2? '/default-profile.avif' : r.img} className='object-cover brightness-75 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt={r.alt} />
-                        </div>
+                    <div key={i} className={`flex mx-2 ${isMobile ? '': 'scroll-items-top delay-300'} md:mx-5  md:my-20 my-30`}>
+                        <img src={r.img.length < 2? '/default-profile.avif' : r.img} className='object-cover brightness-75 h-20 aspect-square my-4 rounded-full hover:border hover:border-theme-old-green' alt={r.alt} />
                         <div className='flex-col'>
                             <h1 className='text-theme-old-green  mx-2 p-1 font-extrabold text-xl mb-5'>{r.title}</h1>
                             <p className='text-start text-white dark:text-white p-1 mx-2'>{r.texto}</p>

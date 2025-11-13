@@ -5,6 +5,9 @@ import { Navegador } from '../../assets/components/Navegador'
 import { Welcome } from './components/Welcome'
 
 export const CentroAlumnos = () => {
+
+    const img = "" // Colocar ubicación de la imagen
+
     return(
         <>
             <div className='min-h-screen'>
@@ -29,7 +32,7 @@ export const CentroAlumnos = () => {
                             </p>
                         </div>
                         <div className='flex my-20'>
-                            <img src="/hero-documentos.avif" className=' w-70 md:w-90 lg:w-120 mx-auto my-auto rounded-lg shadow-xl  shadow-amber-50 -skew-2 hover:skew-2 transition-all duration-300' alt="Imagen representativa del Centro de Alumnos" />
+                            <img src={`${img.length < 2 ? '/default-profile.avif' : img}`} className=' w-70 md:w-90 lg:w-120 mx-auto my-auto rounded-lg shadow-xl  shadow-amber-50 -skew-2 hover:skew-2 transition-all duration-300' alt="Imagen representativa del Centro de Alumnos" />
                         </div>
                     </div>
                 </div>
