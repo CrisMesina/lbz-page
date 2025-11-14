@@ -11,7 +11,7 @@ export const Agropecuaria = () => {
     return (
         <>
             <div className='min-h-screen bg-gradient-to-b from-theme-blue-bg via-theme-blue to-theme-blue-bg'>
-                <div className='sticky top-0 z-10'>
+                <div className='sticky top-0 z-20'>
                     {/*<Nav/>*/}
                     <Navegador/>
                 </div>
@@ -25,7 +25,7 @@ export const Agropecuaria = () => {
 
                     <div className={`absolute inset-0 z-0 ${isMobile ? '' : 'animation-popup'}`}>
                         <img 
-                            src="/agro2.avif" 
+                            src="/PortadaAgropecuaria.avif" 
                             className='w-full h-full object-cover opacity-20' 
                             alt="Agropecuaria"
                         />

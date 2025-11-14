@@ -13,7 +13,7 @@ export const Coordinadores = () => {
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/c_agro-min.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/c_agro.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinadora de Agropecuaria",
             animation: "scroll-items-left"
         },
@@ -27,7 +27,7 @@ export const Coordinadores = () => {
         {
             id: 4,
             nombre: "Alex Carreño",
-            img: "/c_progra-min.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/c_progra.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinador de Programación",
             animation: "scroll-items-right"
         },
