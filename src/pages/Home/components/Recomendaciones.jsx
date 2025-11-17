@@ -38,9 +38,9 @@ export const Recomendaciones = () => {
             title: "Programa de integración escolar",
             img : "/rec-PIE.avif",
             texto : "El programa de integración escolar (PIE) está compuesto por equipo multidisciplinario de profesionales que buscan como objetivo central favorecer el proceso educativo de todos estudiantes, con el propósito de enriquecer su inclusión al mundo laboral.",
-            nombre : "Barbara ...",
+            nombre : "Barbara Galaz",
             animation: "scroll-items-down",
-            cargo : "Director",
+            cargo : "PIE",
             alt: "Imagen de la persona que entrega la recomendacion de nuestra institucion" 
         },
     ]

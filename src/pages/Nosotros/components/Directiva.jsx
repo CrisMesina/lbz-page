@@ -12,7 +12,7 @@ export const Directiva = () => {
         },
         {
             id: 2,
-            nombre: "Juan Perez",
+            nombre: "Carolina Cavieres",
             img: "/inspectora.avif", 
             cargo: "Inspectora General",
             alt: `Una imagen de nuestra ' INSPECTORA GENERAL ', del Liceo Berta Zamorano Lizana`,

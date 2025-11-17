@@ -12,7 +12,7 @@ export const Malla = () => {
             ramo: "Probabilidad y Estadística Descriptiva",
         },
         {
-            ramo: "Interpretación Musucal",
+            ramo: "Interpretación Musical",
         },
         {
             ramo: "Geografía, Territorio y Desafios Socio Ambientales"

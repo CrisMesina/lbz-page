@@ -6,27 +6,33 @@ export const Padres = () => {
         {
             id: 1,
             image: "/", // Ubicacion de imagenes -> /src/imgs/
-            name: "Juan Perez",
-            cargo: "presidente"
+            name: "Claudia Piro",
+            cargo: "Presidenta"
         },
         {
             id: 2,
             image: "/", // Ubicacion de imagenes -> /src/imgs/
-            name: "Juan Perez",
-            cargo: "presidente"
+            name: "Pamela Acuña",
+            cargo: "Secretaria"
         },
         {
             id: 3,
             image: "/", // Ubicacion de imagenes -> /src/imgs/
-            name: "Juan Perez",
-            cargo: "presidente"
+            name: "Francisca Morales",
+            cargo: "Tesorera"
         },
         {
             id: 4,
             image: "/", // Ubicacion de imagenes -> /src/imgs/
-            name: "Juan Perez",
-            cargo: "presidente"
+            name: "Marlene Filgueira",
+            cargo: "Primera Directora"
         },
+        {
+            id: 5,
+            image: "/",
+            name: "Maria Zuñiga",
+            cargo: "Segunda Directora"
+        }
     ]
 
     return (
@@ -40,7 +46,7 @@ export const Padres = () => {
                                     className='rounded-t-2xl hover:scale-110 transition-all duration-300 rendering w-60 h-60 bg-[#249382] p-2' />
                             </div>
                             <div className='p-5'>
-                                <h1>{a.name}</h1>
+                                <h1 className='mt-2 mb-5'>{a.name}</h1>
                                 <p>{a.cargo}</p>
                             </div>
                         </div>

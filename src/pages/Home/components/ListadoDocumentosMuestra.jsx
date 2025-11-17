@@ -6,7 +6,7 @@ const archivos = [
         name:"Proyecto Educativo Institucional",
         img:"/PEI.avif",
         download:"/Logo-png",
-        animation: "scroll-items-left transition-all scroll-item duration-200",
+        animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -14,7 +14,7 @@ const archivos = [
         name:"Reglamento Interno de Convivencia Escolar",
         img:"/RICE.avif",
         download:"/Logo-png",
-        animation: "scroll-items-left transition-all scroll-item duration-200",
+        animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -30,7 +30,7 @@ const archivos = [
         name:"Plan de Formación Ciudadana",
         img:"/PFC.avif",
         download:"/Logo-png",
-        animation: "scroll-items-right transition-all scroll-item duration-200",
+        animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
@@ -38,7 +38,7 @@ const archivos = [
         name:"Plan Integral de Seguridad Educativa",
         img:"/PISE.avif",
         download:"/Logo-png",
-        animation: "scroll-items-right transition-all scroll-item duration-200",
+        animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     
