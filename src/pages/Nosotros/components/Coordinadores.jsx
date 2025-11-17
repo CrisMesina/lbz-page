@@ -6,56 +6,56 @@ export const Coordinadores = () => {
         {
             id: 1,
             nombre: "Cesar Silva",
-            img: "/c_admin.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/c_admin.avif", 
             cargo: "Coordinador de Administración",
             animation: "scroll-items-left"
         },
         {
             id: 2,
             nombre: "Juan Perez",
-            img: "/c_agro.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/c_agro.avif", 
             cargo: "Coordinadora de Agropecuaria",
             animation: "scroll-items-left"
         },
         {
             id: 3,
             nombre: "Maria Rudolph",
-            img: "/", // ubicación de imagenes -> /src/imgs/
+            img: "/c_hc.avif", 
             cargo: "Coordinadora de Científico Humanista",
             animation: "scroll-items-right"
         },
         {
             id: 4,
             nombre: "Alex Carreño",
-            img: "/c_progra.avif", // ubicación de imagenes -> /src/imgs/
+            img: "/c_progra.avif", 
             cargo: "Coordinador de Programación",
             animation: "scroll-items-right"
         },
         {
             id: 5,
             nombre: "Alejandra G.",
-            img: "/", // ubicación de imagenes -> /src/imgs/
+            img: "/c_pie.avif", 
             cargo: "Coordinadora del Programa de Integración Escolar",
             animation: "scroll-items-top"
         },
         {
             id: 6,
             nombre: "Marisol Miranda",
-            img: "/", // ubicación de imagenes -> /src/imgs/
+            img: "/e_ce.avif", 
             cargo: "Encargada de convivencia escolar",
             animation: "scroll-items-top"
         },
         {
             id: 7,
             nombre: "Marilyn Medina",
-            img: "/", // ubicación de imagenes -> /src/imgs/
+            img: "/orientadora.avif", 
             cargo: "Orientadora",
             animation: "scroll-items-top"
         },
         {
             id: 4,
             nombre: "Joselyn Soto",
-            img: "/", // ubicación de imagenes -> /src/imgs/
+            img: "/evaluadora.avif", 
             cargo: "Evaluadora",
             alt: `Una imagen de nuestro '  ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-right"

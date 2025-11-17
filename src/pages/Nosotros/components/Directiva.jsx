@@ -29,7 +29,7 @@ export const Directiva = () => {
         {
             id: 4,
             nombre: "Joselyn Soto",
-            img: "/", 
+            img: "/evaluadora.avif", 
             cargo: "Evaluadora",
             alt: `Una imagen de nuestro '  ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-right"
