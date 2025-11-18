@@ -5,7 +5,7 @@ const archivos = [
         id:1,
         name:"Proyecto Educativo Institucional",
         img:"/PEI.avif",
-        download:"/Logo-png",
+        download:"/C_Mesina.pdf",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -90,18 +90,20 @@ export const Listado = () => {
                     archivos.map((a, i) =>(
                         <div className={`w-70 md:w-80 lg:w-72 xl:w-65 bg-gradient-to-b from-[#249382] ${isMobile ? '' : a.animation} ${isMobile ? 'opacity-100' : ''} my-10 hover:rotate-4 h-96 mx-auto shadow-lg
                             shadow-blue-900 rounded-2xl `} key={i}>
-                            <a href="" download={a.download}>
-                                <img src={a.img.length < 2 ? "/documento-defecto.png" : a.img} className="rounded-t-2xl mx-auto h-50" alt={a.alt} />
+                            <a href={a.img && a.img.length > 1 ? a.img : "/documento-defecto.png"} target="_blank" rel="noopener noreferrer">
+                                <img src={a.img && a.img.length > 1 ? a.img : "/documento-defecto.png"} className="rounded-t-2xl mx-auto h-50" alt={a.alt} />
                             </a>
                             <h1 className="text-start mx-10 my-5">{a.name}</h1>
                             <div className="p-4 text-center">
-                                <a href=""
-                                    download={a.download}
-                                    className="p-4 rounded-xl skew-2 shadow-lg shadow-[#249382] hover:shadow-theme-old-green-medium font-bold 
-                                        hover:bg-gradient-to-r hover:from-theme-old-green-dark hover:via-theme-old-green hover:to-theme-old-green-nav hover:bg-clip-text hover:text-transparent"
-                                    >
-                                    <button name="download-pdf" aria-label="Descargar documento PDF">Descargar PDF</button>
-                                </a>
+                                {
+                                    a.download && a.download.toLowerCase().endsWith('.pdf') ? (
+                                        <a href={a.download} target="_blank" rel="noopener noreferrer" download className="p-4 rounded-xl skew-2 shadow-lg shadow-[#249382] hover:shadow-theme-old-green-medium font-bold hover:bg-gradient-to-r hover:from-theme-old-green-dark hover:via-theme-old-green hover:to-theme-old-green-nav hover:bg-clip-text hover:text-transparent">
+                                            <button name="download-pdf" aria-label="Descargar documento PDF">Descargar PDF</button>
+                                        </a>
+                                    ) : (
+                                        <button disabled className="p-4 rounded-xl skew-2 bg-gray-600 text-gray-200 cursor-not-allowed font-bold" aria-label="Documento no disponible">No disponible</button>
+                                    )
+                                }
                             </div>
                         </div>
                     ))
