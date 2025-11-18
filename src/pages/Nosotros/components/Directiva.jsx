@@ -49,7 +49,6 @@ export const Directiva = () => {
                             </div>
                         ))
                     }
-                    
                 </div>
             </div>
         </>
