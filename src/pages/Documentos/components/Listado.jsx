@@ -5,15 +5,15 @@ const archivos = [
         id:1,
         name:"Proyecto Educativo Institucional",
         img:"/PEI.avif",
-        download:"/C_Mesina.pdf",
+        download:"/PEI.pdf",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
     {
         id:2,
         name:"Reglamento Interno de Convivencia Escolar",
-        img:"/RICE.avif",
-        download:"/Logo-png",
+        img:"/PEI.avif",
+        download:"/PEI.pdf",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -21,7 +21,7 @@ const archivos = [
         id:3,
         name:"Plan de Gestión de Convivencia Educativa",
         img:"/PGCE.avif",
-        download:"/Logo-png",
+        download:"/PGCE.pdf",
         animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -29,7 +29,7 @@ const archivos = [
         id:4,
         name:"Plan de Formación Ciudadana",
         img:"/PFC.avif",
-        download:"/Logo-png",
+        download:"/PFC.pdf",
         animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -37,7 +37,7 @@ const archivos = [
         id:5,
         name:"Plan Integral de Seguridad Educativa",
         img:"/PISE.avif",
-        download:"/Logo-png",
+        download:"/PISE.pdf",
         animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -45,7 +45,7 @@ const archivos = [
         id:6,
         name:"Plan Local de Formación para el Desarrollo Profesional",
         img:"/PLFDP.avif",
-        download:"/Logo-png",
+        download:"/PLFDP.pdf",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -53,7 +53,7 @@ const archivos = [
         id:7,
         name:"Plan de Sexualidad, Afectividad y Género",
         img:"/PSAG.avif",
-        download:"/Logo-png",
+        download:"/PSAG.pdf",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -61,7 +61,7 @@ const archivos = [
         id:8,
         name:"Plan de Apoyo a la Inclusión",
         img:"/PAI.avif",
-        download:"/Logo-png",
+        download:"/PAI.pdf",
         animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
@@ -69,7 +69,7 @@ const archivos = [
         id:9,
         name:"Reglamento de Evaluación",
         img: "/RE.avif",
-        download:"/logo.png",
+        download:"/RE.pdf",
         animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     }
@@ -93,7 +93,7 @@ export const Listado = () => {
                             <a href={a.img && a.img.length > 1 ? a.img : "/documento-defecto.png"} target="_blank" rel="noopener noreferrer">
                                 <img src={a.img && a.img.length > 1 ? a.img : "/documento-defecto.png"} className="rounded-t-2xl mx-auto h-50" alt={a.alt} />
                             </a>
-                            <h1 className="text-start mx-10 my-5">{a.name}</h1>
+                            <h1 className="text-start mx-10 my-3">{a.name}</h1>
                             <div className="p-4 text-center">
                                 {
                                     a.download && a.download.toLowerCase().endsWith('.pdf') ? (
@@ -101,7 +101,7 @@ export const Listado = () => {
                                             <button name="download-pdf" aria-label="Descargar documento PDF">Descargar PDF</button>
                                         </a>
                                     ) : (
-                                        <button disabled className="p-4 rounded-xl skew-2 bg-gray-600 text-gray-200 cursor-not-allowed font-bold" aria-label="Documento no disponible">No disponible</button>
+                                        <button disabled className="p-4 rounded-xl   bg-gray-600 text-gray-200 cursor-not-allowed font-bold" aria-label="Documento no disponible">No disponible</button>
                                     )
                                 }
                             </div>
