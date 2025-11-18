@@ -55,16 +55,16 @@ export const Especializaciones = () => {
                 {
                     especializaciones.map((e, i) =>(
                         <>
-                            <div key={i} className={`  bg-gradient-to-b from-[#249382] mx-auto opacity-0 skew-1 group transition-all duration-300 hover:skew-0 w-80 xl:w-70 2xl:w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md
+                            <div key={i} className={`  bg-gradient-to-b from-[#249382] mx-auto opacity-0 skew-1 group transition-all duration-300 hover:skew-0 ${window.innerWidth < 328 ? 'w-70' : 'w-80'} xl:w-70 2xl:w-80 h-96 my-20 rounded-xl shadow-2xl hover:shadow-theme-old-green-medium hover:shadow-md
                                 ${hovered !== null && hovered !== i ? ' brightness-50 blur-sm' : ''} ${isMobile ? 'opacity-100' : e.animation} scroll-item dark:text-white text-white hover:scale-105`}
                                 onMouseEnter={() => setIsHovered(i)}
                                 onMouseLeave={() => setIsHovered(null)}
                             >
-                                <div key={i} className='bg-gradient-to-t from-blue-900/30 to-[#249382] group-hover:rotate-4 mx-auto absolute -z-10 duration-300 hover:skew-0 w-80 2xl:w-80 xl:w-70 h-96 rounded-xl '></div>
+                                <div key={i} className={`bg-gradient-to-t from-blue-900/30 to-[#249382] group-hover:rotate-4 mx-auto absolute -z-10 duration-300 hover:skew-0 ${window.innerWidth < 328 ? 'w-70' : 'w-80'} 2xl:w-80 xl:w-70 h-96 rounded-xl `}></div>
 
                                 <div className='flex-col text-center mt-5 p-4'>
                                     <div className='relative justify-center w-30'>
-                                        <img src={e.img} className='absolute w-auto h-30 rounded-full left-22 xl:left-1/2 -top-30 2xl:-top-30 2xl:left-22 xl:-top-25 bg-[#249382] p-1' alt={e.alt} />
+                                        <img src={e.img} className={`absolute w-auto h-30 rounded-full ${window.innerWidth < 328 ? 'left-1/2' : 'left-22'} xl:left-1/2 -top-30 2xl:-top-30 2xl:left-22 xl:-top-25 bg-[#249382] p-1`} alt={e.alt} />
                                     </div>
                                     <h1 className='font-bold my-3 xl:my-5 2xl:my-5'>{e.title}</h1>
                                     <p>{e.text}</p>
