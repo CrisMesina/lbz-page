@@ -95,7 +95,7 @@ export const Navegador = () => {
             )}
             
             <div
-                className={`fixed top-0 left-0 bg-theme-blue h-screen w-96 z-30 transition-transform duration-500 ease-in-out
+                className={`fixed top-0 left-0 bg-theme-blue h-screen ${window.innerWidth < 328 ? 'w-50' : 'w-96'} z-30 transition-transform duration-500 ease-in-out
                 ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
             >
                 <button 
@@ -108,9 +108,9 @@ export const Navegador = () => {
                     </svg>
                 </button>
                 <div>
-                    <img src="/Logo.png" className='w-40 h-auto p-4 mx-auto' alt="Logo de la institución" />
+                    <img src="/Logo.png" className={`${window.innerWidth < 328 ? 'w-30' : 'w-40'} p-4 mx-auto`} alt="Logo de la institución" />
                 </div>
-                <div className='mt-10'>
+                <div className='mt-5'>
                     {navs.map((n, i) =>(
                         <div key={i} className=''>
                             {n.options ? (
