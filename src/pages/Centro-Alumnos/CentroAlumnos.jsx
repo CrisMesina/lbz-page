@@ -6,8 +6,7 @@ import { Welcome } from './components/Welcome'
 
 export const CentroAlumnos = () => {
 
-    const img = "" // Colocar ubicación de la imagen
-
+    const img = "ca_fotoGrupal.avif"; 
     return(
         <>
             <div className='min-h-screen'>

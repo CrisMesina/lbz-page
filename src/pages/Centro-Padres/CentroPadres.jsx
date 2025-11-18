@@ -5,7 +5,7 @@ import { Welcome } from './components/Welcome'
 
 export const CentroPadres = () => {
 
-    const img = "" // Colocar ubicación de la imagen
+    const img = "cp_fotoGrupal.avif"
 
     return(
         <>

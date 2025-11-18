@@ -5,31 +5,31 @@ export const Padres = () => {
     const listado = [
         {
             id: 1,
-            image: "/", // Ubicacion de imagenes -> /src/imgs/
+            image: "/cp_presidente.avif",
             name: "Claudia Piro",
             cargo: "Presidenta"
         },
         {
             id: 2,
-            image: "/", // Ubicacion de imagenes -> /src/imgs/
+            image: "/cp_secretaria.avif",
             name: "Pamela Acuña",
             cargo: "Secretaria"
         },
         {
             id: 3,
-            image: "/", // Ubicacion de imagenes -> /src/imgs/
+            image: "/cp_tesorera.avif",
             name: "Francisca Morales",
             cargo: "Tesorera"
         },
         {
             id: 4,
-            image: "/", // Ubicacion de imagenes -> /src/imgs/
+            image: "/cp_primera_directora.avif",
             name: "Marlene Filgueira",
             cargo: "Primera Directora"
         },
         {
             id: 5,
-            image: "/",
+            image: "/cp_segunda_directora.avif",
             name: "Maria Zuñiga",
             cargo: "Segunda Directora"
         }

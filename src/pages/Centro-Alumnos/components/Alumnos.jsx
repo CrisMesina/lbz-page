@@ -5,13 +5,13 @@ export const Alumnos = () => {
     const listado = [
         {
             id: 1,
-            image: "/", // ubicación de imagenes -> /src/imgs/
+            image: "/ProfesorAsesor1.avif", 
             name: "Karen Reyes",
             alt: "Imagen de nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         },
         {
             id: 2,
-            image: "/", // ubicación de imagenes -> /src/imgs/
+            image: "/ProfesorAsesor2.avif",
             name: "Gerardo Fuenzalida",
             alt: "Imagen de nuestro centro de alumnos, actualmente tenemos como presidente a: '' " 
         }
