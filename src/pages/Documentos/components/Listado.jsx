@@ -12,7 +12,7 @@ const archivos = [
     {
         id:2,
         name:"Reglamento Interno de Convivencia Escolar",
-        img:"/RICE.avif", // ubicacion de imagenes -> src/imgs/
+        img:"/RICE.avif",
         download:"/Logo-png",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -20,7 +20,7 @@ const archivos = [
     {
         id:3,
         name:"Plan de Gestión de Convivencia Educativa",
-        img:"/PGCE.avif", // ubicacion de imagenes -> src/imgs/
+        img:"/PGCE.avif",
         download:"/Logo-png",
         animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -28,7 +28,7 @@ const archivos = [
     {
         id:4,
         name:"Plan de Formación Ciudadana",
-        img:"/PFC.avif", // ubicacion de imagenes -> src/imgs/
+        img:"/PFC.avif",
         download:"/Logo-png",
         animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -36,7 +36,7 @@ const archivos = [
     {
         id:5,
         name:"Plan Integral de Seguridad Educativa",
-        img:"/PISE.avif", // ubicacion de imagenes -> src/imgs/
+        img:"/PISE.avif",
         download:"/Logo-png",
         animation: "scroll-items-right transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -52,7 +52,7 @@ const archivos = [
     {
         id:7,
         name:"Plan de Sexualidad, Afectividad y Género",
-        img:"/PSAG.avif", // ubicacion de imagenes -> src/imgs/
+        img:"/PSAG.avif",
         download:"/Logo-png",
         animation: "scroll-items-left transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
@@ -60,11 +60,19 @@ const archivos = [
     {
         id:8,
         name:"Plan de Apoyo a la Inclusión",
-        img:"/PAI.avif", // ubicacion de imagenes -> src/imgs/
+        img:"/PAI.avif",
         download:"/Logo-png",
         animation: "scroll-items-top transition-all scroll-item duration-200",
         alt: "Directorio de descarga del archivo '  ' "
     },
+    {
+        id:9,
+        name:"Reglamento de Evaluación",
+        img: "/RE.avif",
+        download:"/logo.png",
+        animation: "scroll-items-right transition-all scroll-item duration-200",
+        alt: "Directorio de descarga del archivo '  ' "
+    }
     
 ]
 

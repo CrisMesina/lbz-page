@@ -25,15 +25,7 @@ export const Directiva = () => {
             cargo: "Jefa de UTP",
             alt: `Una imagen de nuestra ' JEFA DE UTP ', del Liceo Berta Zamorano Lizana`,
             animation: "scroll-items-right"
-        },
-        {
-            id: 4,
-            nombre: "Joselyn Soto",
-            img: "/evaluadora.avif", 
-            cargo: "Evaluadora",
-            alt: `Una imagen de nuestro '  ', del Liceo Berta Zamorano Lizana`,
-            animation: "scroll-items-right"
-        },
+        }
     ]
     
     const isMobile = window.innerWidth < 768;
@@ -43,7 +35,7 @@ export const Directiva = () => {
         <>
             <div className='text-center text-white'>
                 <h1 className="text-5xl mb-20 font-bold">Equipo Directivo</h1>
-                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 mx-auto">
+                <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 mx-auto">
                     {
                         directiva.map((d, i ) => (
                             <div key={i} className={`mx-auto rounded-2xl -skew-1 active:shadow-green-700 active:translate-y-1 hover:rotate-1 ${isMobile ? '' : d.animation} transition-all duration-300 hover:scale-110 shadow-lg bg-gradient-to-b from-theme-blue to-[#249382]`}>
