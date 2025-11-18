@@ -25,7 +25,7 @@ export const HC = () => {
 
                     <div className={`absolute inset-0 z-0 ${isMobile ? '' : 'animation-popup'}`}>
                         <img 
-                            src="/img-hc.avif" 
+                            src="/PortadaHC.avif" 
                             className='w-full h-full object-cover opacity-20' 
                             alt="Científico Humanista"
                         />
