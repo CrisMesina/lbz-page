@@ -12,7 +12,7 @@ export const Coordinadores = () => {
         },
         {
             id: 2,
-            nombre: "Juan Perez",
+            nombre: "Paola Arratia",
             img: "/c_agro.avif", // ubicación de imagenes -> /src/imgs/
             cargo: "Coordinadora de Agropecuaria",
             animation: "scroll-items-left"
